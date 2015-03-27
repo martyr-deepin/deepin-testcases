@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "ENV-DESKTOP-deepin",
+    "inst-installing"
+  ],
+  "area": [
+    {
+      "type": "match",
+      "height": 200,
+      "width": 1024,
+      "xpos": 0,
+      "ypos": 0
+    }
+  ]
+}

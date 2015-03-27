@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "ENV-DESKTOP-deepin",
+    "inst-finish-restart-btn"
+  ],
+  "area": [
+    {
+      "type": "match",
+      "height": 60,
+      "width": 200,
+      "xpos": 410,
+      "ypos": 550
+    }
+  ]
+}

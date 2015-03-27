@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "ENV-DESKTOP-deepin",
+    "inst-finish"
+  ],
+  "area": [
+    {
+      "type": "match",
+      "height": 768,
+      "width": 1024,
+      "xpos": 0,
+      "ypos": 0
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "tags": [
+    "welcome-guid-skip-btn",
+    "ENV-DESKTOP-deepin",
+    "ENV-DISTRI-deepin",
+    "ENV-INSTLANG-en",
+    "ENV-FLAVOR-DVD"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "width": 358,
+      "xpos": 590,
+      "ypos": 689,
+      "type": "match",
+      "height": 40
+    }
+  ]
+}

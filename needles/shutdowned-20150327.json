@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "shutdown"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 0,
+      "ypos": 0,
+      "width": 581,
+      "height": 186,
+      "type": "match"
+    }
+  ]
+}
