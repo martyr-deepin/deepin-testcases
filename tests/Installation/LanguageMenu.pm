@@ -64,8 +64,6 @@ sub getLanguageIndex($){
 
 sub run {
 
-    mouse_hide;
-
     save_screenshot;
 
     # wait for language menu to appear

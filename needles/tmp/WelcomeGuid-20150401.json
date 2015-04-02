@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "welcome-guid-skip-btn",
+    "ENV-INSTLANG-zh_CN"
+  ],
+  "area": [
+    {
+      "ypos": 687,
+      "type": "match",
+      "xpos": 773,
+      "height": 40,
+      "width": 186
+    }
+  ],
+  "properties": []
+}

@@ -18,13 +18,55 @@ use base "basetest";
 use strict;
 use testapi;
 
-sub run {
+my $saveScreen :shared = 0;
+my $saveScreenExit :shared = 0;
+#$saveScreen = 0;
+
+sub windowThread  {
+    Gtk2->init;
+
+    my $window = Gtk2::Window->new('toplevel');
+    $window->signal_connect(destroy => sub { $saveScreenExit = 1; Gtk2->main_quit; });
+
+    my $btn = Gtk2::Button->new("save screen");
+    $btn->signal_connect(clicked => \&clickedEven);
+    $window->add($btn);
+
+    $btn->show;
+    $window->show;
+
+    Gtk2->main;
+}
+
+sub clickedEven{
+    $saveScreen = 1;
+    #bmwqemu::diag "clicked, saveScreen: $saveScreen \n"
+}
+
+sub maker{
+    my $thr = threads->create(\&windowThread);
     while(1){
-        save_screenshot;
-        if(check_screen "shutdown", 2){
+
+        if ($saveScreenExit){
             last;
         }
+
+        #bmwqemu::diag "loop ... saveScreen: $saveScreen \n";
+        if ($saveScreen){
+            mouse_hide;
+            save_screenshot;
+            $saveScreen = 0;
+            #print "save screen shot \n";
+            bmwqemu::diag " save screen shot \n"
+        }
+
+        sleep 1;
     }
+}
+
+
+sub run {
+    maker;
 }
 
 sub test_flags {

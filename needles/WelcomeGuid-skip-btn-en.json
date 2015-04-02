@@ -1,0 +1,17 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 590,
+      "type": "match",
+      "height": 40,
+      "ypos": 689,
+      "width": 358
+    }
+  ],
+  "tags": [
+    "ENV-INSTLANG-en",
+    "ENV-VERSION-2014.2",
+    "welcome-guid-skip-btn"
+  ]
+}

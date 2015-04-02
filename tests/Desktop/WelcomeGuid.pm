@@ -22,10 +22,10 @@ sub loadFirstBootGuidTests{
     mouse_hide;
 
     # tmp
-    sleep 15;
-    save_screenshot;
+    #sleep 15;
+    #save_screenshot;
 
-    #assert_screen "welcome-guid-default", 5;
+    assert_screen "welcome-guid-default", 100;
 
     if (get_var("DO_WELCOME_GUID")){
 

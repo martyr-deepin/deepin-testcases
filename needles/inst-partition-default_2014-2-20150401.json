@@ -1,0 +1,18 @@
+{
+  "tags": [
+    "ENV-DESKTOP-deepin",
+    "ENV-HDDSIZEGB-10",
+    "ENV-INSTLANG-zh_CN",
+    "inst-partition-default"
+  ],
+  "area": [
+    {
+      "ypos": 0,
+      "type": "match",
+      "width": 1024,
+      "xpos": 0,
+      "height": 768
+    }
+  ],
+  "properties": []
+}
