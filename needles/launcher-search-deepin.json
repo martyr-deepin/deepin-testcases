@@ -1,0 +1,17 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 0,
+      "ypos": 0,
+      "width": 1024,
+      "height": 767,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "ENV-VERSION-2014.2",
+    "launcher-search-deepin"
+  ]
+}

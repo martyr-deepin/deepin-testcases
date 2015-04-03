@@ -1,0 +1,17 @@
+{
+  "properties": [],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "ENV-VERSION-2014.2",
+    "dock-memu-classic-mode-btn"
+  ],
+  "area": [
+    {
+      "xpos": 521,
+      "ypos": 621,
+      "width": 133,
+      "height": 25,
+      "type": "match"
+    }
+  ]
+}

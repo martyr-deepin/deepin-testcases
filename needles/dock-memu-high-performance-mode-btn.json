@@ -1,0 +1,17 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 521,
+      "ypos": 597,
+      "width": 129,
+      "height": 25,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "ENV-VERSION-2014.2",
+    "ENV-INSTLANG-zh_CN",
+    "dock-memu-high-performance-mode-btn"
+  ]
+}

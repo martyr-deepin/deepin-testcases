@@ -1,0 +1,16 @@
+{
+  "area": [
+    {
+      "xpos": 0,
+      "ypos": 0,
+      "width": 1023,
+      "height": 768,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "desktop-high-performance-mode-default"
+  ],
+  "properties": []
+}

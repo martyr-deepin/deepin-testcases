@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "desktop-classic-mode-default"
+  ],
+  "area": [
+    {
+      "xpos": 0,
+      "ypos": 0,
+      "width": 1022,
+      "height": 767,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

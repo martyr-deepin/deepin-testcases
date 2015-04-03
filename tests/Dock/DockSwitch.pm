@@ -18,55 +18,30 @@ use base "basetest";
 use strict;
 use testapi;
 
-my $saveScreen :shared = 0;
-my $saveScreenExit :shared = 0;
-#$saveScreen = 0;
-
-sub windowThread  {
-    Gtk2->init;
-
-    my $window = Gtk2::Window->new('toplevel');
-    $window->signal_connect(destroy => sub { $saveScreenExit = 1; Gtk2->main_quit; });
-
-    my $btn = Gtk2::Button->new("save screen");
-    $btn->signal_connect(clicked => \&clickedEven);
-    $window->add($btn);
-
-    $btn->show;
-    $window->show;
-
-    Gtk2->main;
-}
-
-sub clickedEven{
-    $saveScreen = 1;
-    #bmwqemu::diag "clicked, saveScreen: $saveScreen \n"
-}
-
-sub maker{
-    my $thr = threads->create(\&windowThread);
-    while(1){
-
-        if ($saveScreenExit){
-            last;
-        }
-
-        #bmwqemu::diag "loop ... saveScreen: $saveScreen \n";
-        if ($saveScreen){
-            mouse_hide;
-            sleep 1;
-            $saveScreen = 0;
-            bmwqemu::diag " save screen shot \n";
-            save_screenshot;
-        }
-
-        sleep 1;
-    }
-}
-
-
 sub run {
-    maker;
+    assert_screen "desktop-fashion-mode-default", 15;
+
+    my $dockMenuX = 512;
+    my $dockMenuY = 753;
+
+    # switch to high performance mode
+    mouse_set $dockMenuX, $dockMenuY;
+    mouse_click "right";
+    assert_and_click "dock-memu-high-performance-mode-btn";
+    assert_screen "desktop-high-performance-mode-default", 3;
+
+    # switch to classic mode
+    mouse_set $dockMenuX, $dockMenuY;
+    mouse_click "right";
+    assert_and_click "dock-memu-classic-mode-btn";
+    assert_screen "desktop-classic-mode-default", 3;
+
+    # switch back to fashion mode
+    mouse_set $dockMenuX, $dockMenuY;
+    mouse_click "right";
+    assert_and_click "dock-memu-fashion-mode-btn";
+    assert_screen "desktop-fashion-mode-default", 3;
+
 }
 
 sub test_flags {

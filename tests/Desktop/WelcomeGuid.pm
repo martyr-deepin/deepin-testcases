@@ -40,6 +40,17 @@ sub run {
 
     # deal with the user guide
     loadFirstBootGuidTests;
+
+=pod
+    # tmp
+    sleep 10;
+    send_key "win";
+
+    sleep 5;
+    save_screenshot;
+    sleep 5;
+=cut
+
 }
 
 

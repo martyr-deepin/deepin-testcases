@@ -1,0 +1,16 @@
+{
+  "properties": [],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "launcher-btn-fashion-mode"
+  ],
+  "area": [
+    {
+      "xpos": 181,
+      "ypos": 696,
+      "width": 65,
+      "height": 64,
+      "type": "match"
+    }
+  ]
+}

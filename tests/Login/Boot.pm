@@ -40,8 +40,6 @@ sub login{
 }
 
 sub run {
-    # boot
-    # assert_screen "boot"
 
     mouse_hide;
 
@@ -49,7 +47,7 @@ sub run {
     assert_screen "grub2", 15;
 
     # login screen
-    assert_screen "login", 50;
+    assert_screen "login", 100;
 
     # login
     login;

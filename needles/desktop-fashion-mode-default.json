@@ -1,0 +1,17 @@
+{
+  "area": [
+    {
+      "width": 1022,
+      "height": 677,
+      "ypos": 90,
+      "type": "match",
+      "xpos": 0
+    }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "ENV-VERSION-2014.2",
+    "desktop-fashion-mode-default"
+  ],
+  "properties": []
+}

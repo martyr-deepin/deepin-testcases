@@ -19,6 +19,7 @@ use strict;
 use testapi;
 
 sub run {
+
     # wait for bootloader to appear
     #assert_screen "bootloader", 10;
 
@@ -26,8 +27,8 @@ sub run {
     #send_key "ret";
 
     # wait for the desktop to appear
-    #assert_screen "desktop", 300;
-   
+    #assert_and_click "desktop";
+
 }
 
 sub test_flags {

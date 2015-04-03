@@ -63,6 +63,22 @@ sub loadDesktopTests(){
 
 }
 
+sub loadDockTests{
+    loadtest "Dock/DockSwitch.pm";
+}
+
+sub loadLauncherTests{
+    loadtest "Launcher/StartUp.pm";
+}
+
+sub loadDeepinMusicPlayerTests{
+
+    loadtest "DeepinMusicPlayer/DMusicStartUp.pm";
+
+    loadtest "DeepinMusicPlayer/Main.pm";
+}
+
+
 sub loadNeedleMaker{
 
     loadtest "NeedleMaker/Maker.pm"
@@ -84,9 +100,23 @@ loadLoginTests;
 # entry desktop
 loadDesktopTests;
 
+if (get_var("DOCK") == "1"){
+    loadDockTests;
+}
+
+if (get_var("LAUNCHER") == "1"){
+    loadLauncherTests;
+}
+
+if (get_var("DEEPINMUSICPLAYER") == "1"){
+    loadDeepinMusicPlayerTests;
+}
+
 if (get_var("NEEDLEMAKER") == "1"){
     loadNeedleMaker;
 }
+
+sleep 15;
 
 1;
 

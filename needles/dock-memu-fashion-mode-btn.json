@@ -1,0 +1,17 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "ENV-VERSION-2014.2",
+    "dock-memu-fashion-mode-btn"
+  ],
+  "area": [
+    {
+      "xpos": 538,
+      "ypos": 574,
+      "width": 113,
+      "height": 24,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}
