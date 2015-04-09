@@ -103,24 +103,24 @@ loadLoginTests;
 # entry desktop
 loadDesktopTests;
 
-if (get_var("DOCK") == "1"){
+if (get_var("DOCK")){
     loadDockTests;
 }
 
-if (get_var("LAUNCHER") == "1"){
+if (get_var("LAUNCHER")){
     loadLauncherTests;
 }
 
-if (get_var("DEEPINMUSICPLAYER") == "1"){
+if (get_var("DEEPINMUSICPLAYER")){
     loadDeepinMusicPlayerTests;
 }
 
-if (get_var("DCC") == "1"){
+if (get_var("DCC")){
     #entry dccuser;
     loadDccUserTests;
 }
 
-if (get_var("NEEDLEMAKER") == "1"){
+if (get_var("NEEDLEMAKER")){
     loadNeedleMaker;
 }
 
