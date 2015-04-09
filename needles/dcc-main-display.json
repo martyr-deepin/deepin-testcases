@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 822,
+      "ypos": 195,
+      "width": 49,
+      "height": 63,
+      "type": "match"
+    }
+  ],
+  "properties": [],
+  "tags": [
+    "dcc-main-display-btn"
+  ]
+}

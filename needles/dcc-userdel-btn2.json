@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-userdel-btn2"
+  ],
+  "area": [
+    {
+      "xpos": 724,
+      "ypos": 204,
+      "width": 27,
+      "height": 29,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

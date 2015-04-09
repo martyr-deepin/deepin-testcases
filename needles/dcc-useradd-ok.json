@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 946,
+      "ypos": 388,
+      "width": 68,
+      "height": 28,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-useradd-ok"
+  ]
+}

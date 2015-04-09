@@ -79,6 +79,10 @@ sub loadDeepinMusicPlayerTests{
 }
 
 
+sub loadDccUserTests(){
+    loadtest "Controlcenter/DccUser.pm";
+}
+
 sub loadNeedleMaker{
 
     loadtest "NeedleMaker/Maker.pm"
@@ -110,6 +114,11 @@ if (get_var("LAUNCHER") == "1"){
 
 if (get_var("DEEPINMUSICPLAYER") == "1"){
     loadDeepinMusicPlayerTests;
+}
+
+if (get_var("DCC") == "1"){
+    #entry dccuser;
+    loadDccUserTests;
 }
 
 if (get_var("NEEDLEMAKER") == "1"){

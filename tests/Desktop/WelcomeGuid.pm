@@ -34,6 +34,10 @@ sub loadFirstBootGuidTests{
     {
         assert_and_click "welcome-guid-skip-btn";
     }
+
+    #sleep 2;
+    #save_screenshot;
+
 }
 
 sub run {

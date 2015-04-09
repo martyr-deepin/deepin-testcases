@@ -53,8 +53,8 @@ sub maker{
 
         #bmwqemu::diag "loop ... saveScreen: $saveScreen \n";
         if ($saveScreen){
-            mouse_hide;
-            sleep 1;
+            #mouse_hide;
+            save_screenshot;
             $saveScreen = 0;
             bmwqemu::diag " save screen shot \n";
             save_screenshot;
