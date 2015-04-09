@@ -1,0 +1,16 @@
+{
+  "area": [
+    {
+      "xpos": 692,
+      "ypos": 13,
+      "width": 300,
+      "height": 64,
+      "type": "match"
+    }
+  ],
+  "properties": [],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "dcc-networktips-check"
+  ]
+}

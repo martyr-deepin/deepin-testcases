@@ -19,22 +19,30 @@ use strict;
 use testapi;
 
 sub adduser {
+    # close networktip
+    sleep 3;
+    if (check_screen "dcc-networktips-check"){
+        mouse_set 977, 21;
+        mouse_click;
+    }
 
-    mouse_set 1024, 768;
-    assert_screen "dcc-main-area",10;
-
-    # click usrbtn on the mainpage of dcc
+    # show controlcenter
+    mouse_set 1023, 767;
+    
+    # click userbtn on the mainpage of controlcenter
+    assert_screen "dcc-main-area", 10;
+    mouse_set 50, 50;
     assert_and_click "dcc-main-user";
-    sleep 1;
+    sleep 2;
 
     # click useradd btn
+    assert_screen "dcc-useradd-btn", 10;
     assert_and_click "dcc-useradd-btn";
-
-    # accept userinfo
+    sleep 2;
+   
+    # input userinfo to dcctext
     my $username = get_var("ADDUNAME");
     my $passwd = get_var("ADDUPWD");
-
-    # input userinfo to dcctext
     mouse_set 880, 198;
     mouse_click;
     type_string $username;
@@ -47,6 +55,7 @@ sub adduser {
     assert_and_click "dcc-useradd-ok";
 
     # authentication of admin
+    sleep 5;
     mouse_set 405, 379;
     mouse_click;
     type_string "deepin";
@@ -55,33 +64,29 @@ sub adduser {
     send_key "tab";
     send_key "tab";
     send_key "ret";
-
 }
 
 sub deluser {
     # wait for useradded page
-    mouse_set 1024, 768;
+    mouse_set 1023, 767;
     assert_screen "dcc-useradded-area", 10;
-
-    # click the delbtn on dcc
+    mouse_set 50, 50;
+   
+    # click the delbtn 
     assert_and_click "dcc-userdel-btn";
-    sleep 1;
+    sleep 2;
 
     # click the delbtn2
     assert_and_click "dcc-userdel-btn2";
-    sleep 1;
+    sleep 2;
 
-    # click ok
+    # click deluser ok
     assert_and_click "dcc-userdel-ok";
-
 }
 
 sub run {
-    # show the dcc
-    # mouse_set 1024, 768;
-    # assert_screen "dcc-main-area", 10;
     adduser;
-    sleep 3;
+    sleep 8;
     deluser;
 
 }

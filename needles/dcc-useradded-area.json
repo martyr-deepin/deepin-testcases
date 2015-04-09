@@ -1,17 +1,15 @@
 {
+  "properties": [],
   "tags": [
-    "ENV-INSTLANG-zh_CN",
-    "ENV-VERSION-2014.2",
     "dcc-useradded-area"
   ],
-  "properties": [],
   "area": [
     {
-      "height": 363,
-      "ypos": 9,
+      "ypos": 6,
+      "xpos": 819,
+      "width": 202,
       "type": "match",
-      "width": 358,
-      "xpos": 665
+      "height": 352
     }
   ]
 }
