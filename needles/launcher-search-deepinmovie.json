@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "launcher-search-deepinmovie"
+  ],
+  "area": [
+    {
+      "xpos": 198,
+      "ypos": 8,
+      "width": 400,
+      "height": 183,
+      "type": "match"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 28,
+      "ypos": 21,
+      "width": 968,
+      "height": 213,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "launcher-search-area"
+  ],
+  "properties": []
+}

@@ -82,6 +82,12 @@ sub loadDccUserTests(){
     loadtest "Controlcenter/DccUser.pm";
 }
 
+
+sub loadDmovieTests(){
+    loadtest "DeepinMovie/StartCloseDmovie.pm";
+
+}
+
 sub loadNeedleMaker{
 
     loadtest "NeedleMaker/Maker.pm"
@@ -119,6 +125,13 @@ if (get_var("DCC")){
     #entry dccuser;
     loadDccUserTests;
 }
+
+
+if (get_var("DMOVIE")){
+
+   loadDmovieTests;
+}
+
 
 if (get_var("NEEDLEMAKER")){
     loadNeedleMaker;
