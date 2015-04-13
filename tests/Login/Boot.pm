@@ -19,24 +19,15 @@ use strict;
 use testapi;
 
 sub login{
-    my $username = "deepin";
     my $userpwd = "deepin";
 
-    if (get_var("USERNAME")){
-        my $username = get_var("USERNAME");
-    }
-
     if (get_var("USERPWD")){
-        my $userpwd = get_var("USERPWD");
+        $userpwd = get_var("USERPWD");
     }
-
-    type_string $username;
-    send_key "ret";
-    type_string $userpwd;
 
     # login
+    type_string $userpwd;
     send_key "ret";
-
 }
 
 sub run {

@@ -23,7 +23,7 @@ sub run {
     mouse_hide;
 
     # waiting for installation to the end
-    assert_screen "inst-finish", 20 * 60;
+    assert_screen "inst-finish", 40 * 60;
 
     mouse_hide;
 
