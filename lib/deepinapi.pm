@@ -15,18 +15,23 @@ sub runScriptOnTty($;$){
 
     send_key "ctrl-alt-".$tty;
 
-    sleep 1;
+    sleep 2;
 
     type_string $username;
     send_key "ret";
     type_string $userpwd;
     send_key "ret";
 
-    sleep 1;
+    sleep 2;
 
     type_string $script;
     send_key "ret";
 
+    # type passwd for sudo
+    type_string $userpwd;
+    send_key "ret";
+
+    sleep 2;
     save_screenshot;
 
     type_string "logout";
@@ -34,7 +39,7 @@ sub runScriptOnTty($;$){
 
     send_key "ctrl-alt-f7";
 
-    sleep 1;
+    sleep 2;
 }
 
 sub disableSysNotifications{

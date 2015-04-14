@@ -42,10 +42,10 @@ sub run {
     # login screen
     assert_screen "login", 100;
 
+    deepinapi::disableSysNotifications;
+
     # login
     login;
-
-    deepinapi::disableSysNotifications;
 }
 
 sub test_flags {
