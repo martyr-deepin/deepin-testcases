@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 670,
+      "ypos": 7,
+      "width": 39,
+      "height": 33,
+      "type": "match"
+    }
+  ],
+  "properties": [],
+  "tags": [
+    "dcc-backtohome-btn"
+  ]
+}

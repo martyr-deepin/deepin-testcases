@@ -109,15 +109,21 @@ sub loadDeepinMusicPlayerTests{
 }
 
 
-sub loadDccUserTests(){
+sub loadDccUserTests{
     loadtest "Controlcenter/DccUser.pm";
 }
 
 
-sub loadDmovieTests(){
+sub loadDmovieTests{
     loadtest "DeepinMovie/StartCloseDmovie.pm";
 
 }
+
+sub loadDccDisplayTests{
+    loadtest "Controlcenter/DccDisplay.pm";
+
+}
+
 
 sub loadNeedleMaker{
 
@@ -155,17 +161,18 @@ if (get_var("DEEPINMUSICPLAYER")){
     loadDeepinMusicPlayerTests;
 }
 
-if (get_var("DCC")){
-    #entry dccuser;
+if (get_var("DCCUSER")){
     loadDccUserTests;
 }
 
+if (get_var("DCCDISPLAY")){
+    loadDccDisplayTests;
+}
 
 if (get_var("DMOVIE")){
 
    loadDmovieTests;
 }
-
 
 if (get_var("NEEDLEMAKER")){
     loadNeedleMaker;

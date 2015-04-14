@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 727,
+      "ypos": 445,
+      "width": 287,
+      "height": 25,
+      "type": "match"
+    }
+  ],
+  "properties": [],
+  "tags": [
+    "dcc-display-brightness-area"
+  ]
+}
