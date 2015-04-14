@@ -23,10 +23,10 @@ sub run {
     assert_screen "desktop-fashion-mode-default", 5;
 
     # launcher start up
-    # send_key "win";
-    # sleep 1;
+    send_key "win";
+    sleep 1;
 
-    assert_and_click "laucher-start-btn-fashion-mode-default";
+    #assert_and_click "laucher-start-btn-fashion-mode-default";
 
     # search deepin-music-player
     type_string "deepin-music-player";
@@ -40,7 +40,16 @@ sub run {
     mouse_set 535, 526;
     mouse_click;
 
-    assert_screen "deepin-music-player-start-up-3", 5;
+    my $ready = check_screen "deepin-music-player-start-up-3", 5;
+
+    # repeat click
+    if (!$ready){
+        # click the third btn
+        mouse_set 535, 526;
+        mouse_click;
+    }
+
+    assert_screen "deepin-music-player-start-up-3", 1;
 
     # entry
     assert_and_click "deepin-music-player-start-up-btn";

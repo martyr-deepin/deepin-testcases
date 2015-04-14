@@ -14,6 +14,8 @@
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
+BEGIN { push @INC, "$ENV{'PWD'}/common" }
+
 use strict;
 use testapi;
 use autotest;
@@ -25,6 +27,35 @@ use threads::shared;
 sub loadtest($) {
     my ($test) = @_;
     autotest::loadtest(get_var("CASEDIR") . "/tests/$test");
+}
+
+
+sub runScript($){
+    my ($script)= @_;
+    my $username = "deepin";
+    my $userpwd = "deepin";
+    if (get_var("USERNAME")){
+        $username = get_var("USERNAME");
+        $userpwd = get_var("USERPWD");
+    }
+
+    send_key "ctrl+alt+f1";
+    type_string $username;
+    send_key "ret";
+    type_string $userpwd;
+    send_key "ret";
+
+    type_string $script;
+    send_key "ret";
+
+    type_string "logout";
+    send_key "ret";
+}
+
+sub closeSysNotifications{
+    my $script = "sudo mv /usr/share/deepin-notifications/deepin-notifications /usr/share/deepin-notifications/deepin-notification";
+
+    runScript($script);
 }
 
 
@@ -51,7 +82,7 @@ sub loadInstTests(){
 sub loadLoginTests{
 
     # login
-    loadtest "Login/Boot.pm";
+    loadtest "Login/Login.pm";
 
 }
 
@@ -74,7 +105,7 @@ sub loadDeepinMusicPlayerTests{
 
     loadtest "DeepinMusicPlayer/DMusicStartUp.pm";
 
-    loadtest "DeepinMusicPlayer/Main.pm";
+    loadtest "DeepinMusicPlayer/DMusicMain.pm";
 }
 
 
@@ -105,6 +136,9 @@ loadInstTests;
 
 # login
 loadLoginTests;
+
+# close system notifications
+#closeSysNotifications;
 
 # entry desktop
 loadDesktopTests;

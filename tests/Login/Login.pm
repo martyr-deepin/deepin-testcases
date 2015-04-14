@@ -18,6 +18,8 @@ use base "basetest";
 use strict;
 use testapi;
 
+use deepinapi;
+
 sub login{
     my $userpwd = "deepin";
 
@@ -42,6 +44,8 @@ sub run {
 
     # login
     login;
+
+    deepinapi::disableSysNotifications;
 }
 
 sub test_flags {
