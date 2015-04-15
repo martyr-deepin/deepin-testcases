@@ -16,17 +16,18 @@ sub runScriptOnTty($;$){
     send_key "ctrl-alt-".$tty;
 
     sleep 2;
-
     type_string $username;
     send_key "ret";
+
+    sleep 2;
     type_string $userpwd;
     send_key "ret";
 
     sleep 2;
-
     type_string $script;
     send_key "ret";
 
+    sleep 2;
     # type passwd for sudo
     type_string $userpwd;
     send_key "ret";

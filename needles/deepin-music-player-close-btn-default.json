@@ -1,0 +1,16 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 644,
+      "ypos": 78,
+      "width": 22,
+      "height": 19,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN ",
+    "deepin-music-player-close-btn-default"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN ",
+    "deepin-music-player-close-tips-confirm-btn"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 527,
+      "ypos": 417,
+      "width": 78,
+      "height": 31,
+      "type": "match"
+    }
+  ]
+}

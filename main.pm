@@ -30,36 +30,6 @@ sub loadtest($) {
 }
 
 
-sub runScript($){
-    my ($script)= @_;
-    my $username = "deepin";
-    my $userpwd = "deepin";
-    if (get_var("USERNAME")){
-        $username = get_var("USERNAME");
-        $userpwd = get_var("USERPWD");
-    }
-
-    send_key "ctrl+alt+f1";
-    type_string $username;
-    send_key "ret";
-    type_string $userpwd;
-    send_key "ret";
-
-    type_string $script;
-    send_key "ret";
-
-    type_string "logout";
-    send_key "ret";
-}
-
-sub closeSysNotifications{
-    my $script = "sudo mv /usr/share/deepin-notifications/deepin-notifications /usr/share/deepin-notifications/deepin-notification";
-
-    runScript($script);
-}
-
-
-
 sub loadInstTests(){
     #loadBootTests();
 
@@ -106,6 +76,8 @@ sub loadDeepinMusicPlayerTests{
     loadtest "DeepinMusicPlayer/DMusicStartUp.pm";
 
     loadtest "DeepinMusicPlayer/DMusicMain.pm";
+
+    loadtest "DeepinMusicPlayer/DMusicExit.pm";
 }
 
 

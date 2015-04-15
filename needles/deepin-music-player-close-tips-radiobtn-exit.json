@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN ",
+    "deepin-music-player-close-tips-radiobtn-exit"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 500,
+      "ypos": 373,
+      "width": 18,
+      "height": 18,
+      "type": "match"
+    }
+  ]
+}
