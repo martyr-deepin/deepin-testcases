@@ -133,12 +133,12 @@ if (get_var("DEEPINMUSICPLAYER")){
     loadDeepinMusicPlayerTests;
 }
 
-if (get_var("DCCUSER")){
-    loadDccUserTests;
-}
-
 if (get_var("DCCDISPLAY")){
     loadDccDisplayTests;
+}
+
+if (get_var("DCCUSER")){
+    loadDccUserTests;
 }
 
 if (get_var("DMOVIE")){

@@ -24,7 +24,7 @@ sub run {
 
     # launcher start up
     send_key "win";
-    sleep 1;
+    sleep 10;
 
     #assert_and_click "laucher-start-btn-fashion-mode-default";
 
@@ -49,7 +49,7 @@ sub run {
         mouse_click;
     }
 
-    assert_screen "deepin-music-player-start-up-3", 1;
+    assert_screen "deepin-music-player-start-up-3", 3;
 
     # entry
     assert_and_click "deepin-music-player-start-up-btn";
