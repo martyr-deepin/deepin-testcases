@@ -81,6 +81,7 @@ sub deluser {
     sleep 2;
 
     # click deluser ok
+
     assert_and_click "dcc-userdel-ok";
 }
 
@@ -88,7 +89,12 @@ sub run {
     adduser;
     sleep 8;
     deluser;
-
+    
+    #exit dcc-user 
+    sleep 3;
+    assert_and_click "dcc-backtohome-btn";
+    mouse_set 50, 50;
+    mouse_click; 
 }
 
 sub test_flags {
