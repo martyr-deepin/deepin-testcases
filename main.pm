@@ -68,7 +68,7 @@ sub loadDockTests{
 }
 
 sub loadLauncherTests{
-    loadtest "Launcher/StartUp.pm";
+    loadtest "Launcher/LauncherStartUp.pm";
 }
 
 sub loadDeepinMusicPlayerTests{
