@@ -23,25 +23,23 @@ sub run {
     assert_screen "desktop-fashion-mode-default", 2;
 
     # mouse
-    assert_and_click "launcher-btn-fashion-mode";
-    assert_screen "launcher-fashion-mode", 3;
+    # assert_and_click "launcher-btn-fashion-mode";
+    # assert_screen "launcher-fashion-mode", 3;
+
+    # keyboard
+    send_key "win";
+    assert_screen "launcher-fashion-mode", 15;
 
     # show deepin software
     type_string "deepin";
     assert_screen "launcher-search-deepin", 3;
+    # exit search
     send_key "esc";
 
     # exit launcher
-    send_key "esc";
+    send_key "esc", 2;
 
     sleep 2;
-
-    # keyboard
-    # assert_screen "default-fashion-mode-desktop";
-    # send_key "win";
-    # assert_screen "fashion-mode-launcher", 3;
-    # send_key "esc", 1;
-
 }
 
 sub test_flags {

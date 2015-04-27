@@ -19,29 +19,29 @@ use strict;
 use testapi;
 
 sub open_close_dmovie {
-    
+
     #close networktip
     sleep 3;
     if (check_screen "dcc-networktips-check"){
         mouse_set 977, 21;
         mouse_click;
     }
-   
-    #open deepin-movie in launcher  
+
+    #open deepin-movie in launcher
     send_key "win";
-    assert_screen "launcher-search-area", 10;
+    assert_screen "launcher-search-area", 15;
     type_string "deepin-movie";
     assert_screen "launcher-search-deepinmovie", 10;
     mouse_set 250, 126;
     mouse_click;
     assert_screen "deepinmovie-main-area", 10;
-    
+
     #send_key "ctrl+o";
-    
+
     #close deepin-movie
     mouse_set 915, 122;
-    mouse_click; 
- 
+    mouse_click;
+
 }
 
 sub run {
