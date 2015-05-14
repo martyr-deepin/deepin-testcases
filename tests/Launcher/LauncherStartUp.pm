@@ -25,10 +25,11 @@ sub run {
     # mouse
     # assert_and_click "launcher-btn-fashion-mode";
     # assert_screen "launcher-fashion-mode", 3;
+    #
 
     # keyboard
     send_key "win";
-    assert_screen "launcher-fashion-mode", 15;
+    assert_screen "launcher-fashion-mode", 25;
 
     # show deepin software
     type_string "deepin";
