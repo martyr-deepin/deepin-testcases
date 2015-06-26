@@ -114,7 +114,7 @@ sub loadNeedleMaker{
 ##############
 
 # pxe
-if (get_var("FLAVOR") == "SID-PXE"){
+if (check_var("FLAVOR", "SID-PXE")){
     loadPXEBootloaderTests;
 }
 
