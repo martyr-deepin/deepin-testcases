@@ -1,16 +1,15 @@
 {
-  "properties": [],
   "area": [
     {
-      "width": 1024,
       "type": "match",
       "height": 768,
       "xpos": 0,
-      "ypos": 0
+      "ypos": 0,
+      "width": 1024
     }
   ],
   "tags": [
-    "ENV-INSTLANG-zh_CN",
-    "inst-finish"
-  ]
+    "inst-lang-menu"
+  ],
+  "properties": []
 }

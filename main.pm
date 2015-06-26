@@ -29,6 +29,10 @@ sub loadtest($) {
     autotest::loadtest(get_var("CASEDIR") . "/tests/$test");
 }
 
+sub loadPXEBootloaderTests(){
+
+    loadtest "Boot/PXEBootloader.pm"
+}
 
 sub loadInstTests(){
     #loadBootTests();
@@ -108,6 +112,11 @@ sub loadNeedleMaker{
 ##############
 # start test #
 ##############
+
+# pxe
+if (get_var("FLAVOR") == "SID-PXE"){
+    loadPXEBootloaderTests;
+}
 
 # install
 loadInstTests;

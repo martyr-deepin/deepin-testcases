@@ -37,7 +37,12 @@ sub run {
     mouse_hide;
 
     # grub
-    assert_screen "grub2", 15;
+    assert_screen "grub", 15;
+
+
+    sleep 50;
+
+    save_screenshot;
 
     # login screen
     assert_screen "login", 100;

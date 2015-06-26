@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "ypos": 0,
+      "width": 1024,
+      "xpos": 0,
+      "height": 768,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "inst-lang-menu"
+  ],
+  "properties": []
+}

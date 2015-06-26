@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 0,
+      "ypos": 0,
+      "width": 715,
+      "height": 395,
+      "type": "match"
+    }
+  ],
+  "properties": [],
+  "tags": [
+    "pxe-boot-menu-2"
+  ]
+}

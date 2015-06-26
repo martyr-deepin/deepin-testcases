@@ -25,7 +25,7 @@ sub loadFirstBootGuidTests{
     #sleep 15;
     #save_screenshot;
 
-    assert_screen "welcome-guid-default", 100;
+    assert_screen "welcome-guid-default", 400;
 
     if (get_var("DO_WELCOME_GUID")){
 

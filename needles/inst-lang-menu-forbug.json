@@ -1,15 +1,15 @@
 {
   "tags": [
-    "ENV-DESKTOP-deepin",
     "inst-lang-menu"
   ],
+  "properties": [],
   "area": [
     {
-      "type": "match",
+      "ypos": 0,
       "height": 768,
-      "width": 1024,
+      "type": "match",
       "xpos": 0,
-      "ypos": 0
+      "width": 1024
     }
   ]
 }

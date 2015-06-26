@@ -18,30 +18,33 @@ use base "basetest";
 use strict;
 use testapi;
 
-sub loadFirstBootGuidTests{
-    mouse_hide;
-
-    # tmp
-    sleep 15;
-    save_screenshot;
-
-    #assert_screen "welcome-guid-default", 5;
-
-    if (get_var("DO_WELCOME_GUID")){
-
-    }
-    else
-    {
-        assert_and_click "welcome-guid-skip-btn";
-    }
-}
-
 sub run {
 
-    # deal with the user guide
-    loadFirstBootGuidTests;
-}
+    assert_screen "pxe-boot-menu-1", 30;
 
+    for (my $i = 0; $i < 5; $i ++){
+        send_key "down";
+    }
+
+    send_key "ret";
+
+    assert_screen "pxe-boot-menu-2", 10;
+
+    if (get_var("ARCH") == "x86_64"){
+        send_key "down";
+        send_key "down";
+        send_key "down";
+    }
+    elsif (get_var("ARCH") == "i386"){
+        send_key "down";
+        send_key "down";
+        send_key "down";
+        send_key "down";
+    }
+
+    send_key "ret";
+
+}
 
 sub test_flags {
     # without anything - rollback to 'lastgood' snapshot if failed
