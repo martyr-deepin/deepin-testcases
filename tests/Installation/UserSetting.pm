@@ -23,7 +23,7 @@ sub run {
     mouse_hide;
 
     # wait for user info setting to appear
-    assert_screen "inst-user-setting-default", 10;
+    assert_screen "inst-user-setting-default", 20;
 
     # user name & pwd
     my $userName = get_var("USERNAME");

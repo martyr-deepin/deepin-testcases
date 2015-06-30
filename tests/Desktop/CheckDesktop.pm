@@ -19,42 +19,11 @@ use strict;
 use testapi;
 use bmwqemu;
 
-sub loadFirstBootGuidTests{
-    mouse_hide;
-
-    # tmp
-    #sleep 15;
-    #save_screenshot;
-
-    assert_screen "welcome-guid-default", 400;
-
-    if (get_var("DO_WELCOME_GUID")){
-
-    }
-    else
-    {
-        assert_and_click "welcome-guid-skip-btn";
-    }
-
-
-    # finish loading desktop
-    # make snapshot
-    #bmwqemu::make_snapshot("Finish-Loading-Desktop");
-
-    # flush
-    sleep 5;
-
-}
-
 sub run {
 
-    # deal with the user guide
-    loadFirstBootGuidTests;
-
-    sleep 20;
+    bmwqemu::make_snapshot("Desktop-CheckDesktop");
 
 }
-
 
 sub test_flags {
     # without anything - rollback to 'lastgood' snapshot if failed

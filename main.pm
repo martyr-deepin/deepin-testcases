@@ -25,8 +25,10 @@ use threads;
 use threads::shared;
 
 sub loadtest($) {
+
     my ($test) = @_;
     autotest::loadtest(get_var("CASEDIR") . "/tests/$test");
+
 }
 
 sub loadPXEBootloaderTests(){
@@ -35,6 +37,7 @@ sub loadPXEBootloaderTests(){
 }
 
 sub loadInstTests(){
+
     #loadBootTests();
 
     # choose language
@@ -51,6 +54,7 @@ sub loadInstTests(){
 
     # waiting for the installation to the end, and restart
     loadtest "Installation/Finish.pm";
+
 }
 
 sub loadLoginTests{
@@ -68,11 +72,15 @@ sub loadDesktopTests(){
 }
 
 sub loadDockTests{
+
     loadtest "Dock/DockSwitch.pm";
+
 }
 
 sub loadLauncherTests{
+
     loadtest "Launcher/LauncherStartUp.pm";
+
 }
 
 sub loadDeepinMusicPlayerTests{
@@ -86,16 +94,19 @@ sub loadDeepinMusicPlayerTests{
 
 
 sub loadDccUserTests{
+
     loadtest "Controlcenter/DccUser.pm";
 }
 
 
 sub loadDmovieTests{
+
     loadtest "DeepinMovie/StartCloseDmovie.pm";
 
 }
 
 sub loadDccDisplayTests{
+
     loadtest "Controlcenter/DccDisplay.pm";
 
 }
@@ -115,7 +126,9 @@ sub loadNeedleMaker{
 
 # pxe
 if (check_var("FLAVOR", "SID-PXE")){
+
     loadPXEBootloaderTests;
+
 }
 
 # install

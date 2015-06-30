@@ -34,7 +34,7 @@ sub login{
 
 sub run {
 
-    mouse_hide;
+    #mouse_hide;
 
     # grub
     assert_screen "grub", 15;

@@ -2,6 +2,7 @@
   "area": [
     {
       "type": "match",
+      "match": 70,
       "height": 768,
       "xpos": 0,
       "ypos": 0,
