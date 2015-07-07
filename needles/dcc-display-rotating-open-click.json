@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "dcc-display-rotating-open-click"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "height": 35,
+      "ypos": 471,
+      "width": 302,
+      "xpos": 718,
+      "type": "match"
+    }
+  ]
+}

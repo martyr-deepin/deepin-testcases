@@ -1,15 +1,16 @@
 {
   "properties": [],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "dcc-useradd-ok"
+  ],
   "area": [
     {
+      "type": "match",
+      "width": 68,
       "xpos": 946,
       "ypos": 388,
-      "width": 68,
-      "height": 28,
-      "type": "match"
+      "height": 28
     }
-  ],
-  "tags": [
-    "dcc-useradd-ok"
   ]
 }

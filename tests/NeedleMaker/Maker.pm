@@ -66,7 +66,13 @@ sub maker{
 
 
 sub run {
+
+    save_screenshot;
+
+    assert_screen "desktop-fashion-mode-default", 15;
+
     maker;
+
 }
 
 sub test_flags {

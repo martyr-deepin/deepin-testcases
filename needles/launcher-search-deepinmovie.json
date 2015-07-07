@@ -1,15 +1,16 @@
 {
   "properties": [],
-  "tags": [
-    "launcher-search-deepinmovie"
-  ],
   "area": [
     {
-      "xpos": 198,
-      "ypos": 8,
       "width": 400,
       "height": 183,
-      "type": "match"
+      "ypos": 8,
+      "type": "match",
+      "xpos": 198
     }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "launcher-search-deepinmovie"
   ]
 }

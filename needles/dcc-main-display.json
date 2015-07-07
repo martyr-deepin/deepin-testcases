@@ -1,15 +1,16 @@
 {
+  "properties": [],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "dcc-main-display"
+  ],
   "area": [
     {
       "xpos": 820,
-      "ypos": 196,
-      "width": 56,
       "height": 59,
-      "type": "match"
+      "width": 56,
+      "type": "match",
+      "ypos": 196
     }
-  ],
-  "tags": [
-    "dcc-main-display"
-  ],
-  "properties": []
+  ]
 }

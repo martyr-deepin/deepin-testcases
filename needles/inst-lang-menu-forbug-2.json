@@ -2,15 +2,14 @@
   "properties": [],
   "area": [
     {
-      "xpos": 0,
+      "ypos": 0,
       "type": "match",
       "width": 1024,
-      "height": 767,
-      "ypos": 0
+      "xpos": 0,
+      "height": 768
     }
   ],
   "tags": [
-    "ENV-INSTLANG-zh_CN",
-    "launcher-search-deepin"
+    "inst-lang-menu"
   ]
 }

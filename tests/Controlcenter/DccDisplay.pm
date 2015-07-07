@@ -25,31 +25,32 @@ sub run {
         mouse_set 977, 21;
         mouse_click;
     }
-    
-    #show controlcenter 
+
+    #show controlcenter
     mouse_set 1023, 767;
-    
-    #click displaybtn on the mainpage of controlcenter 
+
+    #click displaybtn on the mainpage of controlcenter
     assert_screen "dcc-main-area", 10;
     mouse_set 50, 50;
     assert_and_click "dcc-main-display";
     assert_screen "dcc-display-main-area", 10;
     sleep 2;
     #open rotating setting
-    mouse_set 1000, 429;
-    mouse_click;
+    #mouse_set 1000, 429;
+    #mouse_click;
+    assert_and_click "dcc-display-rotating-open-click";
     assert_screen "dcc-display-rotating-area", 10;
     sleep 2;
-  
+
     #change brightness setting
-    mouse_set 867, 431;
-    mouse_click;
-    sleep 2;
-    
-    #exit dcc--display 
+    #mouse_set 867, 431;
+    #mouse_click;
+    #sleep 2;
+
+    #exit dcc--display
     assert_and_click "dcc-backtohome-btn";
     mouse_set 50, 50;
-    mouse_click;   
+    mouse_click;
 
 }
 

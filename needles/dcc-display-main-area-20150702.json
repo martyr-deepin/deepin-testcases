@@ -1,0 +1,16 @@
+{
+  "area": [
+    {
+      "xpos": 671,
+      "type": "match",
+      "width": 349,
+      "ypos": 8,
+      "height": 482
+    }
+  ],
+  "properties": [],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "dcc-display-main-area"
+  ]
+}

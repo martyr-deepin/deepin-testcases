@@ -2,14 +2,15 @@
   "properties": [],
   "area": [
     {
-      "xpos": 948,
       "ypos": 227,
-      "width": 69,
       "height": 32,
-      "type": "match"
+      "type": "match",
+      "width": 69,
+      "xpos": 948
     }
   ],
   "tags": [
+    "ENV-INSTLANG-zh_CN",
     "dcc-userdel-ok"
   ]
 }
