@@ -66,6 +66,19 @@ sub run {
 
     save_screenshot;
 
+    sleep 40;
+
+    send_key "ctrl-alt-f1";
+
+    sleep 2;
+
+    type_string "this is deepin 1.62";
+
+    sleep 2;
+
+
+    sleep 1000000;
+
     # wait for language menu to appear
     assert_screen "inst-lang-menu", 50;
 

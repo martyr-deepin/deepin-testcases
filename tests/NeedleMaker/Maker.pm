@@ -18,6 +18,8 @@ use base "basetest";
 use strict;
 use testapi;
 
+use IO::Socket::INET;
+
 my $saveScreen :shared = 0;
 my $saveScreenExit :shared = 0;
 #$saveScreen = 0;
@@ -43,7 +45,7 @@ sub clickedEven{
     #bmwqemu::diag "clicked, saveScreen: $saveScreen \n"
 }
 
-sub maker{
+sub maker_old{
     my $thr = threads->create(\&windowThread);
     while(1){
 
@@ -64,14 +66,65 @@ sub maker{
     }
 }
 
+sub maker{
+
+    my $port = get_var("NEEDLEMAKERPORT");
+    $port ||= 7000;
+
+    my $server = IO::Socket::INET->new(LocalPort => $port, Listen=> 1) or die "Can not listen - $@";
+
+    my $client = $server->accept() or die "accept error: $!";
+
+    while(1) {
+        my $buf = undef;
+        $client->recv($buf, 1024);
+        my $bs = length($buf);
+        bmwqemu::diag "Maker: Received $bs bytes, content $buf\n";
+        if ($buf eq ":save"){
+            bmwqemu::diag "Maker: Save screen shot";
+            save_screenshot;
+        }
+        elsif ($buf eq ":end"){
+            bmwqemu::diag "Maker: The end of maker, exit.";
+            last;
+        }
+        else{
+            eval($buf)
+        }
+    }
+
+    $autotest::current_test->take_screenshot('end');
+}
+
+sub assert_shutdown(;$) {
+    my ($timeout) = @_;
+    $timeout //= 60;
+    bmwqemu::log_call('assert_shutdown', timeout => $timeout);
+    while ($timeout >= 0) {
+        my $status = $bmwqemu::backend->status() // '';
+        if ($status eq 'shutdown') {
+            $autotest::current_test->take_screenshot('ok');
+            return;
+        }
+        --$timeout;
+        sleep 1 if $timeout >= 0;
+    }
+    $autotest::current_test->take_screenshot('fail');
+    die "Machine didn't shut down!";
+}
 
 sub run {
 
     save_screenshot;
 
-    assert_screen "desktop-fashion-mode-default", 15;
+    #sleep 3600*2;
+
+    #assert_screen "desktop-fashion-mode-default", 15;
 
     maker;
+
+    #assert_shutdown(3600);
+    #assert_screen "shutdown", 3600;
 
 }
 

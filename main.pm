@@ -124,55 +124,57 @@ sub loadNeedleMaker{
 # start test #
 ##############
 
-# pxe
-if (check_var("FLAVOR", "SID-PXE")){
-
-    loadPXEBootloaderTests;
-
-}
-
-# install
-loadInstTests;
-
-# login
-loadLoginTests;
-
-# close system notifications
-#closeSysNotifications;
-
-# entry desktop
-loadDesktopTests;
-
-if (get_var("DOCK")){
-    loadDockTests;
-}
-
-if (get_var("LAUNCHER")){
-    loadLauncherTests;
-}
-
-if (get_var("DEEPINMUSICPLAYER")){
-    loadDeepinMusicPlayerTests;
-}
-
-if (get_var("DCCDISPLAY")){
-    loadDccDisplayTests;
-}
-
-if (get_var("DCCUSER")){
-    loadDccUserTests;
-}
-
-if (get_var("DMOVIE")){
-
-   loadDmovieTests;
-}
-
 if (get_var("NEEDLEMAKER")){
+
     loadNeedleMaker;
+
+}
+else{
+
+    # pxe
+    if (check_var("FLAVOR", "SID-PXE")){
+
+        loadPXEBootloaderTests;
+
+    }
+
+    # install
+    loadInstTests;
+
+    # login
+    loadLoginTests;
+
+    # entry desktop
+    loadDesktopTests;
+
+    if (get_var("DOCK")){
+        loadDockTests;
+    }
+
+    if (get_var("LAUNCHER")){
+        loadLauncherTests;
+    }
+
+    if (get_var("DEEPINMUSICPLAYER")){
+        loadDeepinMusicPlayerTests;
+    }
+
+    if (get_var("DCCDISPLAY")){
+        loadDccDisplayTests;
+    }
+
+    if (get_var("DCCUSER")){
+        loadDccUserTests;
+    }
+
+    if (get_var("DMOVIE")){
+
+    loadDmovieTests;
+    }
+
 }
 
-sleep 15;
+sleep 10;
 
 1;
 
