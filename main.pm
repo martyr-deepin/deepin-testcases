@@ -83,6 +83,13 @@ sub loadLauncherTests{
 
 }
 
+sub loadLauncherGeditTests{
+
+    loadtest "Gedit/Gedit.pm"
+
+}
+
+
 sub loadDeepinMusicPlayerTests{
 
     loadtest "DeepinMusicPlayer/DMusicStartUp.pm";
@@ -141,7 +148,7 @@ else{
     # install
     loadInstTests;
 
-    # login
+    # lmZgin
     loadLoginTests;
 
     # entry desktop
@@ -153,6 +160,10 @@ else{
 
     if (get_var("LAUNCHER")){
         loadLauncherTests;
+    }
+
+    if (get_var("GEDIT")){
+        loadLauncherGeditTests;
     }
 
     if (get_var("DEEPINMUSICPLAYER")){

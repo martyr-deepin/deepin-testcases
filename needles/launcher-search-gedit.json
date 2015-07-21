@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 174,
+      "ypos": 90,
+      "width": 170,
+      "height": 117,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "launcher-search-gedit"
+  ]
+}
