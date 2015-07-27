@@ -14,7 +14,7 @@
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-use base "basetest";
+use base "softwarebasetest";
 use strict;
 use testapi;
 
@@ -28,10 +28,13 @@ sub adduser {
 
     # show controlcenter
     mouse_set 1023, 767;
-    
+
     # click userbtn on the mainpage of controlcenter
     assert_screen "dcc-main-area", 10;
-    mouse_set 50, 50;
+    #mouse_set 50, 50;
+    #mouse_hide;
+    mouse_set 100, 100;
+
     assert_and_click "dcc-main-user";
     sleep 2;
 
@@ -39,7 +42,7 @@ sub adduser {
     assert_screen "dcc-useradd-btn", 10;
     assert_and_click "dcc-useradd-btn";
     sleep 2;
-   
+
     # input userinfo to dcctext
     my $username = get_var("ADDUNAME");
     my $passwd = get_var("ADDUPWD");
@@ -70,9 +73,10 @@ sub deluser {
     # wait for useradded page
     mouse_set 1023, 767;
     assert_screen "dcc-useradded-area", 10;
-    mouse_set 50, 50;
-   
-    # click the delbtn 
+    #mouse_set 50, 50;
+    mouse_set 100, 100;
+
+    # click the delbtn
     assert_and_click "dcc-userdel-btn";
     sleep 2;
 
@@ -89,20 +93,12 @@ sub run {
     adduser;
     sleep 8;
     deluser;
-    
-    #exit dcc-user 
+
+    #exit dcc-user
     sleep 3;
     assert_and_click "dcc-backtohome-btn";
-    mouse_set 50, 50;
-    mouse_click; 
-}
-
-sub test_flags {
-    # without anything - rollback to 'lastgood' snapshot if failed
-    # 'fatal' - whole test suite is in danger if this fails
-    # 'milestone' - after this test succeeds, update 'lastgood'
-    # 'important' - if this fails, set the overall state to 'fail'
-    return { important => 1 };
+    mouse_set 50, 250;
+    mouse_click;
 }
 
 1;

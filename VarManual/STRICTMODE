@@ -1,0 +1,6 @@
+说明：
+严格模式，在该模式下，softwarebasetest的test_flags默认值变为fatal，只要一个测试失败，整个测试都会被标记为failed
+
+
+使用方法：
+STRICTMODE=1, CL检测是会自动添加该变量

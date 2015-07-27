@@ -18,9 +18,13 @@ use base "basetest";
 use strict;
 use testapi;
 
-use deepinapi;
+use deepinapi qw(install_from_local run_on_tty);
 
 sub login{
+
+    # login screen
+    assert_screen "login", 100;
+
     my $userpwd = "deepin";
 
     if (get_var("USERPWD")){
@@ -28,37 +32,44 @@ sub login{
     }
 
     # login
-    type_string $userpwd;
-    send_key "ret";
+    type_string "$userpwd\n";
 }
 
-sub run {
+sub disableSysNotified{
 
-    #mouse_hide;
+    my $script = "mv /usr/share/deepin-notifications/deepin-notifications /usr/share/deepin-notifications/deepin-notification";
+    run_on_tty($script, 1);
+
+}
+
+sub ready_env{
+
+    # install tool packages
+    my @pkglist = ("curl.deb", "deepin-internal-debug.deb");
+    install_from_local(@pkglist);
+
+    # disable notification
+    disableSysNotified;
+
+}
+
+
+sub run {
 
     # grub
     assert_screen "grub", 15;
 
-
-    sleep 50;
-
     save_screenshot;
-
-    # login screen
-    assert_screen "login", 100;
-
-    deepinapi::disableSysNotifications;
 
     # login
     login;
+
+    ready_env;
+
 }
 
 sub test_flags {
-    # without anything - rollback to 'lastgood' snapshot if failed
-    # 'fatal' - whole test suite is in danger if this fails
-    # 'milestone' - after this test succeeds, update 'lastgood'
-    # 'important' - if this fails, set the overall state to 'fail'
-    return { important => 1 };
+    return { important => 1 , milestone => 1};
 }
 
 1;

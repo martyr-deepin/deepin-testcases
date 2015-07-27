@@ -1,0 +1,16 @@
+{
+  "area": [
+    {
+      "xpos": 176,
+      "ypos": 159,
+      "width": 671,
+      "height": 451,
+      "type": "match"
+    }
+  ],
+  "properties": [],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "deepin-terminal"
+  ]
+}

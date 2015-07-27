@@ -17,48 +17,60 @@
 use base "basetest";
 use strict;
 use testapi;
+use bmwqemu;
+
+sub loadFirstBootGuidTests{
+    #mouse_hide;
+    mouse_set 100, 100;
+
+    # tmp
+    #sleep 15;
+    #save_screenshot;
+
+    assert_screen "welcome-guid-default", 60;
+
+    if (get_var("DO_WELCOME_GUID")){
+
+    }
+    else
+    {
+        assert_and_click "welcome-guid-skip-btn";
+    }
+
+
+    # finish loading desktop
+    # make snapshot
+    #bmwqemu::make_snapshot("Finish-Loading-Desktop");
+
+    # flush
+    sleep 5;
+
+}
 
 sub run {
 
-    mouse_hide;
+    # deal with the user guide
+    loadFirstBootGuidTests;
 
-    # wait for parition to appear
-    assert_screen "inst-partition-default", 10;
+    sleep 20;
 
-    # expert mode
-    if (check_var("PARTITION_MODE", "expert")){
-
-       # deal with other vars
-       # ...
-       # ...
-
-    }
-    # simple mode
-    else{
-        send_key "tab";
-        send_key "tab";
-        send_key "tab";
-        send_key "tab";
-        send_key "ret";
-
-        # click by mouse
-        # assert_and_click "partition-confirm", 1;
-
-        # by keyboard
-        # confirm
-        send_key "tab";
-        send_key "tab";
-        send_key "ret";
-    }
 }
+
 
 sub test_flags {
     # without anything - rollback to 'lastgood' snapshot if failed
     # 'fatal' - whole test suite is in danger if this fails
     # 'milestone' - after this test succeeds, update 'lastgood'
     # 'important' - if this fails, set the overall state to 'fail'
-    return { important => 1 };
+    return { important => 1 , milestone => 1};
 }
+
+sub post_fail_hook {
+
+    deepinapi::collect_logs();
+
+}
+
 
 1;
 

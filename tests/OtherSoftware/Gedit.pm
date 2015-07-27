@@ -1,5 +1,6 @@
-use base "basetest";
+#use base "basetest";
 use strict;
+use base "softwarebasetest";
 use testapi;
 
 sub displaygedit {

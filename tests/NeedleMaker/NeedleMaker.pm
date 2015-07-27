@@ -14,59 +14,31 @@
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-use base "basetest";
 use strict;
+use base 'softwarebasetest';
 use testapi;
+use deepinapi qw(install_from_local download_local_file);
+
 
 use IO::Socket::INET;
 
-my $saveScreen :shared = 0;
-my $saveScreenExit :shared = 0;
-#$saveScreen = 0;
+our $global_self;
 
-sub windowThread  {
-    Gtk2->init;
+sub init{
 
-    my $window = Gtk2::Window->new('toplevel');
-    $window->signal_connect(destroy => sub { $saveScreenExit = 1; Gtk2->main_quit; });
+    # user name & pwd
+    my $userName = get_var("USERNAME");
+    my $pwd = get_var("USERPWD");
 
-    my $btn = Gtk2::Button->new("save screen");
-    $btn->signal_connect(clicked => \&clickedEven);
-    $window->add($btn);
+    # set the global name and pwd for testapi
+    $username = $userName;
+    $password = $pwd;
 
-    $btn->show;
-    $window->show;
-
-    Gtk2->main;
-}
-
-sub clickedEven{
-    $saveScreen = 1;
-    #bmwqemu::diag "clicked, saveScreen: $saveScreen \n"
-}
-
-sub maker_old{
-    my $thr = threads->create(\&windowThread);
-    while(1){
-
-        if ($saveScreenExit){
-            last;
-        }
-
-        #bmwqemu::diag "loop ... saveScreen: $saveScreen \n";
-        if ($saveScreen){
-            #mouse_hide;
-            save_screenshot;
-            $saveScreen = 0;
-            bmwqemu::diag " save screen shot \n";
-            save_screenshot;
-        }
-
-        sleep 1;
-    }
 }
 
 sub maker{
+
+    my $self = shift;
 
     my $port = get_var("NEEDLEMAKERPORT");
     $port ||= 7000;
@@ -97,6 +69,7 @@ sub maker{
 }
 
 sub assert_shutdown(;$) {
+
     my ($timeout) = @_;
     $timeout //= 60;
     bmwqemu::log_call('assert_shutdown', timeout => $timeout);
@@ -111,29 +84,35 @@ sub assert_shutdown(;$) {
     }
     $autotest::current_test->take_screenshot('fail');
     die "Machine didn't shut down!";
+
 }
+
 
 sub run {
 
+    my $self = shift;
+    $global_self = $self;
+
+    init;
+
+    #sleep 30;
+    assert_screen "login", 40;
+
+    # login
+    type_string "deepin\n";
+
+    sleep 15;
+
     save_screenshot;
 
-    #sleep 3600*2;
-
-    #assert_screen "desktop-fashion-mode-default", 15;
-
     maker;
-
-    #assert_shutdown(3600);
-    #assert_screen "shutdown", 3600;
 
 }
 
 sub test_flags {
-    # without anything - rollback to 'lastgood' snapshot if failed
-    # 'fatal' - whole test suite is in danger if this fails
-    # 'milestone' - after this test succeeds, update 'lastgood'
-    # 'important' - if this fails, set the overall state to 'fail'
-    return { important => 1 };
+
+    return {fatal => 1};
+
 }
 
 1;

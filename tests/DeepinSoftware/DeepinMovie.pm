@@ -14,54 +14,49 @@
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-use base "basetest";
 use strict;
+use base "softwarebasetest";
 use testapi;
-use bmwqemu;
+use deepinapi;
 
-sub loadFirstBootGuidTests{
-    mouse_hide;
+sub open_close_dmovie {
 
-    # tmp
-    #sleep 15;
-    #save_screenshot;
-
-    assert_screen "welcome-guid-default", 400;
-
-    if (get_var("DO_WELCOME_GUID")){
-
-    }
-    else
-    {
-        assert_and_click "welcome-guid-skip-btn";
+    #close networktip
+    sleep 3;
+    if (check_screen "dcc-networktips-check"){
+        mouse_set 977, 21;
+        mouse_click;
     }
 
+    #open deepin-movie in launcher
+    send_key "win";
+    assert_screen "launcher-search-area", 15;
+    type_string "deepin-movie";
+    assert_screen "launcher-search-deepinmovie", 10;
+    mouse_set 250, 126;
+    mouse_click;
+    assert_screen "deepinmovie-main-area", 10;
 
-    # finish loading desktop
-    # make snapshot
-    #bmwqemu::make_snapshot("Finish-Loading-Desktop");
+    #send_key "ctrl-o";
 
-    # flush
-    sleep 5;
+    #close deepin-movie
+    mouse_set 915, 122;
+    mouse_click;
+
+    save_screenshot;
 
 }
 
 sub run {
 
-    # deal with the user guide
-    loadFirstBootGuidTests;
+    open_close_dmovie;
 
-    sleep 20;
+    # press enter to boot right away
+    #send_key "ret";
 
-}
+    # wait for the desktop to appear
+    #assert_and_click "desktop";
 
-
-sub test_flags {
-    # without anything - rollback to 'lastgood' snapshot if failed
-    # 'fatal' - whole test suite is in danger if this fails
-    # 'milestone' - after this test succeeds, update 'lastgood'
-    # 'important' - if this fails, set the overall state to 'fail'
-    return { important => 1 };
 }
 
 1;

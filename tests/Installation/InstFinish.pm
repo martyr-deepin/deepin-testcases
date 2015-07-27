@@ -14,33 +14,30 @@
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-use base "basetest";
 use strict;
+use base "installbasetest";
 use testapi;
 
 sub run {
 
-    assert_and_click "deepin-music-player-close-btn-default";
+    mouse_hide;
 
-    if (check_screen "deepin-music-player-close-tips", 5){
-        # choose alwalys exit when click close btn
-        assert_and_click "deepin-music-player-close-tips-radiobtn-exit";
-        sleep 1;
+    # waiting for installation to the end
+    assert_screen "inst-finish", 40 * 60;
 
-        # confirm exit
-        assert_and_click "deepin-music-player-close-tips-confirm-btn";
-    }
+    mouse_hide;
 
-    sleep 5;
+    # click to reboot
+    #assert_and_click "inst-finish-restart-btn", 1;
+
+    send_key "tab";
+    send_key "tab";
+    send_key "ret";
 
 }
 
 sub test_flags {
-    # without anything - rollback to 'lastgood' snapshot if failed
-    # 'fatal' - whole test suite is in danger if this fails
-    # 'milestone' - after this test succeeds, update 'lastgood'
-    # 'important' - if this fails, set the overall state to 'fail'
-    return { important => 1 };
+    return { important => 1 , milestone => 1};
 }
 
 1;

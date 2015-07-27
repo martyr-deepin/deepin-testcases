@@ -14,11 +14,13 @@
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-use base "basetest";
+use base "softwarebasetest";
 use strict;
 use testapi;
+use deepinapi;
 
 sub run {
+
     assert_screen "desktop-fashion-mode-default", 15;
 
     my $dockMenuX = 512;
@@ -42,14 +44,6 @@ sub run {
     assert_and_click "dock-memu-fashion-mode-btn";
     assert_screen "desktop-fashion-mode-default", 3;
 
-}
-
-sub test_flags {
-    # without anything - rollback to 'lastgood' snapshot if failed
-    # 'fatal' - whole test suite is in danger if this fails
-    # 'milestone' - after this test succeeds, update 'lastgood'
-    # 'important' - if this fails, set the overall state to 'fail'
-    return { important => 1 };
 }
 
 1;

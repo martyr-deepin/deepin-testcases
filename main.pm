@@ -31,29 +31,32 @@ sub loadtest($) {
 
 }
 
+sub loadISOMaxSizeTests(){
+
+    loadtest "Boot/ISOSize.pm";
+}
+
 sub loadPXEBootloaderTests(){
 
-    loadtest "Boot/PXEBootloader.pm"
+    loadtest "Boot/PXEBootloader.pm";
 }
 
 sub loadInstTests(){
 
-    #loadBootTests();
-
     # choose language
-    loadtest "Installation/LanguageMenu.pm";
+    loadtest "Installation/InstLangMenu.pm";
 
     # user setting
-    loadtest "Installation/UserSetting.pm";
+    loadtest "Installation/InstUserSetting.pm";
 
     # partition setting
-    loadtest "Installation/Partitioning.pm";
+    loadtest "Installation/InstPartition.pm";
 
     # installing
     loadtest "Installation/StartInstallation.pm";
 
     # waiting for the installation to the end, and restart
-    loadtest "Installation/Finish.pm";
+    loadtest "Installation/InstFinish.pm";
 
 }
 
@@ -66,62 +69,63 @@ sub loadLoginTests{
 
 sub loadDesktopTests(){
 
-    # guid
-    loadtest "Desktop/WelcomeGuid.pm";
+    if (not check_var("BOOTFROM", "c")){
+
+        # guid
+        loadtest "Desktop/FirstBootDesktop.pm";
+
+    }
 
 }
 
 sub loadDockTests{
 
-    loadtest "Dock/DockSwitch.pm";
+    loadtest "DeepinSoftware/DeepinDock.pm";
 
 }
 
 sub loadLauncherTests{
 
-    loadtest "Launcher/LauncherStartUp.pm";
+    loadtest "DeepinSoftware/DeepinLauncher.pm";
 
 }
 
 sub loadLauncherGeditTests{
 
-    loadtest "Gedit/Gedit.pm"
+    loadtest "OtherSoftware/Gedit.pm"
 
 }
 
 
 sub loadDeepinMusicPlayerTests{
 
-    loadtest "DeepinMusicPlayer/DMusicStartUp.pm";
+    loadtest "DeepinSoftware/DeepinMusic.pm";
 
-    loadtest "DeepinMusicPlayer/DMusicMain.pm";
-
-    loadtest "DeepinMusicPlayer/DMusicExit.pm";
 }
 
 
 sub loadDccUserTests{
 
-    loadtest "Controlcenter/DccUser.pm";
+    loadtest "DeepinSoftware/DCCUser.pm";
 }
 
 
 sub loadDmovieTests{
 
-    loadtest "DeepinMovie/StartCloseDmovie.pm";
+    loadtest "DeepinSoftware/DeepinMovie.pm";
 
 }
 
 sub loadDccDisplayTests{
 
-    loadtest "Controlcenter/DccDisplay.pm";
+    loadtest "DeepinSoftware/DCCDisplay.pm";
 
 }
 
 
 sub loadNeedleMaker{
 
-    loadtest "NeedleMaker/Maker.pm"
+    loadtest "NeedleMaker/NeedleMaker.pm"
 
 }
 
@@ -145,21 +149,37 @@ else{
 
     }
 
-    # install
-    loadInstTests;
+    if (get_var("ISO_MAXSIZE") && check_var("FLAVOR", "SID-DVD")){
 
-    # lmZgin
+        loadISOMaxSizeTests;
+
+    }
+
+    if (not check_var("BOOTFROM", "c")){
+
+        # install
+        loadInstTests;
+
+    }
+
+    # login
     loadLoginTests;
 
-    # entry desktop
-    loadDesktopTests;
+    if (not check_var("BOOTFROM", "c")){
+        # entry desktop
+        loadDesktopTests;
+    }
 
     if (get_var("DOCK")){
+
         loadDockTests;
+
     }
 
     if (get_var("LAUNCHER")){
+
         loadLauncherTests;
+
     }
 
     if (get_var("GEDIT")){
@@ -167,20 +187,27 @@ else{
     }
 
     if (get_var("DEEPINMUSICPLAYER")){
+
         loadDeepinMusicPlayerTests;
+
     }
 
     if (get_var("DCCDISPLAY")){
+
         loadDccDisplayTests;
+
     }
 
     if (get_var("DCCUSER")){
+
         loadDccUserTests;
+
     }
 
     if (get_var("DMOVIE")){
 
-    loadDmovieTests;
+        loadDmovieTests;
+
     }
 
 }

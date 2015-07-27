@@ -14,7 +14,7 @@
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-use base "basetest";
+use base "installbasetest";
 use strict;
 use testapi;
 
@@ -22,27 +22,36 @@ sub run {
 
     mouse_hide;
 
-    # waiting for installation to the end
-    assert_screen "inst-finish", 40 * 60;
+    # wait for parition to appear
+    assert_screen "inst-partition-default", 10;
 
-    mouse_hide;
+    # expert mode
+    if (check_var("PARTITION_MODE", "expert")){
 
-    # click to reboot
-    #assert_and_click "inst-finish-restart-btn", 1;
+       # deal with other vars
+       # ...
+       # ...
 
-    send_key "tab";
-    send_key "tab";
-    send_key "ret";
+    }
+    # simple mode
+    else{
+        send_key "tab";
+        send_key "tab";
+        send_key "tab";
+        send_key "tab";
+        send_key "ret";
 
+        # click by mouse
+        # assert_and_click "partition-confirm", 1;
+
+        # by keyboard
+        # confirm
+        send_key "tab";
+        send_key "tab";
+        send_key "ret";
+    }
 }
 
-sub test_flags {
-    # without anything - rollback to 'lastgood' snapshot if failed
-    # 'fatal' - whole test suite is in danger if this fails
-    # 'milestone' - after this test succeeds, update 'lastgood'
-    # 'important' - if this fails, set the overall state to 'fail'
-    return { important => 1 };
-}
 
 1;
 

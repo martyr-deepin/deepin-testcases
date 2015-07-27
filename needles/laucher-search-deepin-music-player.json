@@ -1,17 +1,23 @@
 {
+  "area": [
+    {
+      "ypos": 88,
+      "width": 117,
+      "type": "match",
+      "height": 119,
+      "xpos": 191
+    },
+    {
+      "width": 293,
+      "type": "match",
+      "ypos": 7,
+      "xpos": 390,
+      "height": 40
+    }
+  ],
   "properties": [],
   "tags": [
     "ENV-INSTLANG-zh_CN",
-    "ENV-VERSION-2014.2",
     "laucher-search-deepin-music-player"
-  ],
-  "area": [
-    {
-      "xpos": 0,
-      "ypos": 2,
-      "width": 1022,
-      "height": 766,
-      "type": "match"
-    }
   ]
 }

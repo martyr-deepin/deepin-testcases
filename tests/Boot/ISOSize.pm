@@ -20,32 +20,22 @@ use testapi;
 
 sub run {
 
-    assert_screen "deepin-music-player-main-default", 10;
+    my $self = shift;
+    my $iso = get_var("ISO");
+    my $size = -s $iso;
+    my $result = 'ok';
+    my $max = get_var("ISO_MAXSIZE");
 
-    sleep 10;
+    if ($size > $max){
+        $result = 'fail';
+    }
 
-=pod
-    assert_and_click "deepin-music-player-menu-btn";
-    assert_and_click "deepin-music-player-property-btn";
-    assert_and_click "deepin-music-player-property-plugin-btn";
-
-    # add plugin
-    assert_and_click "deepin-music-player-property-plugin-baidu-btn";
-    assert_and_click "deepin-music-player-property-plugin-doubanFM-btn";
-    assert_and_click "deepin-music-player-property-plugin-broadcast-btn";
-
-    assert_and_click "deepin-music-player-property-close-btn";
-
-    assert_screen "deepin-music-player-main-added-plugins", 2;
-=cut
+    bmwqemu::diag("check if actual iso size $size fits $max: $result");
+    $self->result($result);
 
 }
 
 sub test_flags {
-    # without anything - rollback to 'lastgood' snapshot if failed
-    # 'fatal' - whole test suite is in danger if this fails
-    # 'milestone' - after this test succeeds, update 'lastgood'
-    # 'important' - if this fails, set the overall state to 'fail'
     return { important => 1 };
 }
 

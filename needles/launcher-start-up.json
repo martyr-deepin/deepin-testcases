@@ -2,15 +2,15 @@
   "properties": [],
   "tags": [
     "ENV-INSTLANG-zh_CN",
-    "launcher-search-area"
+    "launcher-start-up"
   ],
   "area": [
     {
-      "width": 968,
-      "type": "match",
+      "xpos": 0,
       "ypos": 0,
-      "height": 85,
-      "xpos": 26
+      "width": 1023,
+      "height": 91,
+      "type": "match"
     }
   ]
 }

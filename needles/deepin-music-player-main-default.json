@@ -1,16 +1,16 @@
 {
-  "tags": [
-    "ENV-INSTLANG-zh_CN ",
-    "deepin-music-player-main-default"
-  ],
   "properties": [],
   "area": [
     {
-      "height": 608,
-      "ypos": 78,
-      "width": 306,
+      "xpos": 359,
       "type": "match",
-      "xpos": 359
+      "height": 608,
+      "width": 306,
+      "ypos": 78
     }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN ",
+    "deepin-music-player-main-default"
   ]
 }

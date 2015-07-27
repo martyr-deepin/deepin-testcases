@@ -14,18 +14,18 @@
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-use base "basetest";
 use strict;
+use base "softwarebasetest";
 use testapi;
+use deepinapi;
 
 sub run {
 
-    assert_screen "desktop-fashion-mode-default", 2;
+    #assert_screen "desktop-fashion-mode-default", 2;
 
     # mouse
     # assert_and_click "launcher-btn-fashion-mode";
     # assert_screen "launcher-fashion-mode", 3;
-    #
 
     # keyboard
     send_key "win";
@@ -43,13 +43,6 @@ sub run {
     sleep 2;
 }
 
-sub test_flags {
-    # without anything - rollback to 'lastgood' snapshot if failed
-    # 'fatal' - whole test suite is in danger if this fails
-    # 'milestone' - after this test succeeds, update 'lastgood'
-    # 'important' - if this fails, set the overall state to 'fail'
-    return { milestone => 1 };
-}
 
 1;
 
