@@ -20,10 +20,6 @@ use strict;
 use testapi;
 use autotest;
 
-use Gtk2;
-use threads;
-use threads::shared;
-
 sub loadtest($) {
 
     my ($test) = @_;
