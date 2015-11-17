@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 842,
+      "ypos": 699,
+      "width": 99,
+      "height": 20,
+      "type": "match"
+    }
+  ],
+  "properties": [],
+  "tags": [
+    "welcome-guid-skip-btn"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "welcome-guid-default"
+  ],
+  "area": [
+    {
+      "xpos": 292,
+      "ypos": 320,
+      "width": 444,
+      "height": 87,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}
