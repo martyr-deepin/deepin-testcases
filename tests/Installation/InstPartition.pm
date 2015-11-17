@@ -48,6 +48,8 @@ sub run {
         # confirm
         send_key "tab";
         send_key "tab";
+        send_key "tab";
+        send_key "tab";
         send_key "ret";
     }
 }
