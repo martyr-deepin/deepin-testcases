@@ -27,14 +27,14 @@ sub loadFirstBootGuidTests{
     #sleep 15;
     #save_screenshot;
 
-    assert_screen "welcome-guid-default", 60;
-
     if (get_var("DO_WELCOME_GUID")){
 
+        assert_screen "welcome-guid-default", 60;
+        assert_and_click "welcome-guid-skip-btn";
     }
     else
     {
-        assert_and_click "welcome-guid-skip-btn";
+        assert_screen "desktop-default", 60;
     }
 
 

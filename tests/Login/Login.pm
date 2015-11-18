@@ -45,7 +45,7 @@ sub disableSysNotified{
 sub ready_env{
 
     # install tool packages
-    my @pkglist = ("curl.deb", "deepin-internal-debug.deb");
+    my @pkglist = ("curl.deb");
     install_from_local(@pkglist);
 
     # disable notification
