@@ -40,7 +40,7 @@ sub run {
         send_key "tab";
         send_key "tab";
         send_key "ret";
-
+        
         # click by mouse
         # assert_and_click "partition-confirm", 1;
 
