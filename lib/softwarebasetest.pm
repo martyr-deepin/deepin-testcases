@@ -40,7 +40,7 @@ sub post_fail_hook{
 
     my ($self) = @_;
 
-    collect_logs();
+    #collect_logs();
 }
 
 1;
