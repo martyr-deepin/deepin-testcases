@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 673,
+      "ypos": 550,
+      "width": 30,
+      "height": 28,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-slider-shortcut"
+  ],
+  "properties": []
+}

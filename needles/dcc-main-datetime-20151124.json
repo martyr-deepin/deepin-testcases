@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "dcc-main-datetime"
+  ],
+  "area": [
+    {
+      "xpos": 709,
+      "ypos": 389,
+      "width": 33,
+      "height": 35,
+      "type": "match"
+    }
+  ]
+}

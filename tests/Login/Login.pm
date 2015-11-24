@@ -32,7 +32,11 @@ sub login{
     }
 
     # login
-    type_string "$userpwd\n";
+    sleep 3;
+    type_string "$userpwd";
+    save_screenshot;
+    sleep 1;
+    send_key "ret";
 }
 
 sub disableSysNotified{
@@ -64,7 +68,7 @@ sub run {
     # login
     login;
 
-    ready_env;
+    #ready_env;
 
 }
 

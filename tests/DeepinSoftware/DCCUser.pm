@@ -1,4 +1,4 @@
-# Copyright (C) 2014 SUSE Linux GmbH
+# Copyright (C) 2015 SUSE Linux GmbH
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -19,28 +19,32 @@ use strict;
 use testapi;
 
 sub adduser {
-    # close networktip
-    sleep 3;
-    if (check_screen "dcc-networktips-check"){
-        mouse_set 977, 21;
-        mouse_click;
-    }
-
     # show controlcenter
     mouse_set 1023, 767;
 
-    # click userbtn on the mainpage of controlcenter
-    assert_screen "dcc-main-area", 10;
-    #mouse_set 50, 50;
-    #mouse_hide;
-    mouse_set 100, 100;
-
+    # click btn on the mainpage of controlcenter
+	assert_screen "dcc-main-area";
+    assert_screen "dcc-main-user", 10;
     assert_and_click "dcc-main-user";
     sleep 2;
 
+    assert_screen "dcc-slider-useradd", 10;
+
+    assert_screen "dcc-backtohome-btn", 10;
+    assert_and_click "dcc-backtohome-btn", 10;
+    mouse_click;
+    sleep 5;
+    mouse_set 100, 100;
+    mouse_click;
+    sleep 5;
+    save_screenshot;
+
+}
+
+
+sub test {
     # click useradd btn
-    assert_screen "dcc-useradd-btn", 10;
-    assert_and_click "dcc-useradd-btn";
+    assert_and_click "dcc-useradd-btn", 10;
     sleep 2;
 
     # input userinfo to dcctext
@@ -91,14 +95,14 @@ sub deluser {
 
 sub run {
     adduser;
-    sleep 8;
-    deluser;
+    #sleep 8;
+    #deluser;
 
     #exit dcc-user
-    sleep 3;
-    assert_and_click "dcc-backtohome-btn";
-    mouse_set 50, 250;
-    mouse_click;
+    #sleep 3;
+    #assert_and_click "dcc-backtohome-btn";
+    #mouse_set 50, 250;
+    #mouse_click;
 }
 
 1;

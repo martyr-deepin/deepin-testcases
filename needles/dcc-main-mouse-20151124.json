@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-main-mouse"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 949,
+      "ypos": 393,
+      "width": 32,
+      "height": 31,
+      "type": "match"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "dcc-slider-defaultapp"
+  ],
+  "area": [
+    {
+      "xpos": 672,
+      "ypos": 166,
+      "width": 34,
+      "height": 30,
+      "type": "match"
+    }
+  ]
+}

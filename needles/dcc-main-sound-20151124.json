@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 948,
+      "ypos": 285,
+      "width": 35,
+      "height": 32,
+      "type": "match"
+    }
+  ],
+  "properties": [],
+  "tags": [
+    "dcc-main-sound"
+  ]
+}

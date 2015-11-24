@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-useradd-btn"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 980,
+      "ypos": 10,
+      "width": 38,
+      "height": 31,
+      "type": "match"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-main-powermgm"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 826,
+      "ypos": 396,
+      "width": 37,
+      "height": 25,
+      "type": "match"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-slider-powermgm"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 672,
+      "ypos": 409,
+      "width": 31,
+      "height": 24,
+      "type": "match"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-slider-datetime"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 673,
+      "ypos": 358,
+      "width": 30,
+      "height": 29,
+      "type": "match"
+    }
+  ]
+}

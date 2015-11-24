@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 673,
+      "ypos": 647,
+      "width": 30,
+      "height": 28,
+      "type": "match"
+    }
+  ],
+  "properties": [],
+  "tags": [
+    "dcc-slider-remote"
+  ]
+}

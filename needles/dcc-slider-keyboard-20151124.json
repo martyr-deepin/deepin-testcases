@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "dcc-slider-keyboard"
+  ],
+  "area": [
+    {
+      "xpos": 673,
+      "ypos": 504,
+      "width": 31,
+      "height": 25,
+      "type": "match"
+    }
+  ]
+}

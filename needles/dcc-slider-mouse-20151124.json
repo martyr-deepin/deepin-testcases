@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-slider-mouse"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 673,
+      "ypos": 453,
+      "width": 30,
+      "height": 30,
+      "type": "match"
+    }
+  ]
+}

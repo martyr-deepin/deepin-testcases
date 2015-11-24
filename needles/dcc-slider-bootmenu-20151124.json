@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "dcc-slider-bootmenu"
+  ],
+  "area": [
+    {
+      "xpos": 673,
+      "ypos": 600,
+      "width": 30,
+      "height": 27,
+      "type": "match"
+    }
+  ]
+}

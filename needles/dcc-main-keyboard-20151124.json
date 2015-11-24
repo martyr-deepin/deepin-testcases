@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-main-keyboard"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 704,
+      "ypos": 502,
+      "width": 39,
+      "height": 26,
+      "type": "match"
+    }
+  ]
+}

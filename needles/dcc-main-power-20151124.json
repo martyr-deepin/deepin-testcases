@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "dcc-main-power"
+  ],
+  "area": [
+    {
+      "xpos": 836,
+      "ypos": 699,
+      "width": 17,
+      "height": 18,
+      "type": "match"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 672,
+      "ypos": 118,
+      "width": 33,
+      "height": 29,
+      "type": "match"
+    }
+  ],
+  "properties": [],
+  "tags": [
+    "dcc-slider-display"
+  ]
+}

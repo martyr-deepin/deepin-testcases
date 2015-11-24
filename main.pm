@@ -119,6 +119,118 @@ sub loadDccDisplayTests{
 }
 
 
+sub loadDccDefaultappTests{
+
+    loadtest "DeepinSoftware/DCCDefaultapp.pm";
+
+}
+
+
+sub loadDccPersonalizationTests{
+
+    loadtest "DeepinSoftware/DCCPersonalization.pm";
+
+}
+
+
+sub loadDccNetworkTests{
+
+    loadtest "DeepinSoftware/DCCNetwork.pm";
+
+}
+
+
+sub loadDccSoundTests{
+
+    loadtest "DeepinSoftware/DCCSound.pm";
+
+}
+
+
+sub loadDccDatetimeTests{
+
+    loadtest "DeepinSoftware/DCCDatetime.pm";
+
+}
+
+
+sub loadDccPowermgmTests{
+
+    loadtest "DeepinSoftware/DCCPowermgm.pm";
+
+}
+
+
+sub loadDccMouseTests{
+
+    loadtest "DeepinSoftware/DCCMouse.pm";
+
+}
+
+
+sub loadDccKeyboardTests{
+
+    loadtest "DeepinSoftware/DCCKeyboard.pm";
+
+}
+
+
+sub loadDccShortcutTests{
+
+    loadtest "DeepinSoftware/DCCShortcut.pm";
+
+}
+
+
+sub loadDccBootmenuTests{
+
+    loadtest "DeepinSoftware/DCCBootmenu.pm";
+
+}
+
+
+sub loadDccRemoteTests{
+
+    loadtest "DeepinSoftware/DCCRemote.pm";
+
+}
+
+
+sub loadDccSysteminforTests{
+
+    loadtest "DeepinSoftware/DCCSysteminfor.pm";
+
+}
+
+
+sub loadDccPowerTests{
+
+    loadtest "DeepinSoftware/DCCPower.pm";
+
+}
+
+
+sub loadDccAllTests{
+
+    loadDccUserTests;
+    loadDccDisplayTests;
+    loadDccDefaultappTests;
+    loadDccPersonalizationTests;
+    loadDccNetworkTests;
+    loadDccSoundTests;
+    loadDccDatetimeTests;
+    loadDccPowermgmTests;
+    loadDccMouseTests;
+    loadDccKeyboardTests;
+    loadDccShortcutTests;
+    loadDccBootmenuTests;
+    loadDccRemoteTests;
+    loadDccSysteminforTests;
+    loadDccPowerTests;
+
+}
+
+
 sub loadNeedleMaker{
 
     loadtest "NeedleMaker/NeedleMaker.pm"
@@ -188,15 +300,9 @@ else{
 
     }
 
-    if (get_var("DCCDISPLAY")){
+    if (get_var("DCCALL")){
 
-        loadDccDisplayTests;
-
-    }
-
-    if (get_var("DCCUSER")){
-
-        loadDccUserTests;
+        loadDccAllTests;
 
     }
 

@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-main-user"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 700,
+      "ypos": 177,
+      "width": 47,
+      "height": 35,
+      "type": "match"
+    }
+  ]
+}

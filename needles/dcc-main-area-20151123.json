@@ -1,0 +1,22 @@
+{
+  "area": [
+    {
+      "xpos": 770,
+      "ypos": 12,
+      "width": 151,
+      "height": 125,
+      "type": "match"
+    },
+    {
+      "xpos": 796,
+      "ypos": 18,
+      "width": 96,
+      "height": 86,
+      "type": "exclude"
+    }
+  ],
+  "properties": [],
+  "tags": [
+    "dcc-main-area"
+  ]
+}

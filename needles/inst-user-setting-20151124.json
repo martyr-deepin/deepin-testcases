@@ -1,0 +1,22 @@
+{
+  "tags": [
+    "inst-user-setting-default"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 212,
+      "ypos": 132,
+      "width": 74,
+      "height": 46,
+      "type": "match"
+    },
+    {
+      "xpos": 322,
+      "ypos": 203,
+      "width": 385,
+      "height": 311,
+      "type": "match"
+    }
+  ]
+}
