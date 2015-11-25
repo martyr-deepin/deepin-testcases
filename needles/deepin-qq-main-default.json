@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "deepin-qq-main-default"
+  ],
+  "area": [
+    {
+      "xpos": 291,
+      "ypos": 214,
+      "width": 440,
+      "height": 339,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

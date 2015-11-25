@@ -74,6 +74,40 @@ sub loadDesktopTests(){
 
 }
 
+sub loadDeepinSoftwareTests{
+
+    #deepin-screenshot
+    loadtest "DeepinSoftware/DeepinScreenshot.pm";
+
+    #deepin-boot-maker
+    loadtest "DeepinSoftware/DeepinBootMaker.pm";
+
+    #deepin-terminal
+    loadtest "DeepinSoftware/DeepinTerminal.pm";
+    
+    #deepin-movie
+    loadtest "DeepinSoftware/DeepinMovie.pm";
+
+    #deepin-appstore
+    loadtest "DeepinSoftware/DeepinAppStore.pm";
+
+    #deepin-feedback
+    loadtest "DeepinSoftware/DeepinFeedback.pm";
+
+    #deepin-qq
+    loadtest "DeepinSoftware/DeepinQQ.pm";
+    
+    #deepin-wm-mutitaskingview
+    loadtest "DeepinSoftware/DeepinWM.pm";
+
+    #dde-control-center
+    loadtest "DeepinSoftware/DeepinDdeControlCenter.pm";
+     
+    #deepin-music-player
+    loadtest "DeepinSoftware/DeepinMusic.pm";
+}
+
+
 sub loadDockTests{
 
     loadtest "DeepinSoftware/DeepinDock.pm";
@@ -93,11 +127,6 @@ sub loadLauncherGeditTests{
 }
 
 
-sub loadDeepinMusicPlayerTests{
-
-    loadtest "DeepinSoftware/DeepinMusic.pm";
-
-}
 
 
 sub loadDccUserTests{
@@ -278,6 +307,12 @@ else{
         loadDesktopTests;
     }
 
+    if (get_var("DEEPINSOFTWARE")){
+
+        loadDeepinSoftwareTests;
+
+    }
+
     if (get_var("DOCK")){
 
         loadDockTests;
@@ -294,13 +329,8 @@ else{
         loadLauncherGeditTests;
     }
 
-    if (get_var("DEEPINMUSICPLAYER")){
-
-        loadDeepinMusicPlayerTests;
-
-    }
-
     if (get_var("DCCALL")){
+
 
         loadDccAllTests;
 

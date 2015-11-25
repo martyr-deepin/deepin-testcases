@@ -1,0 +1,16 @@
+{
+  "area": [
+    {
+      "xpos": 979,
+      "ypos": 12,
+      "width": 35,
+      "height": 34,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "deepin-appstore-main-default-btn"
+  ],
+  "properties": []
+}

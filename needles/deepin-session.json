@@ -3,14 +3,14 @@
   "area": [
     {
       "type": "match",
-      "xpos": 173,
-      "width": 561,
       "ypos": 1,
-      "height": 217
+      "xpos": 1,
+      "width": 1022,
+      "height": 766
     }
   ],
   "tags": [
-    "laucher-search-deepin-music-player",
+    "deepin-session",
     "ENV-INSTLANG-zh_CN"
   ]
 }

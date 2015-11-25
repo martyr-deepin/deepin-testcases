@@ -37,25 +37,26 @@ sub startup{
     start_program "deepin-music-player", "laucher-search-deepin-music-player";
 
     # start up deepin-music-player
-    assert_screen "deepin-music-player-start-up-1", 20;
+    if (check_screen "deepin-music-player-start-up-1", 20) {
 
-    # click the third btn
-    mouse_set 535, 526;
-    mouse_click;
-
-    my $ready = check_screen "deepin-music-player-start-up-3", 5;
-
-    # repeat click
-    if (!$ready){
         # click the third btn
         mouse_set 535, 526;
         mouse_click;
+
+        my $ready = check_screen "deepin-music-player-start-up-3", 5;
+
+        # repeat click
+        if (!$ready){
+            # click the third btn
+            mouse_set 535, 526;
+            mouse_click;
+        }
+
+        assert_screen "deepin-music-player-start-up-3", 3;
+
+        # entry
+        assert_and_click "deepin-music-player-start-up-btn";
     }
-
-    assert_screen "deepin-music-player-start-up-3", 3;
-
-    # entry
-    assert_and_click "deepin-music-player-start-up-btn";
 
 }
 
@@ -94,7 +95,7 @@ sub playTest{
     my $expectDTMFCode = '159D';
 
     download_local_file($fileName, "~/data");
-
+    save_screenshot;
     send_key "ctrl-alt-t";
     assert_screen "deepin-terminal", 15;
     # change loop_mode: from list_mode to order_mode (no loop)
@@ -107,8 +108,20 @@ sub playTest{
     sleep 10; # tmp
     save_screenshot;
     $self->assert_DTMF($expectDTMFCode);
-
+    #remove 1d5d9dD.wav
+    sleep 5;
+    mouse_set 537,238;
     sleep 2;
+    save_screenshot;
+    mouse_click "right";
+    sleep 2;
+    save_screenshot;
+    mouse_set 581,327;
+    sleep 2;
+    save_screenshot;
+    mouse_click;
+    sleep 2;
+    save_screenshot;
 }
 
 sub run {
@@ -127,11 +140,13 @@ sub run {
 
     # upload_logs
     upload_logs ref($self)."-captured.wav";
+    #upload_logs "-captured.wav";
     sleep 3;
     save_screenshot;
-
     # exit termial
     send_key "alt-f4";
+    sleep 5;
+    assert_screen "desktop-defult",10;
 
 }
 

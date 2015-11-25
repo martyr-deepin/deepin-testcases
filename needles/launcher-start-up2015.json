@@ -1,0 +1,17 @@
+{
+  "area": [
+    {
+      "width": 1020,
+      "type": "match",
+      "match": 80,
+      "xpos": 1,
+      "ypos": 1,
+      "height": 689
+    }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "launcher-start-up2015"
+  ],
+  "properties": []
+}

@@ -1,0 +1,16 @@
+{
+  "area": [
+    {
+      "xpos": 4,
+      "ypos": 0,
+      "width": 1017,
+      "height": 765,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "deepin-wm-main-default"
+  ],
+  "properties": []
+}

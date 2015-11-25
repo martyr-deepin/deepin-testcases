@@ -1,0 +1,16 @@
+{
+  "area": [
+    {
+      "xpos": 166,
+      "ypos": 2,
+      "width": 552,
+      "height": 186,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "INST-LANG-zh_CN",
+    "laucher-search-deepin-feedback"
+  ],
+  "properties": []
+}

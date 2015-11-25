@@ -1,0 +1,17 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "width": 458,
+      "xpos": 282,
+      "match": 92,
+      "type": "match",
+      "ypos": 261,
+      "height": 241
+    }
+  ],
+  "tags": [
+    "deepin-boot-maker-passwd",
+    "ENV-INSTLANG-zh_CN"
+  ]
+}
