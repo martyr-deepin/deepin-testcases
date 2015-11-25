@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "deepin-feedback-main-default"
+  ],
+  "area": [
+    {
+      "xpos": 277,
+      "ypos": 86,
+      "width": 469,
+      "height": 602,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

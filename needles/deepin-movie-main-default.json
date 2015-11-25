@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "deepin-movie-main-default"
+  ],
+  "area": [
+    {
+      "xpos": 86,
+      "ypos": 97,
+      "width": 852,
+      "height": 571,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "deepin2015-control-center",
+    "ENV-INSTLANG-zh_CN"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "width": 359,
+      "height": 615,
+      "ypos": 151,
+      "xpos": 664,
+      "type": "match"
+    }
+  ]
+}

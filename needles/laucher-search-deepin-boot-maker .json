@@ -1,0 +1,18 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 1,
+      "ypos": 0,
+      "width": 1022,
+      "height": 364,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "laucher-search-deepin-boot-maker",
+    "ENV-DISTRI-deepin",
+    "ENV-INSTLANG-zh_CN",
+    "ENV-FLAVOR-SID-DVD"
+  ]
+}

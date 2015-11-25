@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "deepin-screenshot-start"
+  ],
+  "area": [
+    {
+      "xpos": 3,
+      "ypos": 1,
+      "width": 1018,
+      "height": 686,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "laucher-search-deepin-movie"
+  ],
+  "area": [
+    {
+      "xpos": 155,
+      "ypos": 3,
+      "width": 637,
+      "height": 213,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

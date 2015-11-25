@@ -96,7 +96,7 @@ sub run {
     init;
 
     #sleep 30;
-    assert_screen "login", 40;
+    assert_screen "login2015", 40;
 
     # login
     type_string "deepin\n";

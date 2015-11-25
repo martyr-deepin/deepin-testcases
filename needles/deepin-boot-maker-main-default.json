@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zn_CN",
+    "deepin-boot-maker-main-default"
+  ],
+  "area": [
+    {
+      "xpos": 360,
+      "ypos": 147,
+      "width": 304,
+      "height": 476,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

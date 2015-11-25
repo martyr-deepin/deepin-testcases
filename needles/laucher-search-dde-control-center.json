@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "laucher-search-dde-control-center"
+  ],
+  "area": [
+    {
+      "xpos": 162,
+      "ypos": 0,
+      "width": 537,
+      "height": 203,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

@@ -23,7 +23,7 @@ use deepinapi qw(install_from_local run_on_tty);
 sub login{
 
     # login screen
-    assert_screen "login", 100;
+    assert_screen "login2015", 100;
 
     my $userpwd = "deepin";
 
@@ -61,7 +61,7 @@ sub ready_env{
 sub run {
 
     # grub
-    assert_screen "grub", 15;
+    assert_screen "grub2015", 15;
 
     save_screenshot;
 
@@ -69,7 +69,6 @@ sub run {
     login;
 
     #ready_env;
-
 }
 
 sub test_flags {

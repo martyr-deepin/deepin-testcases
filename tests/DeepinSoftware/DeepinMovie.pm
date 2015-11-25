@@ -17,8 +17,8 @@
 use strict;
 use base "softwarebasetest";
 use testapi;
-use deepinapi;
-
+use deepinapi qw(start_program);
+=pod
 sub open_close_dmovie {
 
     #close networktip
@@ -58,7 +58,26 @@ sub run {
     #assert_and_click "desktop";
 
 }
+=cut
+sub startup {
+    start_program "deepin-movie", "laucher-search-deepin-movie";
+    save_screenshot;
+}
+sub mainUI{
+    assert_screen "deepin-movie-main-default", 60;
+    sleep 3;
+}
+sub exitDeepinMovie{
+    assert_and_click "deepin-movie-main-default-btn";
+    sleep 3;
+    assert_screen "desktop-default",10;
+}
+sub run{
+    startup;
+    mainUI;
+    exitDeepinMovie;
 
+}
 1;
 
 # vim: set sw=4 et:
