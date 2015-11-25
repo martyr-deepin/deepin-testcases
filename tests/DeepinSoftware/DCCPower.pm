@@ -25,6 +25,7 @@ sub run {
 
     # click btn on the mainpage of controlcenter
     assert_screen "dcc-main-power", 10;
+    sleep 2; 
     assert_and_click "dcc-main-power";
     sleep 2;
 
