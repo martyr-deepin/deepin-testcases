@@ -20,10 +20,12 @@ use testapi;
 
 sub run {
     # show controlcenter
+    mouse_set 100, 100;
     mouse_set 1023, 767;
 
     # click btn on the mainpage of controlcenter
     assert_screen "dcc-main-power", 10;
+    sleep 2; 
     assert_and_click "dcc-main-power";
     sleep 2;
 

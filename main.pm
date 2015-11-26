@@ -384,7 +384,6 @@ else{
 
     }
 
-
     if (get_var("DOCK")){
 
         loadDockTests;

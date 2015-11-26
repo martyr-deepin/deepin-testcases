@@ -41,7 +41,6 @@ sub startup{
 sub mainUI{
     # start up deepin-music-player
     if (check_screen "deepin-music-player-start-up-3", 30) {
-
         # click the third btn
         mouse_set 535, 526;
         sleep 3;
@@ -74,9 +73,6 @@ sub mainUI{
     else {
         assert_screen "deepin-music-player-main-default", 10;
     }
-
-    sleep 10;
-
 }
 
 sub exitDMusic{

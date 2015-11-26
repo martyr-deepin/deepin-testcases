@@ -104,6 +104,7 @@ sub start_program($;$){
 
     my $name = shift;
     my $needle = shift;
+
     sleep 10;
     if (check_screen "desktop-default",20){
 	    send_key "win";

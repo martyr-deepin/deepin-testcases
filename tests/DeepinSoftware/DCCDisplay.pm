@@ -21,6 +21,7 @@ use deepinapi;
 
 sub run {
     #mouse_set 1023, 767;
+    mouse_set 100, 100;
     mouse_set 1023, 767;
 
     #click btn on the mainpage of controlcenter
