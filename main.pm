@@ -325,6 +325,27 @@ sub loadDccAllTests{
 }
 
 
+sub loadSystemConfigSourceListTests{
+
+    loadtest "SystemConfig/SourceList.pm";
+
+}
+
+sub loadReleaseInforTests{
+
+    loadtest "SystemConfig/ReleaseInfor.pm";
+
+}
+
+
+sub loadSysCfgAllTests{
+
+    loadSystemConfigSourceListTests;
+    #loadReleaseInforTests;
+
+}
+
+
 sub loadNeedleMaker{
 
     loadtest "NeedleMaker/NeedleMaker.pm"
@@ -407,9 +428,9 @@ else{
 
     }
 
-    if (get_var("DMOVIE")){
+    if (get_var("SYSCFGALL")){
 
-        loadDmovieTests;
+        loadSysCfgAllTests;
 
     }
 

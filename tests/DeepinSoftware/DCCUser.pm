@@ -19,12 +19,22 @@ use strict;
 use testapi;
 
 sub adduser {
+
+    if (check_screen("launcher-with-keywin", 20)){
+
+        mouse_set 100, 100;
+        mouse_click;
+
+    }
+
     # show controlcenter
     mouse_set 100, 100;
+    mouse_click;
+    sleep 3;
     mouse_set 1023, 767;
 
     # click btn on the mainpage of controlcenter
-	assert_screen "dcc-main-area";
+    assert_screen "dcc-main-area";
     assert_screen "dcc-main-user", 10;
     assert_and_click "dcc-main-user";
     sleep 2;

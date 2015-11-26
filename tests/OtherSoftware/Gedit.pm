@@ -13,8 +13,9 @@ sub mainUI{
 }
 sub exitGedit{
     send_key "alt-f4";
+    mouse_set 100, 100;
     sleep 10;
-    assert_screen "desktop-default",5;
+    assert_screen "desktop-default",15;
 }
 sub run{
     startup;

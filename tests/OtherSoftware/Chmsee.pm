@@ -14,7 +14,7 @@ sub mainUI{
 sub exitChmsee{
     send_key "alt-f4";
     sleep 10;
-    assert_screen "desktop-default",10;
+    assert_screen "desktop-default",15;
 }
 sub run{
     startup;

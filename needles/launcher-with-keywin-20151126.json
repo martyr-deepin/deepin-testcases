@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 40,
+      "ypos": 33,
+      "width": 50,
+      "height": 48,
+      "type": "match"
+    }
+  ],
+  "properties": [],
+  "tags": [
+    "launcher-with-keywin"
+  ]
+}

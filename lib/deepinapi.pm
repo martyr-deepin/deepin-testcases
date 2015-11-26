@@ -35,10 +35,14 @@ sub open_tty(;$){
     sleep 2;
 
     # set language env
-    if (not check_var("INSTLANG", "en")){
-        type_string "LANG=C";
-        send_key "ret";
-    }
+    #if (not check_var("INSTLANG", "en")){
+    #    type_string "LANG=C";
+    #    send_key "ret";
+    #}
+
+    # set language to English
+    type_string "LANG=en";
+    send_key "ret";
 
 }
 

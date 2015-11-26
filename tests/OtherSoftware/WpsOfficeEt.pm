@@ -22,7 +22,7 @@ sub exitEt{
         send_key "alt-f4";
         sleep 3;
     }
-    assert_screen "desktop-default",5;
+    assert_screen "desktop-default", 15;
 }
 sub run{
     startup;

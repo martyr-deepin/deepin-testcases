@@ -1,0 +1,43 @@
+{
+  "area": [
+    {
+      "xpos": 178,
+      "ypos": 327,
+      "width": 68,
+      "height": 63,
+      "type": "match"
+    },
+    {
+      "xpos": 323,
+      "ypos": 327,
+      "width": 74,
+      "height": 66,
+      "type": "match"
+    },
+    {
+      "xpos": 475,
+      "ypos": 328,
+      "width": 72,
+      "height": 63,
+      "type": "match"
+    },
+    {
+      "xpos": 626,
+      "ypos": 324,
+      "width": 72,
+      "height": 68,
+      "type": "match"
+    },
+    {
+      "xpos": 770,
+      "ypos": 326,
+      "width": 79,
+      "height": 66,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-slider-power"
+  ],
+  "properties": []
+}

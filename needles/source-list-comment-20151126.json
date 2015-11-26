@@ -1,0 +1,22 @@
+{
+  "properties": [],
+  "tags": [
+    "source-list-comment"
+  ],
+  "area": [
+    {
+      "xpos": 0,
+      "ypos": 20,
+      "width": 619,
+      "height": 117,
+      "type": "match"
+    },
+    {
+      "xpos": 47,
+      "ypos": 49,
+      "width": 176,
+      "height": 49,
+      "type": "exclude"
+    }
+  ]
+}

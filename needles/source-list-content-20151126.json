@@ -1,0 +1,22 @@
+{
+  "tags": [
+    "source-list-content"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 0,
+      "ypos": 18,
+      "width": 558,
+      "height": 84,
+      "type": "match"
+    },
+    {
+      "xpos": 56,
+      "ypos": 34,
+      "width": 119,
+      "height": 29,
+      "type": "exclude"
+    }
+  ]
+}

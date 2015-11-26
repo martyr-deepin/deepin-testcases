@@ -1,4 +1,4 @@
-# Copyright (C) 2014 SUSE Linux GmbH
+# Copyright (C) 2015 SUSE Linux GmbH
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -14,16 +14,12 @@
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-use base "basetest";
+use base "softwarebasetest";
 use strict;
 use testapi;
+use deepinapi qw{ open_tty };
 
-use deepinapi qw(install_from_local run_on_tty);
-
-sub login{
-
-    # login screen
-    assert_screen "login2015", 100;
+sub send_password {
 
     my $userpwd = "deepin";
 
@@ -34,45 +30,41 @@ sub login{
     # login
     sleep 3;
     type_string "$userpwd";
-    save_screenshot;
     sleep 1;
     send_key "ret";
-}
-
-sub disableSysNotified{
-
-    my $script = "mv /usr/share/deepin-notifications/deepin-notifications /usr/share/deepin-notifications/deepin-notification";
-    run_on_tty($script, 1);
 
 }
-
-sub ready_env{
-
-    # install tool packages
-    my @pkglist = ("curl.deb");
-    install_from_local(@pkglist);
-
-    # disable notification
-    # disableSysNotified;
-
-}
-
 
 sub run {
 
-    # grub
-    assert_screen "grub2015", 15;
+    open_tty "f2";
+    send_key "ctrl-l";
+    assert_screen "tty-ctrl-l", 5;
+    type_string "grep '^deb http://packages.deepin.com/deepin unstable main contrib non-free' /etc/apt/sources.list\n";
+    assert_screen "source-list-content";
 
-    save_screenshot;
+    send_key "ctrl-l";
+    assert_screen "tty-ctrl-l", 5;
+    type_string "grep -v '^deb http://packages.deepin.com/deepin unstable main contrib non-free' /etc/apt/sources.list\n";
+    assert_screen "source-list-comment";
 
-    # login
-    login;
 
-    ready_env;
-}
+    send_key "ctrl-l";
+    assert_screen "tty-ctrl-l", 5;
+    type_string "sudo apt-get update\n";
+    
+    if (check_screen("source-list-password", 5)) {
 
-sub test_flags {
-    return { important => 1 , milestone => 1};
+        send_password;
+
+    }
+
+    assert_screen "source-list-update", 600;
+
+    type_string "logout\n";
+    send_key "ctrl-alt-f7";
+    assert_screen "desktop-default", 30;
+
 }
 
 1;

@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "tty-ctrl-l"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 0,
+      "ypos": 0,
+      "width": 56,
+      "height": 765,
+      "type": "match"
+    }
+  ]
+}
