@@ -13,7 +13,7 @@ sub mainUI{
 }
 sub exitDeepinWM{
     send_key "esc";
-    assert_screen "desktop-defult",5;
+    assert_screen "desktop-default",5;
 }
 sub run{
     startup;

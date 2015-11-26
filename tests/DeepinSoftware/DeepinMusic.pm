@@ -157,7 +157,7 @@ sub run {
     # exit termial
     send_key "alt-f4";
     sleep 5;
-    assert_screen "desktop-defult",10;
+    assert_screen "desktop-default",10;
 
 }
 

@@ -14,7 +14,7 @@ sub mainUI{
 sub exitDeepinDdeControlCenter{
     mouse_set 500,500;
     mouse_click;
-    assert_screen "desktop-defult",5;
+    assert_screen "desktop-default",5;
 }
 sub run{
     startup;

@@ -18,7 +18,7 @@ sub exitDeepinAppStore{
     assert_screen "desktop-default",10;
 =cut
     send_key "alt-f4";
-    assert_screen "desktop-defult",5;
+    assert_screen "desktop-default",5;
 }
 sub run{
     startup;
