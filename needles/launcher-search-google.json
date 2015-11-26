@@ -1,0 +1,17 @@
+{
+  "properties": [],
+  "tags": [
+    "launcher-search-google",
+    "ENV-INSTLANG-zh_CN"
+  ],
+  "area": [
+    {
+      "xpos": 185,
+      "ypos": 0,
+      "width": 450,
+      "height": 210,
+      "type": "match",
+      "match": 90
+    }
+  ]
+}

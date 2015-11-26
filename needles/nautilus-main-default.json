@@ -1,0 +1,17 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 94,
+      "ypos": 141,
+      "width": 832,
+      "height": 38,
+      "type": "match",
+      "match": 90
+    }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "nautilus-main-default"
+  ]
+}

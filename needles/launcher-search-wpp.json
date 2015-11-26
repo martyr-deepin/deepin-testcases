@@ -1,0 +1,17 @@
+{
+  "properties": [],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "launcher-search-wpp"
+  ],
+  "area": [
+    {
+      "width": 456,
+      "match": 90,
+      "xpos": 177,
+      "type": "match",
+      "height": 177,
+      "ypos": 0
+    }
+  ]
+}

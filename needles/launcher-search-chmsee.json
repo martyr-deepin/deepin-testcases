@@ -1,0 +1,17 @@
+{
+  "area": [
+    {
+      "xpos": 175,
+      "ypos": 5,
+      "width": 479,
+      "height": 176,
+      "type": "match",
+      "match": 90
+    }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "launcher-search-chmsee"
+  ],
+  "properties": []
+}

@@ -1,0 +1,17 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "launcher-search-youdao-dict"
+  ],
+  "area": [
+    {
+      "xpos": 204,
+      "ypos": 3,
+      "width": 400,
+      "height": 164,
+      "type": "match",
+      "match": 80
+    }
+  ],
+  "properties": []
+}

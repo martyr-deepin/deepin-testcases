@@ -1,0 +1,17 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "font-viewer-main-default"
+  ],
+  "area": [
+    {
+      "xpos": 142,
+      "ypos": 117,
+      "width": 740,
+      "height": 535,
+      "type": "match",
+      "match": 90
+    }
+  ],
+  "properties": []
+}

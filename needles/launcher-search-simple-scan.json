@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "launcher-search-simple-scan"
+  ],
+  "area": [
+    {
+      "xpos": 208,
+      "ypos": 2,
+      "width": 377,
+      "height": 163,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

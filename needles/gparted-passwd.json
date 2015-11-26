@@ -1,0 +1,17 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "gparted-passwd"
+  ],
+  "area": [
+    {
+      "xpos": 201,
+      "ypos": 268,
+      "width": 621,
+      "height": 222,
+      "type": "match",
+      "match": 90
+    }
+  ],
+  "properties": []
+}

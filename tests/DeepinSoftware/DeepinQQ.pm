@@ -8,7 +8,7 @@ sub startup {
     save_screenshot;
 }
 sub mainUI{
-    assert_screen "deepin-qq-main-default", 20;
+    assert_screen "deepin-qq-main-default", 60;
     sleep 3;
 }
 sub exitDeepinQQ{

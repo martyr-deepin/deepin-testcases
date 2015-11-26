@@ -1,0 +1,17 @@
+{
+  "area": [
+    {
+      "xpos": 191,
+      "type": "match",
+      "match": 90,
+      "width": 456,
+      "height": 193,
+      "ypos": 6
+    }
+  ],
+  "tags": [
+    "launcher-search-wps",
+    "ENV-INSTLANG-zh_CN"
+  ],
+  "properties": []
+}

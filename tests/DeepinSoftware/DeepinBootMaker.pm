@@ -11,13 +11,13 @@ sub startup {
     
 }
 sub mainUI{
-    assert_screen "deepin-boot-maker-main-default", 10;
+    assert_screen "deepin-boot-maker-main-default", 20;
     sleep 3;
 }
 sub exitDeepinBootMaker{
     assert_and_click "deepin-boot-maker-main-default-btn";
-    sleep 3;
-    assert_screen "desktop-default",10;
+    sleep 5;
+    assert_screen "desktop-default",20;
 }
 sub run{
     startup;

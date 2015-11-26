@@ -1,16 +1,17 @@
 {
+  "area": [
+    {
+      "height": 88,
+      "ypos": 679,
+      "width": 357,
+      "match": 90,
+      "xpos": 665,
+      "type": "match"
+    }
+  ],
   "tags": [
     "ENV-INSTLANG-zh_CN",
     "dde-control-center-main-default"
-  ],
-  "area": [
-    {
-      "xpos": 665,
-      "ypos": 2,
-      "width": 357,
-      "height": 765,
-      "type": "match"
-    }
   ],
   "properties": []
 }

@@ -1,0 +1,17 @@
+{
+  "properties": [],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "launcher-search-fcti"
+  ],
+  "area": [
+    {
+      "xpos": 178,
+      "ypos": 3,
+      "width": 486,
+      "height": 172,
+      "type": "match",
+      "match": 90
+    }
+  ]
+}

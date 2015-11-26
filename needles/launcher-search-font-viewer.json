@@ -1,0 +1,16 @@
+{
+  "area": [
+    {
+      "xpos": 193,
+      "ypos": 6,
+      "width": 411,
+      "height": 165,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "launcher-search-font-viewer"
+  ],
+  "properties": []
+}

@@ -1,16 +1,16 @@
 {
   "tags": [
     "ENV-INSTLANG-zh_CN",
-    "ENV-VERSION-2014.2",
     "deepin-music-player-start-up-3"
   ],
   "area": [
     {
-      "xpos": 214,
-      "ypos": 187,
-      "width": 586,
-      "height": 392,
-      "type": "match"
+      "xpos": 231,
+      "type": "match",
+      "width": 559,
+      "match": 60,
+      "height": 348,
+      "ypos": 211
     }
   ],
   "properties": []

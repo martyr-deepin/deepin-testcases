@@ -1,0 +1,17 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "chmsee-main-default"
+  ],
+  "area": [
+    {
+      "xpos": 108,
+      "ypos": 62,
+      "width": 811,
+      "height": 637,
+      "type": "match",
+      "match": 90
+    }
+  ],
+  "properties": []
+}

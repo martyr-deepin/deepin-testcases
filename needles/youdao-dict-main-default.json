@@ -1,0 +1,17 @@
+{
+  "properties": [],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "youdao-dict-main-default"
+  ],
+  "area": [
+    {
+      "type": "match",
+      "xpos": 164,
+      "ypos": 67,
+      "height": 564,
+      "match": 80,
+      "width": 700
+    }
+  ]
+}

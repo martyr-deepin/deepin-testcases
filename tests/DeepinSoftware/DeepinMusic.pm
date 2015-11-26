@@ -35,14 +35,19 @@ sub startup{
     #send_key "ret";
 
     start_program "deepin-music-player", "laucher-search-deepin-music-player";
+    save_screenshot;
+}
 
+sub mainUI{
     # start up deepin-music-player
-    if (check_screen "deepin-music-player-start-up-1", 20) {
+    if (check_screen "deepin-music-player-start-up-3", 30) {
 
         # click the third btn
         mouse_set 535, 526;
+        sleep 3;
+        save_screenshot;
         mouse_click;
-
+=pod
         my $ready = check_screen "deepin-music-player-start-up-3", 5;
 
         # repeat click
@@ -53,16 +58,22 @@ sub startup{
         }
 
         assert_screen "deepin-music-player-start-up-3", 3;
-
+=cut
         # entry
-        assert_and_click "deepin-music-player-start-up-btn";
+        #assert_and_click "deepin-music-player-start-up-btn";
+        if (check_screen "deepin-music-player-start-up-btn"){
+            sleep 3;
+            mouse_set 509,479;
+            sleep 3;
+            save_screenshot;
+            mouse_click;
+            sleep 3;
+        }
+        assert_screen "deepin-music-player-main-default", 10;
     }
-
-}
-
-sub mainUI{
-
-    assert_screen "deepin-music-player-main-default", 10;
+    else {
+        assert_screen "deepin-music-player-main-default", 10;
+    }
 
     sleep 10;
 
@@ -141,6 +152,9 @@ sub run {
     # upload_logs
     upload_logs ref($self)."-captured.wav";
     #upload_logs "-captured.wav";
+    sleep 3;
+    #remove old config
+    type_string "rm -rf .config/deepin-music-player\n";
     sleep 3;
     save_screenshot;
     # exit termial

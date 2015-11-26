@@ -1,0 +1,6 @@
+说明：
+1.测试深度系列软件:Chm,CrossOver,Fcitx，GDebi，GParted，Google Chrome,WPS文字，WPS演示，WPS表格，Caculator,Eog,Evince,FileRoller,FontViewer,Nautilus,SimpleScan,SystemConfigPrint,
+SystemMonitor,Thunderbird,YoudaoDict共21个软件，从launcher打开到关闭的过程
+默认：无
+使用方法：
+直接设置：OTHERSOFTWARE=1 即可

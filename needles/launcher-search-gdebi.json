@@ -1,0 +1,17 @@
+{
+  "properties": [],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "launcher-search-gdebi"
+  ],
+  "area": [
+    {
+      "xpos": 179,
+      "ypos": 4,
+      "width": 442,
+      "height": 190,
+      "type": "match",
+      "match": 90
+    }
+  ]
+}

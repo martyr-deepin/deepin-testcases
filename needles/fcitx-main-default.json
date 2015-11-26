@@ -1,0 +1,17 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 226,
+      "ypos": 167,
+      "width": 573,
+      "height": 34,
+      "type": "match",
+      "match": 80
+    }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "fcitx-main-default"
+  ]
+}
