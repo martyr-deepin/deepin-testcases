@@ -73,6 +73,7 @@ sub mainUI{
     else {
         assert_screen "deepin-music-player-main-default", 10;
     }
+    sleep 10;
 }
 
 sub exitDMusic{
