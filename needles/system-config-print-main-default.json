@@ -1,0 +1,17 @@
+{
+  "area": [
+    {
+      "xpos": 289,
+      "ypos": 226,
+      "width": 443,
+      "height": 109,
+      "type": "match",
+      "match": 70
+    }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "system-config-print-main-default"
+  ],
+  "properties": []
+}

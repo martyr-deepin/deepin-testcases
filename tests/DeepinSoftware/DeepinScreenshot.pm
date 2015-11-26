@@ -44,7 +44,7 @@ sub del_png{
     save_screenshot;
     mouse_set 40,40;
     mouse_click "right";
-    mouse_hide;
+    #mouse_hide;
     sleep 3;
     send_key "down";
     sleep 1;

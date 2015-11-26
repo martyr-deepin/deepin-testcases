@@ -1,0 +1,17 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "launcher-search-crossover"
+  ],
+  "area": [
+    {
+      "xpos": 180,
+      "ypos": 3,
+      "width": 463,
+      "height": 176,
+      "type": "match",
+      "match": 90
+    }
+  ],
+  "properties": []
+}

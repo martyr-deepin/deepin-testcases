@@ -104,28 +104,29 @@ sub start_program($;$){
 
     my $name = shift;
     my $needle = shift;
-    sleep 5;
-    send_key "win";
-    save_screenshot;
-    assert_screen "launcher-start-up2015", 20;
-    
-    #type_string $name;
-    my @array=split "", $name;
-    foreach my $ch(@array)
-    {
-        type_string $ch;
-	sleep 0.5;
-    }
-    if ($needle){
-        assert_screen $needle, 20;
-    }
-    else{
-        sleep 2;
-        save_screenshot;
-    }
+    sleep 10;
+    if (check_screen "desktop-default",20){
+	    send_key "win";
+	    save_screenshot;
+	    assert_screen "launcher-start-up2015", 20;
+	    
+	    #type_string $name;
+	    my @array=split "", $name;
+	    foreach my $ch(@array)
+	    {
+		type_string $ch;
+		sleep 1;
+	    }
+	    if ($needle){
+		assert_screen $needle, 20;
+	    }
+	    else{
+		sleep 2;
+		save_screenshot;
+	    }
 
-    send_key "ret";
-
+	    send_key "ret";
+    }
 }
 
 

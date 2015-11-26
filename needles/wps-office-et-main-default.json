@@ -1,0 +1,18 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 3,
+      "ypos": 1,
+      "width": 654,
+      "height": 24,
+      "type": "match",
+      "match": 60,
+      "margin": 20
+    }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "wps-office-et-main-default"
+  ]
+}

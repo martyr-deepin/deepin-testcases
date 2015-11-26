@@ -107,6 +107,71 @@ sub loadDeepinSoftwareTests{
     loadtest "DeepinSoftware/DeepinMusic.pm";
 }
 
+sub loadOtherSoftwareTests{
+
+    #chmsee
+    loadtest "OtherSoftware/Chmsee.pm";
+
+    #crossover
+    loadtest "OtherSoftware/CrossOver.pm";
+
+    #fctix
+    loadtest "OtherSoftware/Fcitx.pm";
+
+    #gdebi
+    loadtest "OtherSoftware/GDebi.pm";
+    
+    #gedit
+    loadtest "OtherSoftware/Gedit.pm";
+
+    #gparted
+    loadtest "OtherSoftware/GParted.pm";
+
+    #google
+    loadtest "OtherSoftware/Google.pm";
+
+    #wps-office-wps
+    loadtest "OtherSoftware/WpsOfficeWps.pm";
+
+    #wps-office-wpp
+    loadtest "OtherSoftware/WpsOfficeWpp.pm";
+
+    #wps-office-et
+    loadtest "OtherSoftware/WpsOfficeEt.pm";
+
+    #Caculator
+    loadtest "OtherSoftware/Caculator.pm";
+
+    #Eog
+    loadtest "OtherSoftware/Eog.pm";
+
+    #Evince
+    loadtest "OtherSoftware/Evince.pm";
+
+    #FileRoller
+    loadtest "OtherSoftware/FileRoller.pm";
+
+    #FontViewer
+    loadtest "OtherSoftware/FontViewer.pm";
+
+    #Nautilus
+    loadtest "OtherSoftware/Nautilus.pm";
+
+    #SimpleScan
+    loadtest "OtherSoftware/SimpleScan.pm";
+
+    #SystemConfigPrint
+    loadtest "OtherSoftware/SystemConfigPrint.pm";
+
+    #SystemMonitor
+    loadtest "OtherSoftware/SystemMonitor.pm";
+
+    #Thunderbird
+    loadtest "OtherSoftware/Thunderbird.pm";
+
+    #YoudaoDict
+    loadtest "OtherSoftware/YoudaoDict.pm";
+}
 
 sub loadDockTests{
 
@@ -122,7 +187,7 @@ sub loadLauncherTests{
 
 sub loadLauncherGeditTests{
 
-    loadtest "OtherSoftware/Gedit.pm"
+    loadtest "OtherSoftware/Gedit.pm";
 
 }
 
@@ -312,6 +377,13 @@ else{
         loadDeepinSoftwareTests;
 
     }
+
+    if (get_var("OTHERSOFTWARE")){
+
+        loadOtherSoftwareTests;
+
+    }
+
 
     if (get_var("DOCK")){
 

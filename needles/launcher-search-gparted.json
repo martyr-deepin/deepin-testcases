@@ -1,0 +1,17 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "launcher-search-gparted"
+  ],
+  "area": [
+    {
+      "xpos": 172,
+      "ypos": 2,
+      "width": 481,
+      "height": 197,
+      "type": "match",
+      "match": 90
+    }
+  ],
+  "properties": []
+}

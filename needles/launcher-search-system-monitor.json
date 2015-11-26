@@ -1,0 +1,17 @@
+{
+  "properties": [],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "launcher-search-system-monitor"
+  ],
+  "area": [
+    {
+      "xpos": 201,
+      "ypos": 6,
+      "width": 408,
+      "height": 159,
+      "type": "match",
+      "match": 90
+    }
+  ]
+}

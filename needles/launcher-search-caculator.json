@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "launcher-search-caculator"
+  ],
+  "area": [
+    {
+      "xpos": 200,
+      "ypos": 6,
+      "width": 380,
+      "height": 159,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

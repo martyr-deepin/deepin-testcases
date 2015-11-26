@@ -1,0 +1,17 @@
+{
+  "area": [
+    {
+      "xpos": 196,
+      "ypos": 5,
+      "width": 394,
+      "height": 164,
+      "type": "match",
+      "match": 90
+    }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "launcher-search-nautilus"
+  ],
+  "properties": []
+}

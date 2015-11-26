@@ -1,0 +1,24 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 570,
+      "ypos": 209,
+      "width": 235,
+      "height": 333,
+      "type": "exclude"
+    },
+    {
+      "xpos": 205,
+      "ypos": 144,
+      "width": 616,
+      "height": 479,
+      "type": "match",
+      "match": 90
+    }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "crossover-main-default"
+  ]
+}
