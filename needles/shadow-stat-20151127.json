@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "shadow-stat"
+  ],
+  "area": [
+    {
+      "xpos": 71,
+      "ypos": 65,
+      "width": 121,
+      "height": 15,
+      "type": "match"
+    }
+  ]
+}

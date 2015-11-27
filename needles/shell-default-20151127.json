@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "shell-default"
+  ],
+  "area": [
+    {
+      "xpos": 0,
+      "ypos": 18,
+      "width": 244,
+      "height": 27,
+      "type": "match"
+    }
+  ]
+}

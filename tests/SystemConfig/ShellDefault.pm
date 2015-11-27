@@ -19,47 +19,13 @@ use strict;
 use testapi;
 use deepinapi qw{ open_tty };
 
-sub send_password {
-
-    my $userpwd = "deepin";
-
-    if (get_var("USERPWD")){
-        $userpwd = get_var("USERPWD");
-    }
-
-    # login
-    sleep 3;
-    type_string "$userpwd";
-    sleep 1;
-    send_key "ret";
-
-}
-
 sub run {
 
     open_tty "f2";
     send_key "ctrl-l";
     assert_screen "tty-ctrl-l", 5;
-    type_string "grep '^deb http://packages.deepin.com/deepin unstable main contrib non-free' /etc/apt/sources.list\n";
-    assert_screen "source-list-content", 10;
-
-    send_key "ctrl-l";
-    assert_screen "tty-ctrl-l", 5;
-    type_string "grep -v '^deb http://packages.deepin.com/deepin unstable main contrib non-free' /etc/apt/sources.list\n";
-    assert_screen "source-list-comment", 10;
-
-
-    send_key "ctrl-l";
-    assert_screen "tty-ctrl-l", 5;
-    type_string "sudo apt-get update\n";
-    
-    if (check_screen("source-list-password", 5)) {
-
-        send_password;
-
-    }
-
-    assert_screen "source-list-update", 300;
+    type_string "grep DSHELL /etc/adduser.conf\n";
+    assert_screen "shell-default", 10;
 
     type_string "logout\n";
     send_key "ctrl-alt-f7";

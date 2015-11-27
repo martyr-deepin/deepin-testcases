@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "perl-interactive"
+  ],
+  "area": [
+    {
+      "xpos": 0,
+      "ypos": 32,
+      "width": 224,
+      "height": 116,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

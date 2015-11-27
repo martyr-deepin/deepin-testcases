@@ -25,12 +25,12 @@ sub run {
     send_key "ctrl-l";
     assert_screen "tty-ctrl-l", 5;
     type_string "grep DISTRIB_RELEASE /etc/lsb-release\n";
-    assert_screen "release-infor-lsb";
+    assert_screen "release-infor-lsb", 10;
 
     send_key "ctrl-l";
     assert_screen "tty-ctrl-l", 5;
     type_string "cat /etc/os-release\n";
-    assert_screen "release-infor-os";
+    assert_screen "release-infor-os", 10;
     
     type_string "logout\n";
     send_key "ctrl-alt-f7";

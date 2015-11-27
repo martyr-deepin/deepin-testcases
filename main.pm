@@ -325,12 +325,6 @@ sub loadDccAllTests{
 }
 
 
-sub loadSystemConfigSourceListTests{
-
-    loadtest "SystemConfig/SourceList.pm";
-
-}
-
 sub loadReleaseInforTests{
 
     loadtest "SystemConfig/ReleaseInfor.pm";
@@ -338,10 +332,49 @@ sub loadReleaseInforTests{
 }
 
 
+sub loadShellDefaultTests{
+
+    loadtest "SystemConfig/ShellDefault.pm";
+
+}
+
+
+sub loadPythonTests{
+
+    loadtest "SystemConfig/Python.pm";
+
+}
+
+
+sub loadShadowTests{
+
+    loadtest "SystemConfig/Shadow.pm";
+
+}
+
+
+sub loadPerlTests{
+
+    loadtest "SystemConfig/Perl.pm";
+
+}
+
+
+sub loadSourceListTests{
+
+    loadtest "SystemConfig/SourceList.pm";
+
+}
+
+
 sub loadSysCfgAllTests{
 
-    loadSystemConfigSourceListTests;
-    #loadReleaseInforTests;
+    loadReleaseInforTests;
+    loadShellDefaultTests;
+    loadPythonTests;
+    loadShadowTests;
+    loadPerlTests;
+    loadSourceListTests;
 
 }
 
