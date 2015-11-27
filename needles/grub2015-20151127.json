@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "grub2015"
+  ],
+  "area": [
+    {
+      "xpos": 198,
+      "ypos": 174,
+      "width": 361,
+      "height": 60,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}
