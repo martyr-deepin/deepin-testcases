@@ -1,16 +1,17 @@
 {
-  "properties": [],
+  "area": [
+    {
+      "height": 419,
+      "ypos": 174,
+      "width": 422,
+      "match": 90,
+      "type": "match",
+      "xpos": 300
+    }
+  ],
   "tags": [
     "ENV-INSTLANG-zh_CN",
     "caculator-main-default"
   ],
-  "area": [
-    {
-      "xpos": 300,
-      "ypos": 174,
-      "width": 422,
-      "height": 419,
-      "type": "match"
-    }
-  ]
+  "properties": []
 }

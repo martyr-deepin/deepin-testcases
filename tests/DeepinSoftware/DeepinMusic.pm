@@ -113,7 +113,7 @@ sub playTest{
 
     $self->start_audiocapture;
     type_string "deepin-music-player $sound\n";
-    sleep 10; # tmp
+    sleep 20; # tmp
     save_screenshot;
     $self->assert_DTMF($expectDTMFCode);
     #remove 1d5d9dD.wav
