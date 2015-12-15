@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "grub2015"
+  ],
+  "area": [
+    {
+      "xpos": 420,
+      "ypos": 616,
+      "width": 180,
+      "height": 43,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}
