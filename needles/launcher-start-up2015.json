@@ -1,17 +1,16 @@
 {
-  "properties": [],
   "area": [
     {
-      "ypos": 6,
-      "match": 90,
-      "width": 881,
-      "height": 683,
-      "xpos": 5,
-      "type": "match"
+      "height": 580,
+      "width": 725,
+      "type": "match",
+      "xpos": 150,
+      "ypos": 98
     }
   ],
   "tags": [
     "ENV-INSTLANG-zh_CN",
     "launcher-start-up2015"
-  ]
+  ],
+  "properties": []
 }
