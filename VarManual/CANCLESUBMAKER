@@ -1,0 +1,6 @@
+说明：
+在needlemaker环境下可以添加此设置，在main.pm中设置测试的脚本，省略掉iso安装的步骤
+
+默认：无
+使用方法：
+直接设置：在needlemaker环境下设置，CANCLESUBMAKER=1 即可

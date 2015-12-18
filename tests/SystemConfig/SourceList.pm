@@ -38,14 +38,18 @@ sub send_password {
 sub run {
 
     open_tty "f2";
+    type_string "cat /etc/apt/sources.list\n";
+    sleep 2;
+    save_screenshot;
+    sleep 3;
     send_key "ctrl-l";
     assert_screen "tty-ctrl-l", 5;
-    type_string "grep '^deb http://packages.deepin.com/deepin unstable main contrib non-free' /etc/apt/sources.list\n";
+    type_string "grep '^deb \\[by-hash=force\\] http://packages.deepin.com/deepin unstable main contrib non-free' /etc/apt/sources.list\n";
     assert_screen "source-list-content", 10;
 
     send_key "ctrl-l";
     assert_screen "tty-ctrl-l", 5;
-    type_string "grep -v '^deb http://packages.deepin.com/deepin unstable main contrib non-free' /etc/apt/sources.list\n";
+    type_string "grep -v '^deb \\[by-hash=force\\] http://packages.deepin.com/deepin unstable main contrib non-free' /etc/apt/sources.list\n";
     assert_screen "source-list-comment", 10;
 
 

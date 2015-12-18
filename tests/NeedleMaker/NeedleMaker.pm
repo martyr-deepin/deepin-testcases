@@ -98,6 +98,8 @@ sub run {
     #sleep 30;
     assert_screen "login2015", 40;
 
+    sleep 10;
+
     # login
     type_string "deepin\n";
 
@@ -105,8 +107,9 @@ sub run {
 
     save_screenshot;
 
-    maker;
-
+    if (!get_var("CANCLESUBMAKER")){
+        maker;
+    }
 }
 
 sub test_flags {

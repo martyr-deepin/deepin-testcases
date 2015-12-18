@@ -22,6 +22,10 @@ use deepinapi qw{ open_tty };
 sub run {
 
     open_tty "f2";
+    type_string "cat /etc/lsb-release\n";
+    sleep 2;
+    save_screenshot;
+    sleep 3;
     send_key "ctrl-l";
     assert_screen "tty-ctrl-l", 5;
     type_string "grep DISTRIB_RELEASE /etc/lsb-release\n";

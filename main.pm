@@ -395,6 +395,10 @@ if (get_var("NEEDLEMAKER")){
 
     loadNeedleMaker;
 
+    if (get_var("CANCLESUBMAKER")){
+        loadShellDefaultTests;
+    }
+
 }
 else{
 
