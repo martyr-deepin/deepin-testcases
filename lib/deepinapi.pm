@@ -111,7 +111,8 @@ sub start_program($;$){
 
     sleep 10;
     if (check_screen "desktop-default",20){
-	    send_key "win";
+	    #send_key "win"; right menu key is not available,only left key valid
+	    send_key "super";
 	    save_screenshot;
 	    assert_screen "launcher-start-up2015", 20;
 	    
