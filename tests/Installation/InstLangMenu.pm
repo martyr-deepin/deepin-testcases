@@ -66,6 +66,9 @@ sub run {
 
     save_screenshot;
 
+    assert_screen "deepin-logo", 50;
+    send_key "ret";
+
     # wait for language menu to appear
     assert_screen "inst-lang-menu", 50;
 
