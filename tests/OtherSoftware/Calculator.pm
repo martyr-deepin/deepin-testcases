@@ -4,11 +4,11 @@ use testapi;
 use deepinapi qw(start_program);
 
 sub startup {
-    start_program "caculator", "launcher-search-caculator";
+    start_program "calculator", "launcher-search-caculator";
     save_screenshot;
 }
 sub mainUI{
-    assert_screen "caculator-main-default", 20;
+    assert_screen "calculator-main-default", 20;
     sleep 3;
 }
 sub exitCaculator{

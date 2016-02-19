@@ -139,8 +139,8 @@ sub loadOtherSoftwareTests{
     #wps-office-et
     loadtest "OtherSoftware/WpsOfficeEt.pm";
 
-    #Caculator
-    loadtest "OtherSoftware/Caculator.pm";
+    #Calculator
+    loadtest "OtherSoftware/Calculator.pm";
 
     #Eog
     loadtest "OtherSoftware/Eog.pm";
