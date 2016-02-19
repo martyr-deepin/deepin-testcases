@@ -4,7 +4,7 @@ use testapi;
 use deepinapi qw(start_program);
 
 sub startup {
-    start_program "deepin-appstore", "laucher-search-deepin-appstore";
+    start_program "deepin-appstore", "launcher-search-deepin-appstore";
     save_screenshot;
 }
 sub mainUI{

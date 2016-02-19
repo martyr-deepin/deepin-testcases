@@ -4,7 +4,7 @@ use testapi;
 use deepinapi qw(start_program);
 
 sub startup {
-    start_program "deepin-qq", "laucher-search-deepin-qq";
+    start_program "deepin-qq", "launcher-search-deepin-qq";
     save_screenshot;
 }
 sub mainUI{

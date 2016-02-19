@@ -60,7 +60,7 @@ sub run {
 }
 =cut
 sub startup {
-    start_program "deepin-movie", "laucher-search-deepin-movie";
+    start_program "deepin-movie", "launcher-search-deepin-movie";
     save_screenshot;
 }
 sub mainUI{

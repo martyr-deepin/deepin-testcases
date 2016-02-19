@@ -4,7 +4,7 @@ use testapi;
 use deepinapi qw(start_program);
 
 sub startup {
-    start_program "deepin-boot-maker", "laucher-search-deepin-boot-maker";
+    start_program "deepin-boot-maker", "launcher-search-deepin-boot-maker";
     save_screenshot;
     assert_screen "deepin-boot-maker-passwd",5;
     type_string "deepin\n";

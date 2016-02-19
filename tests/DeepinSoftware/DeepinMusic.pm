@@ -34,7 +34,7 @@ sub startup{
     #assert_screen "laucher-search-deepin-music-player";
     #send_key "ret";
 
-    start_program "deepin-music-player", "laucher-search-deepin-music-player";
+    start_program "deepin-music-player", "launcher-search-deepin-music-player";
     save_screenshot;
 }
 

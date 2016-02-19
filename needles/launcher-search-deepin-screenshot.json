@@ -1,14 +1,14 @@
 {
   "tags": [
     "ENV-INSTLANG-zh_CN",
-    "laucher-search-deepin-movie"
+    "launcher-search-deepin-screenshot"
   ],
   "area": [
     {
-      "xpos": 155,
-      "ypos": 3,
-      "width": 637,
-      "height": 213,
+      "xpos": 3,
+      "ypos": 1,
+      "width": 1013,
+      "height": 331,
       "type": "match"
     }
   ],

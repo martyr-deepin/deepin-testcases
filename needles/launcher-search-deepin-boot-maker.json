@@ -2,15 +2,15 @@
   "properties": [],
   "area": [
     {
-      "xpos": 1,
+      "height": 313,
       "ypos": 0,
-      "width": 1022,
-      "height": 364,
+      "width": 1020,
+      "xpos": 1,
       "type": "match"
     }
   ],
   "tags": [
-    "laucher-search-deepin-boot-maker",
+    "launcher-search-deepin-boot-maker",
     "ENV-DISTRI-deepin",
     "ENV-INSTLANG-zh_CN",
     "ENV-FLAVOR-SID-DVD"

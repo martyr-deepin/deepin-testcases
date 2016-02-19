@@ -5,7 +5,7 @@ use deepinapi qw(start_program);
 
 sub startup {
     sleep 5;
-    start_program "deepin-screenshot", "laucher-search-deepin-screenshot";
+    start_program "deepin-screenshot", "launcher-search-deepin-screenshot";
     save_screenshot;
 }
 sub mainUI{

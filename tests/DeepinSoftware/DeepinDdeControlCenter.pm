@@ -4,7 +4,7 @@ use testapi;
 use deepinapi qw(start_program);
 
 sub startup {
-    start_program "dde-control-center", "laucher-search-dde-control-center";
+    start_program "dde-control-center", "launcher-search-dde-control-center";
     save_screenshot;
 }
 sub mainUI{
