@@ -1,14 +1,14 @@
 {
-  "properties": [],
   "area": [
     {
-      "ypos": 53,
-      "height": 538,
-      "type": "match",
-      "width": 786,
-      "xpos": 119
+      "height": 24,
+      "ypos": 60,
+      "xpos": 439,
+      "width": 142,
+      "type": "match"
     }
   ],
+  "properties": [],
   "tags": [
     "ENV-INSTLANG-zh_CN",
     "gparted-main-default"

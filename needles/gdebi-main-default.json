@@ -1,16 +1,16 @@
 {
-  "tags": [
-    "ENV-INSTLANG-zh_CN",
-    "gdebi-main-default"
-  ],
   "properties": [],
   "area": [
     {
-      "height": 27,
-      "ypos": 90,
+      "type": "match",
       "xpos": 451,
-      "width": 124,
-      "type": "match"
+      "width": 119,
+      "height": 27,
+      "ypos": 92
     }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "gdebi-main-default"
   ]
 }

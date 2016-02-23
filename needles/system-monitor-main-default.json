@@ -1,16 +1,16 @@
 {
-  "properties": [],
   "tags": [
     "ENV-INSTLANG-zh_CN",
     "system-monitor-main-default"
   ],
   "area": [
     {
-      "height": 35,
-      "xpos": 233,
-      "ypos": 68,
-      "width": 305,
-      "type": "match"
+      "xpos": 231,
+      "width": 311,
+      "type": "match",
+      "ypos": 66,
+      "height": 37
     }
-  ]
+  ],
+  "properties": []
 }

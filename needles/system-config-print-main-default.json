@@ -1,16 +1,16 @@
 {
-  "properties": [],
   "tags": [
     "ENV-INSTLANG-zh_CN",
     "system-config-print-main-default"
   ],
   "area": [
     {
-      "height": 28,
-      "ypos": 226,
-      "xpos": 439,
-      "width": 69,
-      "type": "match"
+      "xpos": 438,
+      "width": 70,
+      "type": "match",
+      "ypos": 225,
+      "height": 26
     }
-  ]
+  ],
+  "properties": []
 }

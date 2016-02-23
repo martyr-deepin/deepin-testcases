@@ -1,16 +1,16 @@
 {
   "area": [
     {
-      "ypos": 77,
-      "type": "match",
-      "width": 599,
-      "xpos": 213,
-      "height": 463
+      "height": 25,
+      "ypos": 82,
+      "xpos": 466,
+      "width": 86,
+      "type": "match"
     }
   ],
+  "properties": [],
   "tags": [
     "ENV-INSTLANG-zh_CN",
     "crossover-main-default"
-  ],
-  "properties": []
+  ]
 }

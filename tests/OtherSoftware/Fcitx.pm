@@ -4,7 +4,7 @@ use testapi;
 use deepinapi qw(start_program);
 
 sub startup {
-    start_program "fcitx configuration", "launcher-search-fcitx";
+    start_program "fcitx-config", "launcher-search-fcitx";
     save_screenshot;
 }
 sub mainUI{

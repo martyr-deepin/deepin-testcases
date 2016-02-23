@@ -1,16 +1,16 @@
 {
-  "properties": [],
-  "area": [
-    {
-      "ypos": 43,
-      "type": "match",
-      "xpos": 103,
-      "width": 814,
-      "height": 639
-    }
-  ],
   "tags": [
     "ENV-INSTLANG-zh_CN",
     "chmsee-main-default"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "ypos": 26,
+      "height": 22,
+      "type": "match",
+      "width": 74,
+      "xpos": 474
+    }
   ]
 }

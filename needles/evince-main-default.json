@@ -3,14 +3,14 @@
     "ENV-INSTLANG-zh_CN",
     "evince-main-default"
   ],
-  "properties": [],
   "area": [
     {
+      "width": 80,
+      "xpos": 471,
       "type": "match",
-      "width": 73,
-      "ypos": 52,
-      "xpos": 474,
-      "height": 31
+      "ypos": 53,
+      "height": 28
     }
-  ]
+  ],
+  "properties": []
 }

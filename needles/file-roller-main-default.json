@@ -1,16 +1,16 @@
 {
-  "properties": [],
   "tags": [
     "ENV-INSTLANG-zh_CN",
     "file-roller-main-default"
   ],
   "area": [
     {
-      "ypos": 94,
-      "xpos": 467,
-      "height": 29,
-      "width": 89,
-      "type": "match"
+      "xpos": 463,
+      "width": 94,
+      "type": "match",
+      "ypos": 95,
+      "height": 27
     }
-  ]
+  ],
+  "properties": []
 }

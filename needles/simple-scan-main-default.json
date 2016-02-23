@@ -1,14 +1,14 @@
 {
+  "properties": [],
   "area": [
     {
-      "height": 31,
-      "ypos": 120,
-      "xpos": 481,
-      "type": "match",
-      "width": 59
+      "ypos": 119,
+      "height": 34,
+      "width": 67,
+      "xpos": 474,
+      "type": "match"
     }
   ],
-  "properties": [],
   "tags": [
     "ENV-INSTLANG-zh_CN",
     "simple-scan-main-default"

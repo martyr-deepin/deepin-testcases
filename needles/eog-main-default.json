@@ -1,16 +1,16 @@
 {
-  "properties": [],
   "tags": [
     "ENV-INSTLANG-zh_CN",
     "eog-main-default"
   ],
+  "properties": [],
   "area": [
     {
-      "xpos": 466,
-      "ypos": 147,
-      "height": 27,
+      "xpos": 468,
+      "width": 90,
       "type": "match",
-      "width": 91
+      "height": 27,
+      "ypos": 147
     }
   ]
 }

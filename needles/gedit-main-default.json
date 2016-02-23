@@ -1,16 +1,16 @@
 {
+  "area": [
+    {
+      "height": 31,
+      "ypos": 20,
+      "type": "match",
+      "xpos": 452,
+      "width": 119
+    }
+  ],
+  "properties": [],
   "tags": [
     "ENV-INSTLANG-zh_CN",
     "gedit-main-default"
-  ],
-  "area": [
-    {
-      "type": "match",
-      "xpos": 80,
-      "width": 862,
-      "height": 662,
-      "ypos": 11
-    }
-  ],
-  "properties": []
+  ]
 }
