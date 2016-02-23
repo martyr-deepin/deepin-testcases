@@ -20,7 +20,7 @@ sub exitWps{
         send_key "alt-tab";
         sleep 3;
         send_key "alt-f4";
-        sleep 3;
+        sleep 5;
     }
     assert_screen "desktop-default",5;
 }

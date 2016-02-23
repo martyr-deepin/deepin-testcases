@@ -1,23 +1,16 @@
 {
+  "area": [
+    {
+      "width": 76,
+      "type": "match",
+      "height": 78,
+      "ypos": 343,
+      "xpos": 473
+    }
+  ],
   "properties": [],
   "tags": [
     "ENV-INSTLANG-zh_CN",
     "deepin-screenshot-main-default"
-  ],
-  "area": [
-    {
-      "xpos": 193,
-      "ypos": 694,
-      "width": 639,
-      "height": 72,
-      "type": "exclude"
-    },
-    {
-      "xpos": 2,
-      "ypos": 0,
-      "width": 1021,
-      "height": 767,
-      "type": "match"
-    }
   ]
 }

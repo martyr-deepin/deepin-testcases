@@ -1,16 +1,16 @@
 {
-  "properties": [],
   "tags": [
     "ENV-INSTLANG-zh_CN",
     "launcher-search-fcitx"
   ],
   "area": [
     {
-      "xpos": 153,
-      "ypos": 108,
-      "width": 114,
-      "height": 131,
-      "type": "match"
+      "ypos": 12,
+      "height": 225,
+      "xpos": 175,
+      "type": "match",
+      "width": 497
     }
-  ]
+  ],
+  "properties": []
 }

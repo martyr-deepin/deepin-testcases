@@ -1,16 +1,16 @@
 {
   "properties": [],
-  "area": [
-    {
-      "xpos": 242,
-      "ypos": 200,
-      "width": 539,
-      "height": 366,
-      "type": "match"
-    }
-  ],
   "tags": [
     "ENV-INSTLANG-zh_CN",
     "accept-wps"
+  ],
+  "area": [
+    {
+      "type": "match",
+      "width": 194,
+      "height": 38,
+      "xpos": 574,
+      "ypos": 511
+    }
   ]
 }

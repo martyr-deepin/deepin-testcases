@@ -4,7 +4,7 @@ use testapi;
 use deepinapi qw(start_program);
 
 sub startup {
-    start_program "calculator", "launcher-search-caculator";
+    start_program "calculator", "launcher-search-calculator";
     save_screenshot;
 }
 sub mainUI{

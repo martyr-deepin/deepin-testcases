@@ -2,14 +2,14 @@
   "properties": [],
   "tags": [
     "ENV-INSTLANG-zh_CN",
-    "system-config-print-main-default"
+    "launcher-search-calculator"
   ],
   "area": [
     {
-      "height": 28,
-      "ypos": 226,
-      "xpos": 439,
-      "width": 69,
+      "xpos": 172,
+      "ypos": 121,
+      "width": 79,
+      "height": 97,
       "type": "match"
     }
   ]

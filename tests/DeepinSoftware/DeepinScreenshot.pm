@@ -45,26 +45,8 @@ sub del_png{
     mouse_set 40,40;
     mouse_click "right";
     #mouse_hide;
-    sleep 3;
-    send_key "down";
-    sleep 1;
-    send_key "down";
-    sleep 1;
-    send_key "down";
-    sleep 1;
-    send_key "down";
-    sleep 1;
-    send_key "down";
-    sleep 1;
-    send_key "down";
-    sleep 1;
-    send_key "down";
-    sleep 1;
-    send_key "down";
-    sleep 1;
-    send_key "down";
-    save_screenshot;
-    send_key "ret";
+    assert_and_click "del_screenshot_png","right",5;
+    sleep 2;
     assert_screen "desktop-default",5;
 }
 sub run{

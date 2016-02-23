@@ -1,16 +1,16 @@
 {
+  "area": [
+    {
+      "height": 31,
+      "ypos": 120,
+      "xpos": 481,
+      "type": "match",
+      "width": 59
+    }
+  ],
   "properties": [],
   "tags": [
     "ENV-INSTLANG-zh_CN",
     "simple-scan-main-default"
-  ],
-  "area": [
-    {
-      "xpos": 242,
-      "ypos": 217,
-      "width": 541,
-      "height": 38,
-      "type": "match"
-    }
   ]
 }

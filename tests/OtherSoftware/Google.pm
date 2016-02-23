@@ -13,7 +13,7 @@ sub mainUI{
 }
 sub exitGoogle{
     send_key "alt-f4";
-    sleep 3;
+    sleep 5;
     assert_screen "desktop-default",5;
 }
 sub run{

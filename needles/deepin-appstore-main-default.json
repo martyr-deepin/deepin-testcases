@@ -1,23 +1,16 @@
 {
   "properties": [],
-  "area": [
-    {
-      "xpos": 176,
-      "ypos": 78,
-      "width": 716,
-      "height": 193,
-      "type": "exclude"
-    },
-    {
-      "xpos": 4,
-      "ypos": 5,
-      "width": 1018,
-      "height": 693,
-      "type": "match"
-    }
-  ],
   "tags": [
     "ENV-INSTLANG-zh_CN",
     "deepin-appstore-main-default"
+  ],
+  "area": [
+    {
+      "height": 33,
+      "ypos": 6,
+      "xpos": 8,
+      "width": 31,
+      "type": "match"
+    }
   ]
 }

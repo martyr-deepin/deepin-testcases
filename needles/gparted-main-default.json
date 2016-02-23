@@ -1,16 +1,16 @@
 {
   "properties": [],
-  "tags": [
-    "gparted-main-default",
-    "ENV-INSTLANG-zh_CN"
-  ],
   "area": [
     {
-      "height": 32,
-      "ypos": 117,
-      "width": 159,
+      "ypos": 53,
+      "height": 538,
       "type": "match",
-      "xpos": 427
+      "width": 786,
+      "xpos": 119
     }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "gparted-main-default"
   ]
 }

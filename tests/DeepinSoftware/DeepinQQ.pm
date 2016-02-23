@@ -12,6 +12,8 @@ sub mainUI{
     sleep 3;
 }
 sub exitDeepinQQ{
+    send_key "alt-tab";
+    sleep 2;
     send_key "alt-f4";
     sleep 5;
     assert_screen "desktop-default",5;

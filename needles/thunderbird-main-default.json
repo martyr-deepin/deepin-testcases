@@ -1,18 +1,16 @@
 {
   "area": [
     {
-      "width": 1017,
-      "ypos": 3,
-      "height": 367,
-      "xpos": 2,
-      "type": "match"
+      "width": 200,
+      "type": "match",
+      "height": 33,
+      "xpos": 412,
+      "ypos": 1
     }
   ],
   "tags": [
     "thunderbird-main-default",
-    "ENV-DISTRI-deepin",
-    "ENV-INSTLANG-zh_CN",
-    "ENV-FLAVOR-SID-DVD"
+    "ENV-INSTLANG-zh_CN"
   ],
   "properties": []
 }

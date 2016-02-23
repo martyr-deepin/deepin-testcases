@@ -1,17 +1,16 @@
 {
-  "area": [
-    {
-      "xpos": 195,
-      "ypos": 112,
-      "width": 635,
-      "height": 511,
-      "type": "match",
-      "match": 80
-    }
-  ],
   "tags": [
     "ENV-INSTLANG-zh_CN",
     "thunderbird-email"
   ],
-  "properties": []
+  "properties": [],
+  "area": [
+    {
+      "ypos": 544,
+      "xpos": 240,
+      "height": 39,
+      "width": 555,
+      "type": "match"
+    }
+  ]
 }
