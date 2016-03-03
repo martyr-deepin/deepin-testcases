@@ -17,7 +17,7 @@
 use strict;
 use base "softwarebasetest";
 use testapi;
-use deepinapi qw(download_local_file start_program);
+use deepinapi qw(download_local_file start_program run_on_tty);
 
 sub startup{
 
@@ -142,20 +142,18 @@ sub run {
 
     exitDMusic;
 
-    playTest $self;
+    #playTest $self;
 
-    exitDMusic;
+    #exitDMusic;
 
     # upload_logs
-    upload_logs ref($self)."-captured.wav";
+    #upload_logs ref($self)."-captured.wav";
     #upload_logs "-captured.wav";
     sleep 3;
     #remove old config
-    type_string "rm -rf .config/deepin-music-player\n";
-    sleep 3;
+    my $script = "rm -rf .config/deepin-music-player";
+    run_on_tty($script, 1);
     save_screenshot;
-    # exit termial
-    send_key "alt-f4";
     sleep 5;
     assert_screen "desktop-default",10;
 
