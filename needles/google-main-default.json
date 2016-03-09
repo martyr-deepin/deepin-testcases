@@ -1,16 +1,16 @@
 {
-  "tags": [
-    "ENV-INSTLANG-zh_CN",
-    "google-main-default"
-  ],
   "properties": [],
   "area": [
     {
-      "width": 166,
-      "xpos": 32,
       "type": "match",
-      "ypos": 28,
-      "height": 22
+      "width": 80,
+      "height": 20,
+      "ypos": 13,
+      "xpos": 932
     }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "google-main-default"
   ]
 }
