@@ -1,0 +1,22 @@
+{
+  "area": [
+    {
+      "ypos": 312,
+      "xpos": 726,
+      "width": 291,
+      "height": 240,
+      "type": "match"
+    },
+    {
+      "width": 57,
+      "xpos": 959,
+      "ypos": 313,
+      "height": 32,
+      "type": "exclude"
+    }
+  ],
+  "properties": [],
+  "tags": [
+    "dcc-defaultapp-auto-detail"
+  ]
+}

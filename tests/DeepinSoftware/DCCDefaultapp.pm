@@ -17,26 +17,32 @@
 use base "softwarebasetest";
 use strict;
 use testapi;
+use deepinapi qw( open_dcc close_dcc refresh_dcc );
+
+our @itemlist = qw( explore mail texttool music video picture terminal 
+                    auto-cd auto-dvd auto-player auto-photo auto-soft auto);
 
 sub run {
-    # show controlcenter
-    mouse_set 100, 100;
-    mouse_set 1023, 767;
 
-    # click btn on the mainpage of controlcenter
-    assert_screen "dcc-main-defaultapp", 10;
-    assert_and_click "dcc-main-defaultapp";
-    sleep 2;
+    open_dcc 'defaultapp';
+    assert_screen 'dcc-defaultapp-snapshot';
+    
+    foreach my $item (@itemlist) {
 
-    assert_screen "dcc-slider-defaultapp", 10;
+        assert_and_click 'dcc-defaultapp-'.$item;
+        assert_screen    'dcc-defaultapp-'.$item.'-detail';
+        mouse_click;
+        sleep 4;
 
-    assert_screen "dcc-backtohome-btn", 10;
-    assert_and_click "dcc-backtohome-btn";
-    sleep 5;
-    mouse_set 100, 100;
+    }
+
+    assert_screen    "dcc-defaultapp-auto-all";
     mouse_click;
-    sleep 5;
-    save_screenshot;
+    assert_screen    "dcc-defaultapp-auto-detail";
+    assert_and_click "dcc-defaultapp-reset";
+    assert_screen    "dcc-defaultapp-auto-all";
+
+    close_dcc;
 
 }
 

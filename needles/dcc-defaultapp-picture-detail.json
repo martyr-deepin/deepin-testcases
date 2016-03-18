@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-defaultapp-picture-detail"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 732,
+      "ypos": 282,
+      "width": 105,
+      "height": 16,
+      "type": "match"
+    }
+  ]
+}

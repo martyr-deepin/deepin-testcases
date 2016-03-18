@@ -5,7 +5,8 @@ use base "Exporter";
 
 use testapi;
 
-our @EXPORT_OK = qw(open_tty run_on_tty start_program collect_logs install_from_local ensure_install download_local_file);
+our @EXPORT_OK = qw(open_tty run_on_tty start_program collect_logs install_from_local ensure_install download_local_file 
+                    open_dcc close_dcc refresh_dcc);
 
 sub open_tty(;$){
 
@@ -197,6 +198,42 @@ sub download_local_file($$;$){
     my $cmd = "wget $url -P $store";
 
     run_on_tty ($cmd, 0, "f2", $timeout);
+
+}
+
+sub open_dcc($){
+
+    my $module = shift;
+    my $needle_dcc_main = "dcc-main-area"; 
+    my $needle_dcc_module = "dcc-main-".$module;
+    my $needle_dcc_slider = "dcc-slider-".$module;
+    assert_screen "desktop-default";
+    mouse_set 1023, 767;
+    assert_screen $needle_dcc_main;
+    assert_and_click $needle_dcc_module;
+    assert_screen $needle_dcc_slider;
+
+}
+
+sub close_dcc(){
+
+    assert_and_click "dcc-backtohome-btn";
+    assert_screen "dcc-main-area";
+    mouse_set 100, 100;
+    mouse_click;
+    assert_screen "desktop-default";
+    
+}
+
+sub refresh_dcc($){
+
+    my $module = shift;
+    my $needle_dcc_module = "dcc-main-".$module;
+    my $needle_dcc_slider = "dcc-slider-".$module;
+    assert_and_click "dcc-backtohome-btn";
+    assert_screen "dcc-main-area";
+    assert_and_click $needle_dcc_module;
+    assert_screen $needle_dcc_slider;    
 
 }
 

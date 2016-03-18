@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 953,
+      "ypos": 393,
+      "width": 42,
+      "height": 15,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-user-add-confirm"
+  ],
+  "properties": []
+}

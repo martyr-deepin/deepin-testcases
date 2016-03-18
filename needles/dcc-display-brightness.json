@@ -1,0 +1,50 @@
+{
+  "tags": [
+    "dcc-display-brightness"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "width": 35,
+      "xpos": 725,
+      "ypos": 329,
+      "height": 22,
+      "type": "match"
+    },
+    {
+      "height": 24,
+      "type": "match",
+      "width": 23,
+      "ypos": 706,
+      "xpos": 676
+    },
+    {
+      "ypos": 299,
+      "xpos": 985,
+      "width": 24,
+      "type": "match",
+      "height": 24
+    },
+    {
+      "ypos": 10,
+      "xpos": 724,
+      "width": 42,
+      "height": 29,
+      "type": "match"
+    },
+    {
+      "ypos": 7,
+      "xpos": 934,
+      "width": 79,
+      "height": 32,
+      "type": "match"
+    },
+    {
+      "height": 18,
+      "type": "match",
+      "width": 171,
+      "xpos": 836,
+      "ypos": 332
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-display-rotating-detail"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 763,
+      "ypos": 343,
+      "width": 196,
+      "height": 66,
+      "type": "match"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-user-add-auth"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 268,
+      "ypos": 310,
+      "width": 27,
+      "height": 29,
+      "type": "match"
+    }
+  ]
+}

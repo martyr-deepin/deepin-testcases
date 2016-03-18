@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 726,
+      "ypos": 120,
+      "width": 37,
+      "height": 17,
+      "type": "match"
+    }
+  ],
+  "properties": [],
+  "tags": [
+    "dcc-defaultapp-mail"
+  ]
+}

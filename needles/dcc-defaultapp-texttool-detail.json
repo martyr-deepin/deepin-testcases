@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-defaultapp-texttool-detail"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 735,
+      "ypos": 184,
+      "width": 103,
+      "height": 18,
+      "type": "match"
+    }
+  ]
+}

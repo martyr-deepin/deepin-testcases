@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 732,
+      "ypos": 247,
+      "width": 120,
+      "height": 21,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-defaultapp-video-detail"
+  ],
+  "properties": []
+}

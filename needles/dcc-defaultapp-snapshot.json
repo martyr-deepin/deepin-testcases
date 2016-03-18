@@ -1,0 +1,22 @@
+{
+  "tags": [
+    "dcc-defaultapp-snapshot"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 723,
+      "ypos": 6,
+      "width": 296,
+      "height": 336,
+      "type": "match"
+    },
+    {
+      "xpos": 939,
+      "ypos": 184,
+      "width": 46,
+      "height": 43,
+      "type": "exclude"
+    }
+  ]
+}

@@ -17,48 +17,19 @@
 use base "softwarebasetest";
 use strict;
 use testapi;
-use deepinapi;
+use deepinapi qw( open_dcc close_dcc refresh_dcc );
 
 sub run {
-    #mouse_set 1023, 767;
-    mouse_set 100, 100;
-    mouse_set 1023, 767;
 
-    #click btn on the mainpage of controlcenter
-    assert_screen "dcc-main-display", 10;
-    assert_and_click "dcc-main-display";
-    sleep 2;
-
-    assert_screen "dcc-slider-display", 10;
-
-    assert_screen "dcc-backtohome-btn", 10;
-    assert_and_dclick "dcc-backtohome-btn";
+    open_dcc 'display';
+    assert_and_click 'dcc-display-resolution';
+    assert_screen 'dcc-display-resolution-detail';
     mouse_click;
-    sleep 5;
-    mouse_set 100, 100;
+    assert_and_click 'dcc-dispaly-rotating';
+    assert_screen 'dcc-display-rotating-detail';
     mouse_click;
-    sleep 5;
-    save_screenshot;
-}
-
-sub test {
-    #open rotating setting
-    #mouse_set 1000, 429;
-    #mouse_click;
-    assert_and_click "dcc-display-rotating-open-click";
-    assert_screen "dcc-display-rotating-area", 10;
-    sleep 2;
-
-    #change brightness setting
-    #mouse_set 867, 431;
-    #mouse_click;
-    #sleep 2;
-
-    #exit dcc--display
-    assert_and_click "dcc-backtohome-btn";
-    #mouse_set 50, 50;
-    mouse_set 100, 100;
-    mouse_click;
+    assert_screen 'dcc-display-brightness';
+    close_dcc;
 
 }
 

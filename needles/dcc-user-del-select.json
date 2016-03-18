@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 725,
+      "ypos": 211,
+      "width": 21,
+      "height": 22,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-user-del-select"
+  ],
+  "properties": []
+}

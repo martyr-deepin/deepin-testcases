@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "dcc-defaultapp-auto-dvd"
+  ],
+  "area": [
+    {
+      "xpos": 729,
+      "ypos": 385,
+      "width": 51,
+      "height": 17,
+      "type": "match"
+    }
+  ]
+}

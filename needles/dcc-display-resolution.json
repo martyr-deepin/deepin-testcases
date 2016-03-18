@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "dcc-display-resolution"
+  ],
+  "area": [
+    {
+      "xpos": 723,
+      "ypos": 266,
+      "width": 47,
+      "height": 18,
+      "type": "match"
+    }
+  ]
+}

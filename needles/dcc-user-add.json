@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 985,
+      "ypos": 13,
+      "width": 25,
+      "height": 24,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-user-add"
+  ],
+  "properties": []
+}

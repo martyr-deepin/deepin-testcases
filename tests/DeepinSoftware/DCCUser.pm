@@ -17,103 +17,59 @@
 use base "softwarebasetest";
 use strict;
 use testapi;
+use deepinapi qw( open_dcc close_dcc refresh_dcc);
 
-sub adduser {
+our $userpwd = "deepin";
 
-    if (check_screen("launcher-with-keywin", 20)){
+sub doauth() {
 
-        mouse_set 100, 100;
-        mouse_click;
+    if (check_screen "dcc-user-add-auth", 10){
+        assert_and_click "dcc-user-add-auth";
+        sleep 2;
 
+        if (get_var("USERPWD")){
+            $userpwd = get_var("USERPWD");
+        }
+        type_string $userpwd;
+        send_key "ret";
     }
 
-    # show controlcenter
-    mouse_set 100, 100;
-    mouse_click;
-    sleep 3;
-    mouse_set 1023, 767;
+}
 
-    # click btn on the mainpage of controlcenter
-    assert_screen "dcc-main-area";
-    assert_screen "dcc-main-user", 10;
-    assert_and_click "dcc-main-user";
-    sleep 2;
+sub adduser($$) {
 
-    assert_screen "dcc-slider-useradd", 10;
-
-    assert_screen "dcc-backtohome-btn", 10;
-    assert_and_click "dcc-backtohome-btn", 10;
-    mouse_click;
-    sleep 5;
-    mouse_set 100, 100;
-    mouse_click;
-    sleep 5;
-    save_screenshot;
+    my $testuser = shift;
+    my $testpasswd = shift;
+    assert_and_click "dcc-user-add";
+    type_string $testuser;
+    send_key "tab";
+    type_string $testpasswd;
+    send_key "tab";
+    type_string $testpasswd;
+    assert_and_click "dcc-user-add-confirm";
+    doauth;
 
 }
 
+sub deluser() {
 
-sub test {
-    # click useradd btn
-    assert_and_click "dcc-useradd-btn", 10;
-    sleep 2;
+    assert_and_click "dcc-user-del";
+    assert_and_click "dcc-user-del-select";
+    assert_and_click "dcc-user-del-confirm";
+    doauth;
+    assert_screen "dcc-user-del-ok";
 
-    # input userinfo to dcctext
-    my $username = get_var("ADDUNAME");
-    my $passwd = get_var("ADDUPWD");
-    mouse_set 880, 198;
-    mouse_click;
-    type_string $username;
-    sleep 1;
-    send_key "tab";
-    type_string $passwd;
-    sleep 1;
-    send_key "tab";
-    type_string $passwd;
-    assert_and_click "dcc-useradd-ok";
-
-    # authentication of admin
-    sleep 5;
-    mouse_set 405, 379;
-    mouse_click;
-    type_string "deepin";
-    sleep 1;
-    send_key "tab";
-    send_key "tab";
-    send_key "tab";
-    send_key "ret";
-}
-
-sub deluser {
-    # wait for useradded page
-    mouse_set 1023, 767;
-    assert_screen "dcc-useradded-area", 10;
-    #mouse_set 50, 50;
-    mouse_set 100, 100;
-
-    # click the delbtn
-    assert_and_click "dcc-userdel-btn";
-    sleep 2;
-
-    # click the delbtn2
-    assert_and_click "dcc-userdel-btn2";
-    sleep 2;
-
-    # click deluser ok
-
-    assert_and_click "dcc-userdel-ok";
 }
 
 sub run {
-    adduser;
-    #sleep 8;
-    #deluser;
 
-    #exit dcc-user
-    #sleep 3;
-    #assert_and_click "dcc-backtohome-btn";
-    #mouse_set 50, 250;
-    #mouse_click;
+    open_dcc 'user';
+    adduser 'test', 'test';
+    refresh_dcc 'user';
+    assert_screen 'dcc-user-add-ok';
+    deluser;
+    close_dcc;
+
 }
 
 1;

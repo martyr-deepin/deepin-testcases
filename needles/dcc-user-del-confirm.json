@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 957,
+      "ypos": 234,
+      "width": 36,
+      "height": 16,
+      "type": "match"
+    }
+  ],
+  "properties": [],
+  "tags": [
+    "dcc-user-del-confirm"
+  ]
+}

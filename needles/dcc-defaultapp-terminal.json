@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 726,
+      "ypos": 278,
+      "width": 36,
+      "height": 21,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-defaultapp-terminal"
+  ],
+  "properties": []
+}
