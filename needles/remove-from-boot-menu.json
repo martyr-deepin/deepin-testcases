@@ -1,0 +1,16 @@
+{
+  "area": [
+    {
+      "xpos": 234,
+      "ypos": 263,
+      "width": 132,
+      "height": 24,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "remove-from-boot-menu",
+    "ENV-INSTLANG-zh_CN"
+  ],
+  "properties": []
+}

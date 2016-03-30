@@ -1,0 +1,16 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 161,
+      "ypos": 299,
+      "width": 707,
+      "height": 178,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "lock-checked"
+  ]
+}

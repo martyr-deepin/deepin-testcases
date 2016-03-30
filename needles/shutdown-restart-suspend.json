@@ -1,0 +1,16 @@
+{
+  "area": [
+    {
+      "xpos": 296,
+      "ypos": 262,
+      "width": 420,
+      "height": 162,
+      "type": "match"
+    }
+  ],
+  "properties": [],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "shutdown-restart-suspend"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "lock-main"
+  ],
+  "area": [
+    {
+      "xpos": 17,
+      "ypos": 330,
+      "width": 963,
+      "height": 418,
+      "type": "match"
+    },
+    {
+      "xpos": 27,
+      "ypos": 624,
+      "width": 222,
+      "height": 116,
+      "type": "exclude"
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,16 @@
+{
+  "properties": [],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "bootloader"
+  ],
+  "area": [
+    {
+      "xpos": 1,
+      "ypos": 34,
+      "width": 677,
+      "height": 153,
+      "type": "match"
+    }
+  ]
+}

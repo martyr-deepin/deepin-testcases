@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "effect-dock-blank"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 702,
+      "ypos": 729,
+      "width": 148,
+      "height": 36,
+      "type": "match"
+    }
+  ]
+}

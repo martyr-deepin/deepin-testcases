@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "lancher-menu"
+  ],
+  "area": [
+    {
+      "xpos": 27,
+      "ypos": 662,
+      "width": 52,
+      "height": 23,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

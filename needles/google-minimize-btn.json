@@ -1,0 +1,16 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 970,
+      "ypos": 1,
+      "width": 27,
+      "height": 21,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "google-minimize-btn"
+  ]
+}

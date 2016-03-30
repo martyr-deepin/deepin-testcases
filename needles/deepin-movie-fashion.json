@@ -1,0 +1,16 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "ypos": 702,
+      "xpos": 407,
+      "type": "match",
+      "height": 46,
+      "width": 51
+    }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "deepin-movie-fashion"
+  ]
+}

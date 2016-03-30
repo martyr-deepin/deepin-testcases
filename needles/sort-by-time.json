@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "sort-by-time"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "ypos": 166,
+      "type": "match",
+      "width": 74,
+      "height": 26,
+      "xpos": 43
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 749,
+      "ypos": 682,
+      "width": 64,
+      "height": 25,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "intelligent-hide-menu"
+  ]
+}

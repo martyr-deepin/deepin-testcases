@@ -1,0 +1,30 @@
+{
+  "tags": [
+    "dock-fashion-mode-default",
+    "ENV-INSTLANG-zh_CN"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "height": 52,
+      "type": "exclude",
+      "xpos": 564,
+      "width": 102,
+      "ypos": 698
+    },
+    {
+      "type": "exclude",
+      "xpos": 778,
+      "ypos": 711,
+      "width": 34,
+      "height": 27
+    },
+    {
+      "ypos": 697,
+      "width": 778,
+      "xpos": 126,
+      "type": "match",
+      "height": 68
+    }
+  ]
+}

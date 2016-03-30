@@ -1,18 +1,16 @@
 {
   "properties": [],
-  "tags": [
-    "desktop-defult",
-    "ENV-DISTRI-deepin",
-    "ENV-INSTLANG-zh_CN",
-    "ENV-FLAVOR-SID-DVD"
-  ],
   "area": [
     {
-      "xpos": 1,
-      "ypos": 0,
-      "width": 1021,
-      "height": 686,
-      "type": "match"
+      "type": "match",
+      "height": 558,
+      "xpos": 5,
+      "ypos": 5,
+      "width": 836
     }
+  ],
+  "tags": [
+    "desktop-default",
+    "ENV-INSTLANG-zh_CN"
   ]
 }

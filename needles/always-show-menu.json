@@ -1,0 +1,16 @@
+{
+  "area": [
+    {
+      "xpos": 757,
+      "ypos": 638,
+      "width": 60,
+      "height": 24,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "always-show-menu",
+    "ENV-INSTLANG-zh_CN"
+  ],
+  "properties": []
+}

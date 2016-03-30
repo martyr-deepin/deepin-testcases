@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "add-to-boot-menu"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 235,
+      "ypos": 239,
+      "width": 105,
+      "height": 26,
+      "type": "match"
+    }
+  ]
+}

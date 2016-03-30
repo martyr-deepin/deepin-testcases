@@ -1,16 +1,16 @@
 {
-  "properties": [],
   "tags": [
     "ENV-INSTLANG-zh_CN",
     "deepin-terminal-main-default"
   ],
+  "properties": [],
   "area": [
     {
-      "xpos": 181,
-      "ypos": 162,
-      "width": 662,
-      "height": 444,
-      "type": "match"
+      "height": 56,
+      "ypos": 152,
+      "width": 179,
+      "type": "match",
+      "xpos": 181
     }
   ]
 }

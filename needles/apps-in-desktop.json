@@ -1,0 +1,16 @@
+{
+  "area": [
+    {
+      "xpos": 20,
+      "ypos": 9,
+      "width": 87,
+      "height": 319,
+      "type": "match"
+    }
+  ],
+  "properties": [],
+  "tags": [
+    "apps-in-desktop",
+    "ENV-INSTLANG-zh_CN"
+  ]
+}

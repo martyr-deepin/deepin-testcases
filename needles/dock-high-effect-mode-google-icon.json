@@ -1,0 +1,16 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 8,
+      "ypos": 720,
+      "width": 587,
+      "height": 47,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "dock-high-effect-mode-google-icon"
+  ]
+}

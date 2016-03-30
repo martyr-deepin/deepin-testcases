@@ -1,0 +1,16 @@
+{
+  "area": [
+    {
+      "xpos": 6,
+      "height": 108,
+      "width": 108,
+      "type": "match",
+      "ypos": 121
+    }
+  ],
+  "properties": [],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "file-roller-checked"
+  ]
+}

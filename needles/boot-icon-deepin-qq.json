@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "boot-icon-deepin-qq"
+  ],
+  "area": [
+    {
+      "xpos": 178,
+      "ypos": 123,
+      "width": 69,
+      "height": 98,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

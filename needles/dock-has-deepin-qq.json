@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "dock-has-deepin-qq",
+    "ENV-INSTLANG-zh_CN"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 533,
+      "ypos": 693,
+      "width": 54,
+      "height": 60,
+      "type": "match"
+    }
+  ]
+}

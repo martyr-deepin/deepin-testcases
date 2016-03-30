@@ -1,16 +1,16 @@
 {
-  "properties": [],
   "area": [
     {
       "type": "match",
       "width": 80,
-      "height": 20,
       "ypos": 13,
-      "xpos": 932
+      "xpos": 932,
+      "height": 20
     }
   ],
   "tags": [
     "ENV-INSTLANG-zh_CN",
     "google-main-default"
-  ]
+  ],
+  "properties": []
 }

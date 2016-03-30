@@ -1,0 +1,16 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "type": "match",
+      "xpos": 0,
+      "width": 1017,
+      "ypos": 369,
+      "height": 399
+    }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "dock-always-hide"
+  ]
+}

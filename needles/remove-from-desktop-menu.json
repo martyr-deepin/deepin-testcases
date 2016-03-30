@@ -1,0 +1,16 @@
+{
+  "area": [
+    {
+      "xpos": 233,
+      "ypos": 195,
+      "width": 95,
+      "height": 25,
+      "type": "match"
+    }
+  ],
+  "properties": [],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "remove-from-desktop-menu"
+  ]
+}

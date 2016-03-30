@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "calculator-icon"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 482,
+      "ypos": 125,
+      "width": 60,
+      "height": 100,
+      "type": "match"
+    }
+  ]
+}

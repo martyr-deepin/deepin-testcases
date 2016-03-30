@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "hot-area-menu"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 24,
+      "ypos": 516,
+      "width": 77,
+      "height": 25,
+      "type": "match"
+    }
+  ]
+}

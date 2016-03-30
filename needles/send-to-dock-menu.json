@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "send-to-dock-menu"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 237,
+      "ypos": 210,
+      "width": 103,
+      "height": 25,
+      "type": "match"
+    }
+  ]
+}

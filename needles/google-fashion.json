@@ -1,0 +1,23 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "google-fashion"
+  ],
+  "area": [
+    {
+      "height": 48,
+      "ypos": 701,
+      "xpos": 463,
+      "width": 51,
+      "type": "match"
+    },
+    {
+      "ypos": 700,
+      "height": 20,
+      "width": 47,
+      "xpos": 465,
+      "type": "exclude"
+    }
+  ],
+  "properties": []
+}

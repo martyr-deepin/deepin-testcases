@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "file-menu",
+    "ENV-INSTLANG-zh_CN"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 668,
+      "ypos": 533,
+      "width": 65,
+      "height": 26,
+      "type": "match"
+    }
+  ]
+}

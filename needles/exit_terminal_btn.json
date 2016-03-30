@@ -1,0 +1,16 @@
+{
+  "area": [
+    {
+      "xpos": 649,
+      "ypos": 420,
+      "width": 77,
+      "height": 30,
+      "type": "match"
+    }
+  ],
+  "properties": [],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "exit_terminal_btn"
+  ]
+}

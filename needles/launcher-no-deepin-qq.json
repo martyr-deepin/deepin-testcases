@@ -1,0 +1,16 @@
+{
+  "area": [
+    {
+      "xpos": 91,
+      "ypos": 13,
+      "width": 900,
+      "height": 309,
+      "type": "match"
+    }
+  ],
+  "properties": [],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "launcher-no-deepin-qq"
+  ]
+}

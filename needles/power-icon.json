@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "power-icon"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 917,
+      "ypos": 676,
+      "width": 53,
+      "height": 53,
+      "type": "match"
+    }
+  ]
+}

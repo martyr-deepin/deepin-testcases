@@ -1,0 +1,17 @@
+{
+  "properties": [],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "launcher-icon-sort-menu"
+  ],
+  "area": [
+    {
+      "width": 88,
+      "xpos": 38,
+      "type": "match",
+      "ypos": 87,
+      "height": 132,
+      "match": 90
+    }
+  ]
+}

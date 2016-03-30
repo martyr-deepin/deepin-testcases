@@ -1,0 +1,16 @@
+{
+  "properties": [],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "google-classic"
+  ],
+  "area": [
+    {
+      "xpos": 322,
+      "ypos": 734,
+      "width": 36,
+      "height": 31,
+      "type": "match"
+    }
+  ]
+}

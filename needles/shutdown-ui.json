@@ -1,0 +1,16 @@
+{
+  "properties": [],
+  "tags": [
+    "shutdown-ui",
+    "ENV-INSTLANG-zh_CN"
+  ],
+  "area": [
+    {
+      "xpos": 4,
+      "ypos": 3,
+      "width": 1017,
+      "height": 759,
+      "type": "match"
+    }
+  ]
+}

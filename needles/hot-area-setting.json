@@ -1,0 +1,30 @@
+{
+  "area": [
+    {
+      "ypos": 6,
+      "type": "match",
+      "width": 1013,
+      "xpos": 10,
+      "height": 756
+    },
+    {
+      "xpos": 565,
+      "width": 103,
+      "ypos": 697,
+      "type": "exclude",
+      "height": 53
+    },
+    {
+      "height": 27,
+      "xpos": 778,
+      "type": "exclude",
+      "ypos": 710,
+      "width": 34
+    }
+  ],
+  "properties": [],
+  "tags": [
+    "hot-area-setting",
+    "ENV-INSTLANG-zh_CN"
+  ]
+}

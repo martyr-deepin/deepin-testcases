@@ -1,0 +1,16 @@
+{
+  "properties": [],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "google-high-effect"
+  ],
+  "area": [
+    {
+      "xpos": 419,
+      "ypos": 724,
+      "width": 52,
+      "height": 40,
+      "type": "match"
+    }
+  ]
+}

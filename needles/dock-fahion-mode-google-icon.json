@@ -1,0 +1,30 @@
+{
+  "properties": [],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "dock-fahion-mode-google-icon"
+  ],
+  "area": [
+    {
+      "width": 1019,
+      "xpos": 5,
+      "ypos": 4,
+      "height": 764,
+      "type": "match"
+    },
+    {
+      "type": "exclude",
+      "xpos": 562,
+      "width": 103,
+      "height": 50,
+      "ypos": 698
+    },
+    {
+      "type": "exclude",
+      "xpos": 777,
+      "width": 36,
+      "height": 28,
+      "ypos": 710
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "properties": [],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "effect-mode-default"
+  ],
+  "area": [
+    {
+      "xpos": 7,
+      "height": 46,
+      "width": 957,
+      "ypos": 720,
+      "type": "match"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "simple-scan-icon",
+    "ENV-INSTLANG-zh_CN"
+  ],
+  "area": [
+    {
+      "xpos": 176,
+      "ypos": 123,
+      "width": 73,
+      "height": 109,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "sort-by-icon"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "width": 79,
+      "ypos": 115,
+      "type": "match",
+      "height": 25,
+      "xpos": 45
+    }
+  ]
+}

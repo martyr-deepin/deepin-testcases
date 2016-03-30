@@ -1,0 +1,16 @@
+{
+  "area": [
+    {
+      "type": "match",
+      "height": 767,
+      "ypos": 0,
+      "width": 1019,
+      "xpos": 1
+    }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "dock-fashion-mode-icons"
+  ],
+  "properties": []
+}

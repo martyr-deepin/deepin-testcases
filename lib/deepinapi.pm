@@ -6,7 +6,7 @@ use base "Exporter";
 use testapi;
 
 our @EXPORT_OK = qw(open_tty run_on_tty start_program collect_logs install_from_local ensure_install download_local_file 
-                    open_dcc close_dcc refresh_dcc);
+                    open_dcc close_dcc refresh_dcc check_app_open );
 
 sub open_tty(;$){
 
@@ -52,7 +52,7 @@ sub run_on_tty($;$$$){
     my $script = shift;
     my $sudo = shift || 0;
     my $tty = shift || "f1";
-    my $timeout = shift || 60;
+    my $timeout = shift || 600;
 
     open_tty ($tty);
 
@@ -235,6 +235,16 @@ sub refresh_dcc($){
     assert_and_click $needle_dcc_module;
     assert_screen $needle_dcc_slider;    
 
+}
+
+sub check_app_open($$){
+    my $appname = shift;
+    my $appscreen = shift;
+    assert_and_click $appname;
+    save_screenshot;
+    sleep 2;
+    assert_screen $appscreen,100;
+    sleep 2;
 }
 
 1;

@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "remove-from-dock-menu"
+  ],
+  "area": [
+    {
+      "xpos": 234,
+      "ypos": 214,
+      "width": 103,
+      "height": 24,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

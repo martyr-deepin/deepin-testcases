@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "launcher"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "width": 51,
+      "xpos": 180,
+      "type": "match",
+      "height": 51,
+      "ypos": 695
+    }
+  ]
+}

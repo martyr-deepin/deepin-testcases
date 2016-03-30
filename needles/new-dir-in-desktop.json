@@ -1,0 +1,16 @@
+{
+  "area": [
+    {
+      "xpos": 16,
+      "ypos": 11,
+      "width": 88,
+      "height": 88,
+      "type": "match"
+    }
+  ],
+  "properties": [],
+  "tags": [
+    "new-dir-in-desktop",
+    "ENV-INSTLANG-zh_CN"
+  ]
+}

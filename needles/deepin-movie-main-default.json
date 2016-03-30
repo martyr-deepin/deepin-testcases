@@ -3,14 +3,14 @@
     "ENV-INSTLANG-zh_CN",
     "deepin-movie-main-default"
   ],
+  "properties": [],
   "area": [
     {
-      "xpos": 86,
-      "ypos": 97,
-      "width": 852,
-      "height": 571,
-      "type": "match"
+      "ypos": 287,
+      "xpos": 288,
+      "type": "match",
+      "width": 422,
+      "height": 183
     }
-  ],
-  "properties": []
+  ]
 }

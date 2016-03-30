@@ -1,0 +1,16 @@
+{
+  "properties": [],
+  "tags": [
+    "restart-checked",
+    "ENV-INSTLANG-zh_CN"
+  ],
+  "area": [
+    {
+      "xpos": 144,
+      "ypos": 299,
+      "width": 718,
+      "height": 184,
+      "type": "match"
+    }
+  ]
+}

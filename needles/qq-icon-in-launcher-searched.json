@@ -1,0 +1,16 @@
+{
+  "properties": [],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "qq-icon-in-launcher-searched"
+  ],
+  "area": [
+    {
+      "type": "match",
+      "width": 65,
+      "xpos": 181,
+      "ypos": 123,
+      "height": 92
+    }
+  ]
+}

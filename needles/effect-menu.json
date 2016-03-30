@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "effect-menu"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 753,
+      "ypos": 580,
+      "width": 61,
+      "height": 25,
+      "type": "match"
+    }
+  ]
+}

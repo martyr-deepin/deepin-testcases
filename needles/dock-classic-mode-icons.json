@@ -1,0 +1,23 @@
+{
+  "area": [
+    {
+      "type": "match",
+      "ypos": 4,
+      "height": 764,
+      "xpos": 2,
+      "width": 1020
+    },
+    {
+      "type": "exclude",
+      "ypos": 738,
+      "height": 24,
+      "width": 43,
+      "xpos": 967
+    }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "dock-classic-mode-icons"
+  ],
+  "properties": []
+}

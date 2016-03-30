@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "fashion-dock-blank"
+  ],
+  "area": [
+    {
+      "xpos": 866,
+      "ypos": 724,
+      "width": 27,
+      "height": 42,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

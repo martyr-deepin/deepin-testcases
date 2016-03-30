@@ -1,0 +1,16 @@
+{
+  "area": [
+    {
+      "xpos": 21,
+      "ypos": 12,
+      "width": 88,
+      "height": 85,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "deepin-qq-in-desktop",
+    "ENV-INSTLANG-zh_CN"
+  ],
+  "properties": []
+}

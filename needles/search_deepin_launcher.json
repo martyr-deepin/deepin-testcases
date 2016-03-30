@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "search_deepin_launcher"
+  ],
+  "area": [
+    {
+      "xpos": 170,
+      "ypos": 113,
+      "width": 684,
+      "height": 262,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

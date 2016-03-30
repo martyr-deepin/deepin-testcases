@@ -1,0 +1,16 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 152,
+      "ypos": 273,
+      "width": 772,
+      "height": 230,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "logout-checked",
+    "ENV-INSTLANG-zh_CN"
+  ]
+}

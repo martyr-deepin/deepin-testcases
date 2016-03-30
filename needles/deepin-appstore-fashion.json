@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "deepin-appstore-fashion"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "xpos": 311,
+      "ypos": 699,
+      "width": 48,
+      "height": 50,
+      "type": "match"
+    }
+  ]
+}

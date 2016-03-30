@@ -1,0 +1,16 @@
+{
+  "properties": [],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "classic-mode-default"
+  ],
+  "area": [
+    {
+      "height": 37,
+      "xpos": 2,
+      "type": "match",
+      "ypos": 729,
+      "width": 961
+    }
+  ]
+}

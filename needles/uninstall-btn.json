@@ -1,0 +1,16 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 583,
+      "ypos": 419,
+      "width": 42,
+      "height": 22,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "uninstall-btn"
+  ]
+}

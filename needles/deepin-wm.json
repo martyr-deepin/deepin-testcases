@@ -1,0 +1,17 @@
+{
+  "tags": [
+    "deepin-wm",
+    "ENV-INSTLANG-zh_CN"
+  ],
+  "area": [
+    {
+      "width": 52,
+      "height": 52,
+      "type": "match",
+      "xpos": 202,
+      "margin": 5,
+      "ypos": 696
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,17 @@
+{
+  "area": [
+    {
+      "type": "match",
+      "xpos": 12,
+      "match": 90,
+      "ypos": 726,
+      "width": 949,
+      "height": 37
+    }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "dock-high-effect-mode-default"
+  ],
+  "properties": []
+}

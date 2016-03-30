@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "shutdown-icon"
+  ],
+  "area": [
+    {
+      "xpos": 817,
+      "ypos": 679,
+      "width": 56,
+      "height": 56,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

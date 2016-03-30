@@ -1,0 +1,16 @@
+{
+  "properties": [],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "dock-classic-mode-default"
+  ],
+  "area": [
+    {
+      "width": 963,
+      "height": 33,
+      "xpos": 3,
+      "type": "match",
+      "ypos": 734
+    }
+  ]
+}

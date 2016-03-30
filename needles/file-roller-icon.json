@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "file-roller-icon"
+  ],
+  "area": [
+    {
+      "xpos": 382,
+      "ypos": 123,
+      "width": 65,
+      "height": 110,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

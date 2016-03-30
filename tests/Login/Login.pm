@@ -68,7 +68,7 @@ sub run {
     # login
     login;
 
-    ready_env;
+    #ready_env;
 }
 
 sub test_flags {

@@ -1,0 +1,16 @@
+{
+  "area": [
+    {
+      "xpos": 748,
+      "ypos": 573,
+      "width": 61,
+      "height": 24,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "ENV-INSTLANG-zh_CN",
+    "high-effect-menu"
+  ],
+  "properties": []
+}

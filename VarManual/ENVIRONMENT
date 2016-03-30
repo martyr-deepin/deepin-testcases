@@ -1,0 +1,5 @@
+说明：
+1.测试launcher,dock,session-ui,桌面组件
+默认：无
+使用方法：
+直接设置：ENVIRONMENT=1 即可
