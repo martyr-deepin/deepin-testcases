@@ -18,7 +18,14 @@ sub open_launcher{
 	mouse_set 100,100;
 	sleep 2;
 	send_key "super";
-	type_string "deepin-qq";	
+	sleep 2;
+	my $name = "deepin-qq";
+	my @array=split "", $name;
+	foreach my $ch(@array)
+	{
+		type_string $ch;
+		sleep 1;
+	}
 }
 
 sub step1{
@@ -85,7 +92,7 @@ sub step8{
 	assert_and_click "uninstall";
 	sleep 10;
 	assert_and_click "uninstall-btn";
-	sleep 15;
+	sleep 60;
 }
 
 sub step9{

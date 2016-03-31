@@ -1,16 +1,17 @@
 {
-  "properties": [],
-  "area": [
-    {
-      "type": "match",
-      "height": 89,
-      "ypos": 124,
-      "xpos": 188,
-      "width": 48
-    }
-  ],
   "tags": [
     "ENV-INSTLANG-zh_CN",
     "launcher-search-deepin-qq"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "width": 48,
+      "margin": 500,
+      "xpos": 188,
+      "type": "match",
+      "ypos": 124,
+      "height": 89
+    }
   ]
 }

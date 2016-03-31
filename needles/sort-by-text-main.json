@@ -1,16 +1,16 @@
 {
-  "properties": [],
-  "area": [
-    {
-      "xpos": 42,
-      "ypos": 29,
-      "width": 940,
-      "height": 635,
-      "type": "match"
-    }
-  ],
   "tags": [
     "ENV-INSTLANG-zh_CN",
     "sort-by-text-main"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "width": 863,
+      "height": 654,
+      "xpos": 28,
+      "type": "match",
+      "ypos": 26
+    }
   ]
 }

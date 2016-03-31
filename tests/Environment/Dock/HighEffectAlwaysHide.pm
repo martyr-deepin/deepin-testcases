@@ -19,7 +19,7 @@ sub step2 {
 	mouse_set 500,767;
 	sleep 2;
 	assert_screen "dock-high-effect-mode-default",60;
-	mouse_set 500,500;
+	mouse_set 100,100;
 	assert_screen "dock-always-hide",60;
 	send_key "super";
 	assert_screen "dock-high-effect-mode-default",60;

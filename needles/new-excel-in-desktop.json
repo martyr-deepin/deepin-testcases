@@ -3,14 +3,15 @@
     "new-excel-in-desktop",
     "ENV-INSTLANG-zh_CN"
   ],
+  "properties": [],
   "area": [
     {
-      "height": 42,
-      "ypos": 481,
+      "width": 39,
+      "margin": 500,
       "type": "match",
       "xpos": 41,
-      "width": 39
+      "ypos": 366,
+      "height": 42
     }
-  ],
-  "properties": []
+  ]
 }

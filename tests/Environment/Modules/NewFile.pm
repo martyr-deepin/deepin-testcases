@@ -9,6 +9,7 @@ sub new_file($;$){
 	if (check_screen "desktop-default",60){
 		mouse_click "right";
 		assert_and_hover "new-txt";
+		sleep 5;
 		save_screenshot;
 		assert_and_click $file_type;
 		mouse_click;
