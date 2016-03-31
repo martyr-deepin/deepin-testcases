@@ -173,6 +173,33 @@ sub loadOtherSoftwareTests{
     loadtest "OtherSoftware/YoudaoDict.pm";
 }
 
+sub loadEnvironmentTests{
+    #launcher
+    loadtest "Environment/Launcher/Start_up1.pm";
+    loadtest "Environment/Launcher/Start_up2.pm";
+    loadtest "Environment/Launcher/Start_up3.pm";
+    loadtest "Environment/Launcher/Start_up4.pm";
+    loadtest "Environment/Launcher/Search.pm";
+    loadtest "Environment/Launcher/Operation.pm";
+    #dock
+    loadtest "Environment/Dock/SwitchMode.pm";
+    loadtest "Environment/Dock/FashionAlwaysHide.pm";
+    loadtest "Environment/Dock/FashionIntelligent.pm";
+    loadtest "Environment/Dock/HighEffectAlwaysHide.pm";
+    loadtest "Environment/Dock/HighEffectIntelligent.pm";
+    loadtest "Environment/Dock/ClassicAlwaysHide.pm";
+    loadtest "Environment/Dock/ClassicIntelligent.pm";
+    #session-ui
+    loadtest "Environment/Session_ui/Restart.pm";
+    loadtest "Environment/Session_ui/Shutdown.pm";
+    loadtest "Environment/Session_ui/Logout.pm";
+    loadtest "Environment/Session_ui/Lock.pm";
+    #modules
+    loadtest "Environment/Modules/NewDir.pm";
+    loadtest "Environment/Modules/NewFile.pm";
+    loadtest "Environment/Modules/Sort.pm";
+}
+
 sub loadDockTests{
 
     loadtest "DeepinSoftware/DeepinDock.pm";
@@ -439,6 +466,12 @@ else{
     if (get_var("OTHERSOFTWARE")){
 
         loadOtherSoftwareTests;
+
+    }
+
+    if (get_var("ENVIRONMENT")){
+
+        loadEnvironmentTests;
 
     }
 
