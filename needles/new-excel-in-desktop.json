@@ -6,12 +6,11 @@
   "properties": [],
   "area": [
     {
-      "height": 42,
-      "xpos": 39,
-      "type": "match",
       "ypos": 479,
+      "xpos": 39,
       "width": 39,
-      "margin": 500
+      "height": 42,
+      "type": "match"
     }
   ]
 }

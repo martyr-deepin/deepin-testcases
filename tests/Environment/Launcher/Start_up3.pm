@@ -15,7 +15,7 @@ sub step1{
 		sleep 2;
 		mouse_click;
 		sleep 2;
-		mouse_set 1,767;
+		mouse_set 2,766;
 		assert_screen "launcher-start-up2015",60;
 		send_key "esc";
 		assert_screen "desktop-default",60;

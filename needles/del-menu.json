@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "del-menu",
+    "ENV-INSTLANG-zh_CN"
+  ],
+  "area": [
+    {
+      "xpos": 84,
+      "ypos": 216,
+      "width": 53,
+      "height": 25,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

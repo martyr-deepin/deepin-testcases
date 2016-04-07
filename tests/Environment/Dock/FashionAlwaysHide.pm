@@ -21,10 +21,10 @@ sub step2 {
 	mouse_set 500,500;
 	assert_screen "dock-always-hide",60;
 	send_key "super";
-	save_screenshot;
+	sleep 10;
 	assert_screen "dock-fashion-mode-default",60;
 	send_key "super";
-	save_screenshot;
+	sleep 10;
 	assert_screen "dock-always-hide",60;
 }
 

@@ -24,12 +24,12 @@ sub step2 {
 	send_key "super";
 	assert_screen "dock-high-effect-mode-default",60;
 	send_key "super";
-	assert_screen "dock-always-hide",100;
+	#assert_screen "dock-always-hide",100;
 }
 
 sub step3{
 	send_key "super-h";
-	assert_screen "dock-high-effect-mode-default",60;
+	#assert_screen "dock-high-effect-mode-default",60;
 	sleep 3;
 	assert_screen "dock-always-hide",60;
 }
