@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "txt-main",
+    "ENV-INSTLANG-zh_CN"
+  ],
+  "area": [
+    {
+      "xpos": 87,
+      "ypos": 15,
+      "width": 850,
+      "height": 41,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

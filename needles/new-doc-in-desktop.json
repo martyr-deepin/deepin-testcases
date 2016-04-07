@@ -1,16 +1,17 @@
 {
+  "area": [
+    {
+      "type": "match",
+      "ypos": 245,
+      "xpos": 36,
+      "margin": 500,
+      "width": 46,
+      "height": 70
+    }
+  ],
+  "properties": [],
   "tags": [
     "new-doc-in-desktop",
     "ENV-INSTLANG-zh_CN"
-  ],
-  "properties": [],
-  "area": [
-    {
-      "xpos": 30,
-      "ypos": 126,
-      "width": 64,
-      "height": 78,
-      "type": "match"
-    }
   ]
 }

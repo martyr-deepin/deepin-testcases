@@ -1,15 +1,15 @@
 {
   "tags": [
-    "new-dir-in-desktop",
+    "by-time-menu",
     "ENV-INSTLANG-zh_CN"
   ],
   "properties": [],
   "area": [
     {
-      "xpos": 38,
-      "height": 36,
-      "width": 43,
-      "ypos": 22,
+      "xpos": 671,
+      "ypos": 628,
+      "width": 98,
+      "height": 27,
       "type": "match"
     }
   ]

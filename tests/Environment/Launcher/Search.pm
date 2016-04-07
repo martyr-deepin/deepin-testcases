@@ -32,7 +32,7 @@ sub step2{
 	launcher_sort_by "sort-by-icon","sort-by-icon-main";
 	launcher_sort_by "sort-by-text","sort-by-text-main";
 	#launcher_sort_by "sort-by-time","sort-by-time-main";
-	launcher_sort_by "sort-by-frequency","sort-by-frequency-main";
+	#launcher_sort_by "sort-by-frequency","sort-by-frequency-main";
 }
 
 sub teardown{

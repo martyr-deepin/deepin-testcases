@@ -1,0 +1,16 @@
+{
+  "tags": [
+    "all-checked",
+    "ENV-INSTLANG-zh_CN"
+  ],
+  "area": [
+    {
+      "xpos": 4,
+      "ypos": 7,
+      "width": 116,
+      "height": 576,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

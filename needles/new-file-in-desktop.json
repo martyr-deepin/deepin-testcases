@@ -1,16 +1,17 @@
 {
-  "area": [
-    {
-      "xpos": 25,
-      "ypos": 15,
-      "width": 75,
-      "height": 79,
-      "type": "match"
-    }
-  ],
-  "properties": [],
   "tags": [
     "ENV-INSTLANG-zh_CN",
     "new-file-in-desktop"
+  ],
+  "properties": [],
+  "area": [
+    {
+      "ypos": 23,
+      "type": "match",
+      "xpos": 43,
+      "margin": 500,
+      "width": 33,
+      "height": 35
+    }
   ]
 }

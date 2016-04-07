@@ -1,16 +1,17 @@
 {
-  "tags": [
-    "new-excel-in-desktop",
-    "ENV-INSTLANG-zh_CN"
-  ],
   "properties": [],
   "area": [
     {
-      "ypos": 479,
       "xpos": 39,
-      "width": 39,
+      "margin": 500,
       "height": 42,
+      "width": 39,
+      "ypos": 479,
       "type": "match"
     }
+  ],
+  "tags": [
+    "new-excel-in-desktop",
+    "ENV-INSTLANG-zh_CN"
   ]
 }
