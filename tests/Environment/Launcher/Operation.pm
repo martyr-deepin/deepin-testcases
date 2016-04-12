@@ -9,7 +9,7 @@ sub open_launcher_and_search{
 	sleep 2;
 	type_string "deepin-qq";
 	sleep 5;
-	assert_screen "launcher-search-deepin-qq",60;
+	assert_screen "launcher-search-deepin-qq",100;
 	assert_and_click "qq-icon-in-launcher-searched","right";
 	
 }
@@ -97,7 +97,7 @@ sub step8{
 
 sub step9{
 	open_launcher;
-	assert_screen "launcher-no-deepin-qq",60;
+	assert_screen "launcher-no-deepin-qq",200;
 }
 
 sub teardown{

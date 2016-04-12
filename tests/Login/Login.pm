@@ -23,7 +23,7 @@ use deepinapi qw(install_from_local run_on_tty);
 sub login{
 
     # login screen
-    assert_screen "login2015", 100;
+    assert_screen "login2015", 150;
 
     my $userpwd = "deepin";
 

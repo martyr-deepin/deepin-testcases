@@ -3,14 +3,14 @@
     "ENV-INSTLANG-zh_CN",
     "sort-by-text-main"
   ],
-  "properties": [],
   "area": [
     {
-      "width": 863,
-      "height": 654,
+      "ypos": 26,
+      "height": 233,
       "xpos": 28,
-      "type": "match",
-      "ypos": 26
+      "width": 330,
+      "type": "match"
     }
-  ]
+  ],
+  "properties": []
 }

@@ -10,6 +10,7 @@ sub launcher_sort_by($;$){
 	my $sort_launcher = shift;
 	assert_and_click $sort;
 	mouse_set 30,30;
+	sleep 5;
 	assert_screen $sort_launcher,60;
 	type_string "deepin";
 	assert_screen "search_deepin_launcher",60;
