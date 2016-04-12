@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-mouse-right-button-highlight"
+  ],
+  "area": [
+    {
+      "xpos": 984,
+      "ypos": 60,
+      "width": 32,
+      "height": 20,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

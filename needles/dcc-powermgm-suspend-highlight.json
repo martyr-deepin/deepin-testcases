@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 863,
+      "ypos": 86,
+      "width": 30,
+      "height": 19,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-powermgm-suspend-highlight"
+  ],
+  "properties": []
+}

@@ -17,26 +17,122 @@
 use base "softwarebasetest";
 use strict;
 use testapi;
+use deepinapi qw( open_dcc close_dcc refresh_dcc );
+
+sub close_dcc_keyboard_caps_lock {
+
+    assert_and_click 'dcc-keyboard-caps-lock-button-on';
+    mouse_hide;
+    sleep 1;
+    assert_screen 'dcc-keyboard-caps-lock-button-off';
+    refresh_dcc 'keyboard';
+    assert_screen 'dcc-keyboard-caps-lock-button-off';
+
+}
+
+sub open_dcc_keyboard_caps_lock {
+
+    assert_and_click 'dcc-keyboard-caps-lock-button-off';
+    mouse_hide;
+    sleep 1;
+    assert_screen 'dcc-keyboard-caps-lock-button-on';
+    refresh_dcc 'keyboard';
+    assert_screen 'dcc-keyboard-caps-lock-button-on';
+
+}
+
+sub test_dcc_keyboard_caps_lock {
+
+    close_dcc_keyboard_caps_lock;
+    assert_and_click 'dcc-keyboard-reset';
+    mouse_hide;
+    sleep 1;
+    assert_screen 'dcc-keyboard-snapshot';
+    close_dcc_keyboard_caps_lock;
+    open_dcc_keyboard_caps_lock;
+    assert_screen 'dcc-keyboard-snapshot';
+
+}
+
+sub click_dcc_keyboard_layout_button_add {
+
+    assert_and_click 'dcc-keyboard-layout-button-add';
+    mouse_hide;
+    sleep 1;
+    assert_screen 'dcc-keyboard-layout-detail';
+
+}
+
+sub click_dcc_keyboard_layout_button_del {
+
+    assert_and_click 'dcc-keyboard-layout-button-del';
+    mouse_hide;
+    sleep 1;
+    assert_screen 'dcc-keyboard-layout-button-del-confirm';
+
+}
+
+sub add_dcc_keyboard_layout {
+
+    click_dcc_keyboard_layout_button_add;
+    assert_and_click 'dcc-keyboard-layout-afghanistan';
+    assert_and_click 'dcc-keyboard-layout-add-confirm';
+    mouse_hide;
+    sleep 1;
+    assert_screen 'dcc-keyboard-layout-afghanistan-added';
+    refresh_dcc 'keyboard';
+    assert_screen 'dcc-keyboard-layout-afghanistan-added';
+
+}
+
+sub del_dcc_keyboard_layout {
+
+    click_dcc_keyboard_layout_button_del;
+    assert_and_click 'dcc-keyboard-layout-afghanistan-del';
+    mouse_hide;
+    sleep 1;
+    assert_and_click 'dcc-keyboard-layout-button-del-confirm';
+    mouse_hide;
+    sleep 1;
+    assert_screen 'dcc-keyboard-snapshot';
+    refresh_dcc 'keyboard';
+    assert_screen 'dcc-keyboard-snapshot';
+
+}
+
+sub test_dcc_keyboard_layout {
+
+    add_dcc_keyboard_layout;
+    del_dcc_keyboard_layout;
+
+}
+
+sub test_dcc_keyboard_language {
+
+    assert_and_click 'dcc-keyboard-language-button';
+    mouse_hide;
+    sleep 1;
+    assert_screen 'dcc-keyboard-language-detail';
+    assert_and_click 'dcc-keyboard-language-search';
+    mouse_hide;
+    sleep 1;
+    type_string 'english';
+    assert_screen 'dcc-keyboard-language-search-english';
+    assert_and_click 'dcc-keyboard-language-button';
+    mouse_hide;
+    sleep 1;
+    assert_screen 'dcc-keyboard-snapshot';
+
+}
 
 sub run {
-    # show controlcenter
-    mouse_set 100, 100;
-    mouse_set 1023, 767;
 
-    # click btn on the mainpage of controlcenter
-    assert_screen "dcc-main-keyboard", 10;
-    assert_and_click "dcc-main-keyboard";
-    sleep 2;
-
-    assert_screen "dcc-slider-keyboard", 10;
-
-    assert_screen "dcc-backtohome-btn", 10;
-    assert_and_click "dcc-backtohome-btn";
-    sleep 5;
-    mouse_set 100, 100;
-    mouse_click;
-    sleep 5;
-    save_screenshot;
+    open_dcc 'keyboard';
+    assert_screen 'dcc-keyboard-snapshot';
+    test_dcc_keyboard_caps_lock;
+    test_dcc_keyboard_layout;
+    test_dcc_keyboard_language;
+    close_dcc;
 
 }
 

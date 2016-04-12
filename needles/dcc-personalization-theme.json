@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-personalization-theme"
+  ],
+  "area": [
+    {
+      "xpos": 724,
+      "ypos": 56,
+      "width": 35,
+      "height": 20,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

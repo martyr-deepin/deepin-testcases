@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 90,
+      "ypos": 309,
+      "width": 37,
+      "height": 36,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-datetime-synchronization-confirm"
+  ],
+  "properties": []
+}

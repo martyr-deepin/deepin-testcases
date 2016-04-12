@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 935,
+      "ypos": 10,
+      "width": 76,
+      "height": 28,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-keyboard-reset"
+  ],
+  "properties": []
+}

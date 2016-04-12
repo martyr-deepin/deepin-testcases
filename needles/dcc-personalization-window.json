@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 725,
+      "ypos": 90,
+      "width": 29,
+      "height": 19,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-personalization-window"
+  ]
+}

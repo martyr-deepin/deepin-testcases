@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 771,
+      "ypos": 239,
+      "width": 43,
+      "height": 19,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-powermgm-plugged-in-high-performance"
+  ]
+}

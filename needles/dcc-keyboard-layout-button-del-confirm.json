@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 935,
+      "ypos": 250,
+      "width": 79,
+      "height": 27,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-keyboard-layout-button-del-confirm"
+  ],
+  "properties": []
+}

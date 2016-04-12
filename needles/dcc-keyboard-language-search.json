@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-keyboard-language-search"
+  ],
+  "area": [
+    {
+      "xpos": 840,
+      "ypos": 350,
+      "width": 60,
+      "height": 31,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

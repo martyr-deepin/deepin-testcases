@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-network-wirenetwork-detail-ipv6"
+  ],
+  "area": [
+    {
+      "xpos": 724,
+      "ypos": 278,
+      "width": 34,
+      "height": 19,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

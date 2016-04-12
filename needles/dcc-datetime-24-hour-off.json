@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 718,
+      "ypos": 206,
+      "width": 300,
+      "height": 111,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-datetime-24-hour-off"
+  ]
+}

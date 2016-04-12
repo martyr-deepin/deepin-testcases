@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 966,
+      "ypos": 46,
+      "width": 49,
+      "height": 27,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-network-wirenetwork-button-on"
+  ],
+  "properties": []
+}

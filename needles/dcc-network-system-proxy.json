@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 724,
+      "ypos": 117,
+      "width": 56,
+      "height": 19,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-network-system-proxy"
+  ]
+}

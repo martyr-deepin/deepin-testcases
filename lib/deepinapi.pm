@@ -211,6 +211,8 @@ sub open_dcc($){
     mouse_set 1023, 767;
     assert_screen $needle_dcc_main;
     assert_and_click $needle_dcc_module;
+    mouse_hide;
+    sleep 1;
     assert_screen $needle_dcc_slider;
 
 }
@@ -233,6 +235,8 @@ sub refresh_dcc($){
     assert_and_click "dcc-backtohome-btn";
     assert_screen "dcc-main-area";
     assert_and_click $needle_dcc_module;
+    mouse_hide;
+    sleep 1;
     assert_screen $needle_dcc_slider;    
 
 }

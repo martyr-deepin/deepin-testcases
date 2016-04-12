@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 969,
+      "ypos": 217,
+      "width": 45,
+      "height": 21,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-keyboard-caps-lock-button-on"
+  ]
+}

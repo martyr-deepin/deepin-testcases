@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-powermgm-shutdown-highlight"
+  ],
+  "area": [
+    {
+      "xpos": 749,
+      "ypos": 84,
+      "width": 39,
+      "height": 20,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

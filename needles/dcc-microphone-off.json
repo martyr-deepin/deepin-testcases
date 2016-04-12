@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 722,
+      "ypos": 6,
+      "width": 289,
+      "height": 367,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-microphone-off"
+  ]
+}

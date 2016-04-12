@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "dcc-network-infor"
+  ],
+  "area": [
+    {
+      "xpos": 983,
+      "ypos": 6,
+      "width": 29,
+      "height": 27,
+      "type": "match"
+    }
+  ]
+}

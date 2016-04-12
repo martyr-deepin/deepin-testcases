@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 937,
+      "ypos": 208,
+      "width": 75,
+      "height": 26,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-datetime-timezone-add-confirm"
+  ]
+}

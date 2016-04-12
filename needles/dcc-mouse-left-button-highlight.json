@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 943,
+      "ypos": 58,
+      "width": 37,
+      "height": 24,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-mouse-left-button-highlight"
+  ],
+  "properties": []
+}

@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "dcc-personalization-cursor"
+  ],
+  "area": [
+    {
+      "xpos": 724,
+      "ypos": 155,
+      "width": 32,
+      "height": 17,
+      "type": "match"
+    }
+  ]
+}

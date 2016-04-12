@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-network-wirenetwork-detail-save"
+  ],
+  "area": [
+    {
+      "xpos": 938,
+      "ypos": 311,
+      "width": 73,
+      "height": 29,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

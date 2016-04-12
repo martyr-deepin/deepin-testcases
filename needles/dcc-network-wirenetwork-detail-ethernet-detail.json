@@ -1,0 +1,22 @@
+{
+  "tags": [
+    "dcc-network-wirenetwork-detail-ethernet-detail"
+  ],
+  "area": [
+    {
+      "xpos": 725,
+      "ypos": 137,
+      "width": 292,
+      "height": 98,
+      "type": "match"
+    },
+    {
+      "xpos": 816,
+      "ypos": 140,
+      "width": 129,
+      "height": 26,
+      "type": "exclude"
+    }
+  ],
+  "properties": []
+}

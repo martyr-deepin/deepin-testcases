@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-network-wirenetwork-detail-secure-detail"
+  ],
+  "area": [
+    {
+      "xpos": 725,
+      "ypos": 172,
+      "width": 288,
+      "height": 26,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

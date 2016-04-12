@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-network-infor-cancel"
+  ],
+  "area": [
+    {
+      "xpos": 936,
+      "ypos": 112,
+      "width": 76,
+      "height": 26,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 860,
+      "ypos": 312,
+      "width": 77,
+      "height": 28,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-network-wirenetwork-detail-cancel"
+  ]
+}

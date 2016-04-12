@@ -1,0 +1,16 @@
+{
+  "area": [
+    {
+      "margin": 1,
+      "ypos": 207,
+      "height": 28,
+      "type": "match",
+      "xpos": 965,
+      "width": 53
+    }
+  ],
+  "tags": [
+    "dcc-datetime-24-hour-button-on"
+  ],
+  "properties": []
+}

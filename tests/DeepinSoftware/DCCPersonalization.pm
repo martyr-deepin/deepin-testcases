@@ -17,26 +17,28 @@
 use base "softwarebasetest";
 use strict;
 use testapi;
+use deepinapi qw( open_dcc close_dcc refresh_dcc );
+
+our @itemlist = qw( theme window icon cursor wallpaper fonts );
 
 sub run {
-    # show controlcenter
-    mouse_set 100, 100;
-    mouse_set 1023, 767;
 
-    # click btn on the mainpage of controlcenter
-    assert_screen "dcc-main-personalization", 10;
-    assert_and_click "dcc-main-personalization";
-    sleep 2;
+    open_dcc 'personalization';
+    assert_screen 'dcc-personalization-snapshot';
 
-    assert_screen "dcc-slider-personalization", 10;
-    
-    assert_screen "dcc-backtohome-btn", 10;
-    assert_and_click "dcc-backtohome-btn";
-    sleep 5;
-    mouse_set 100, 100;
-    mouse_click;
-    sleep 5;
-    save_screenshot;
+    assert_and_click 'dcc-personalization-theme';
+    mouse_set 1023, 0;
+
+    foreach my $item (@itemlist) {
+
+        assert_and_click 'dcc-personalization-'.$item;
+        assert_screen    'dcc-personalization-'.$item.'-detail';
+        mouse_click;
+        sleep 4;
+
+    }
+
+    close_dcc;
 
 }
 

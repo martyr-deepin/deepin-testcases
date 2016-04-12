@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-microphone-button-on"
+  ],
+  "area": [
+    {
+      "xpos": 969,
+      "ypos": 200,
+      "width": 45,
+      "height": 28,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

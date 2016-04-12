@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "dcc-datetime-synchronization-button-on"
+  ],
+  "area": [
+    {
+      "xpos": 970,
+      "ypos": 208,
+      "width": 43,
+      "height": 25,
+      "type": "match"
+    }
+  ]
+}

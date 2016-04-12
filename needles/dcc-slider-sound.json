@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-slider-sound"
+  ],
+  "area": [
+    {
+      "ypos": 331,
+      "type": "match",
+      "xpos": 671,
+      "height": 30,
+      "width": 33
+    }
+  ],
+  "properties": []
+}

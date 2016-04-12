@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-powermgm-plugged-in-balanced"
+  ],
+  "area": [
+    {
+      "xpos": 773,
+      "ypos": 209,
+      "width": 42,
+      "height": 18,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

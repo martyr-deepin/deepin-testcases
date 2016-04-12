@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-network-wirenetwork-off"
+  ],
+  "area": [
+    {
+      "xpos": 721,
+      "ypos": 43,
+      "width": 90,
+      "height": 84,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

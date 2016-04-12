@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-mouse-reset"
+  ],
+  "area": [
+    {
+      "xpos": 939,
+      "ypos": 11,
+      "width": 71,
+      "height": 24,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

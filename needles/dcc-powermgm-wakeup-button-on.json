@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "dcc-powermgm-wakeup-button-on"
+  ],
+  "area": [
+    {
+      "xpos": 969,
+      "ypos": 114,
+      "width": 44,
+      "height": 24,
+      "type": "match"
+    }
+  ]
+}

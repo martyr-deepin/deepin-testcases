@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-powermgm-ask"
+  ],
+  "area": [
+    {
+      "xpos": 974,
+      "ypos": 88,
+      "width": 29,
+      "height": 15,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

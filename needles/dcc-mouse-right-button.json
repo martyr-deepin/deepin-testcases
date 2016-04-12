@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 985,
+      "ypos": 57,
+      "width": 32,
+      "height": 26,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-mouse-right-button"
+  ]
+}

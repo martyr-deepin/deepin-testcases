@@ -1,0 +1,22 @@
+{
+  "properties": [],
+  "tags": [
+    "dcc-network-add-detail"
+  ],
+  "area": [
+    {
+      "xpos": 721,
+      "ypos": 8,
+      "width": 295,
+      "height": 164,
+      "type": "match"
+    },
+    {
+      "xpos": 951,
+      "ypos": 11,
+      "width": 38,
+      "height": 36,
+      "type": "exclude"
+    }
+  ]
+}

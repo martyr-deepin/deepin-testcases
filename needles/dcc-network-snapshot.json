@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-network-snapshot"
+  ],
+  "area": [
+    {
+      "xpos": 720,
+      "ypos": 7,
+      "width": 301,
+      "height": 227,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

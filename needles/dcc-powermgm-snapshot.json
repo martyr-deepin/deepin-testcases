@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-powermgm-snapshot"
+  ],
+  "area": [
+    {
+      "xpos": 722,
+      "ypos": 10,
+      "width": 289,
+      "height": 308,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

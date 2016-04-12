@@ -17,26 +17,166 @@
 use base "softwarebasetest";
 use strict;
 use testapi;
+use deepinapi qw( open_dcc close_dcc refresh_dcc );
+
+our $userpwd = "deepin";
+
+sub click_dcc_datetime_synchronization_button($) {
+
+    my $type = shift;
+    if ( 'off' eq $type) {
+        assert_and_click 'dcc-datetime-synchronization-button-off';
+        mouse_hide;
+        sleep 1;
+    }
+
+    if ( 'on' eq $type) {
+        assert_and_click 'dcc-datetime-synchronization-button-on';
+        mouse_hide;
+        sleep 1;
+    }
+
+}
+
+sub close_dcc_datetime_synchronization {
+
+    click_dcc_datetime_synchronization_button 'on';
+    mouse_hide;
+    sleep 1;
+    # assert_screen 'dcc-datetime-synchronization-off';
+    if (check_screen 'dcc-datetime-synchronization-confirm', 10) {
+        #assert_and_click 'dcc-datetime-synchronization-confirm';
+        if (get_var("USERPWD")){
+            $userpwd = get_var("USERPWD");
+        }
+        type_string $userpwd;
+        sleep 2;
+        send_key "ret";
+        assert_screen 'dcc-datetime-synchronization-off';
+    } else {
+        assert_screen 'dcc-datetime-synchronization-off';
+    }
+
+}
+
+sub open_dcc_datetime_synchronization {
+
+    click_dcc_datetime_synchronization_button 'off';
+    mouse_hide;
+    sleep 1;
+    assert_screen 'dcc-datetime-snapshot';
+
+}
+
+sub test_dcc_datetime_synchronization {
+
+    close_dcc_datetime_synchronization;
+    open_dcc_datetime_synchronization;
+
+}
+
+sub click_dcc_datetime_24_hour_button($) {
+
+    my $type = shift;
+    if ( 'off' eq $type) {
+        # assert_and_click 'dcc-datetime-24-hour-button-off';
+        mouse_set 988, 261;
+        mouse_click;
+        mouse_hide;
+        sleep 1;
+    }
+
+    if ( 'on' eq $type) {
+        # assert_and_click 'dcc-datetime-24-hour-button-on';
+        mouse_set 988, 261;
+        mouse_click;
+        mouse_hide;
+        sleep 1;
+    }
+
+}
+
+sub close_dcc_datetime_24_hour {
+
+    click_dcc_datetime_24_hour_button 'on';
+    mouse_hide;
+    sleep 1;
+    assert_screen 'dcc-datetime-24-hour-off';
+
+}
+
+sub open_dcc_datetime_24_hour {
+
+    click_dcc_datetime_24_hour_button 'off';
+    mouse_hide;
+    sleep 1;
+    assert_screen 'dcc-datetime-snapshot';
+
+}
+
+sub test_dcc_datetime_24_hour {
+
+    close_dcc_datetime_24_hour;
+    open_dcc_datetime_24_hour;
+
+}
+
+sub click_dcc_datetime_timezone_add_button {
+
+    assert_and_click 'dcc-datetime-timezone-add-button';
+    mouse_hide;
+    sleep 1;
+
+}
+
+sub click_dcc_datetime_timezone_del_button {
+
+    assert_and_click 'dcc-datetime-timezone-del-button';
+    mouse_hide;
+    sleep 1;
+
+}
+
+sub add_dcc_datetime_timezone {
+
+    click_dcc_datetime_timezone_add_button;
+    assert_screen 'dcc-datetime-timezone-detail';
+    assert_and_click 'dcc-datetime-timezone-niue';
+    assert_screen 'dcc-datetime-timezone-add-confirm';
+    assert_and_click 'dcc-datetime-timezone-add-confirm';
+    mouse_hide;
+    sleep 1;
+    assert_screen 'dcc-datetime-timezone-niue-added';
+
+}
+
+sub del_dcc_datetime_timezone {
+
+    click_dcc_datetime_timezone_del_button;
+    assert_screen    'dcc-datetime-timezone-del-confirm';
+    assert_and_click 'dcc-datetime-timezone-niue-del-button';
+    assert_and_click 'dcc-datetime-timezone-del-confirm';
+    mouse_hide;
+    sleep 1;
+
+}
+
+sub test_dcc_datetime_timezone {
+
+    add_dcc_datetime_timezone;
+    del_dcc_datetime_timezone;
+
+}
 
 sub run {
-    # show controlcenter
-    mouse_set 100, 100;    
-    mouse_set 1023, 767;
 
-    # click btn on the mainpage of controlcenter
-    assert_screen "dcc-main-datetime", 10;
-    assert_and_click "dcc-main-datetime";
-    sleep 2;
-
-    assert_screen "dcc-slider-datetime", 10;
-
-    assert_screen "dcc-backtohome-btn", 10;
-    assert_and_click "dcc-backtohome-btn";
-    sleep 5;
-    mouse_set 100, 100;
-    mouse_click;
-    sleep 5;
-    save_screenshot;
+    open_dcc 'datetime';
+    assert_screen 'dcc-datetime-snapshot';
+    test_dcc_datetime_synchronization;
+    test_dcc_datetime_24_hour;
+    test_dcc_datetime_timezone;
+    assert_screen 'dcc-datetime-snapshot';
+    close_dcc;
 
 }
 

@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "dcc-network-infor-wire-connection"
+  ],
+  "area": [
+    {
+      "xpos": 722,
+      "ypos": 76,
+      "width": 60,
+      "height": 21,
+      "type": "match"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-network-detail-next"
+  ],
+  "area": [
+    {
+      "xpos": 938,
+      "ypos": 138,
+      "width": 72,
+      "height": 23,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

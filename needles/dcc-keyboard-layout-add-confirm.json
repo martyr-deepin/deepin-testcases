@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "dcc-keyboard-layout-add-confirm"
+  ],
+  "area": [
+    {
+      "xpos": 937,
+      "ypos": 250,
+      "width": 76,
+      "height": 24,
+      "type": "match"
+    }
+  ]
+}

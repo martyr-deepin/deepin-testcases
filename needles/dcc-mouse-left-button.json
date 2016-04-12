@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "dcc-mouse-left-button"
+  ],
+  "area": [
+    {
+      "xpos": 945,
+      "ypos": 59,
+      "width": 34,
+      "height": 22,
+      "type": "match"
+    }
+  ]
+}

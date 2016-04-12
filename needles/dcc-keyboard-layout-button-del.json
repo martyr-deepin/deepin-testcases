@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-keyboard-layout-button-del"
+  ],
+  "area": [
+    {
+      "xpos": 956,
+      "ypos": 252,
+      "width": 29,
+      "height": 23,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

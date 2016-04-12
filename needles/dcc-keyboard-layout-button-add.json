@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 985,
+      "ypos": 251,
+      "width": 29,
+      "height": 25,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-keyboard-layout-button-add"
+  ],
+  "properties": []
+}

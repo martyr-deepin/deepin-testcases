@@ -1,0 +1,29 @@
+{
+  "tags": [
+    "dcc-datetime-snapshot"
+  ],
+  "area": [
+    {
+      "xpos": 719,
+      "ypos": 7,
+      "width": 301,
+      "height": 483,
+      "type": "match"
+    },
+    {
+      "xpos": 767,
+      "ypos": 51,
+      "width": 204,
+      "height": 146,
+      "type": "exclude"
+    },
+    {
+      "xpos": 722,
+      "ypos": 412,
+      "width": 174,
+      "height": 52,
+      "type": "exclude"
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-powermgm-plugged-in-custom"
+  ],
+  "area": [
+    {
+      "xpos": 929,
+      "ypos": 238,
+      "width": 52,
+      "height": 20,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

@@ -17,26 +17,49 @@
 use base "softwarebasetest";
 use strict;
 use testapi;
+use deepinapi qw( open_dcc close_dcc refresh_dcc );
+
+sub click_dcc_mouse_left_button {
+
+    assert_and_click 'dcc-mouse-left-button';
+    mouse_hide;
+    sleep 1;
+    assert_screen 'dcc-mouse-left-button-highlight';
+    refresh_dcc 'mouse';
+    assert_screen 'dcc-mouse-left-button-highlight';
+
+}
+
+sub click_dcc_mouse_right_button {
+
+    assert_and_click 'dcc-mouse-right-button';
+    mouse_hide;
+    sleep 1;
+    assert_screen 'dcc-mouse-right-button-highlight';
+    refresh_dcc 'mouse';
+    assert_screen 'dcc-mouse-right-button-highlight';
+
+}
+
+sub click_dcc_mouse_reset {
+
+    assert_and_click 'dcc-mouse-reset';
+    mouse_hide;
+    sleep 1;
+
+}
 
 sub run {
-    # show controlcenter
-    mouse_set 100, 100;
-    mouse_set 1023, 767;
 
-    # click btn on the mainpage of controlcenter
-    assert_screen "dcc-main-mouse", 10;
-    assert_and_click "dcc-main-mouse";
-    sleep 2;
-
-    assert_screen "dcc-slider-mouse", 10;
-
-    assert_screen "dcc-backtohome-btn", 10;
-    assert_and_click "dcc-backtohome-btn";
-    sleep 5;
-    mouse_set 100, 100;
-    mouse_click;
-    sleep 5;
-    save_screenshot;
+    open_dcc 'mouse';
+    assert_screen 'dcc-mouse-snapshot';
+    click_dcc_mouse_right_button;
+    click_dcc_mouse_reset;
+    assert_screen 'dcc-mouse-snapshot';
+    click_dcc_mouse_right_button;
+    click_dcc_mouse_left_button;
+    assert_screen 'dcc-mouse-snapshot';
+    close_dcc;
 
 }
 

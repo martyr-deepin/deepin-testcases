@@ -17,26 +17,72 @@
 use base "softwarebasetest";
 use strict;
 use testapi;
+use deepinapi qw( open_dcc close_dcc refresh_dcc );
+
+
+sub test_dcc_powermgm_keydown($) {
+
+    my $type = shift;
+    assert_and_click 'dcc-powermgm-'.$type;
+    mouse_hide;
+    sleep 1;
+    assert_screen    'dcc-powermgm-'.$type.'-highlight';
+    refresh_dcc 'powermgm';
+    assert_screen    'dcc-powermgm-'.$type.'-highlight';
+
+}
+
+sub click_dcc_powermgm_wakeup_button($) {
+
+    my $type = shift;
+    if ( 'on' eq $type ) {
+        assert_and_click 'dcc-powermgm-wakeup-button-'.$type;
+        mouse_hide;
+        sleep 1;
+        assert_screen 'dcc-powermgm-wakeup-button-off';
+    }
+
+    if ( 'off' eq $type ) {
+        assert_and_click 'dcc-powermgm-wakeup-button-'.$type;
+        mouse_hide;
+        sleep 1;
+        assert_screen 'dcc-powermgm-wakeup-button-on';
+    }
+
+}
+
+sub test_dcc_powermgm_wakeup {
+
+    click_dcc_powermgm_wakeup_button 'on';
+    click_dcc_powermgm_wakeup_button 'off';
+
+}
+
+sub test_dcc_powermgm_plugged_in($) {
+
+    my $type = shift;
+    assert_and_click 'dcc-powermgm-plugged-in-'.$type;
+    mouse_hide;
+    sleep 1;
+    assert_screen    'dcc-powermgm-plugged-in-'.$type.'-highlight';
+    refresh_dcc 'powermgm';
+    assert_screen    'dcc-powermgm-plugged-in-'.$type.'-highlight';
+
+}
 
 sub run {
-    # show controlcenter
-    mouse_set 100, 100;
-    mouse_set 1023, 767;
 
-    # click btn on the mainpage of controlcenter
-    assert_screen "dcc-main-powermgm", 10;
-    assert_and_click "dcc-main-powermgm";
-    sleep 2;
-
-    assert_screen "dcc-slider-powermgm", 10;
-
-    assert_screen "dcc-backtohome-btn", 10;
-    assert_and_click "dcc-backtohome-btn";
-    sleep 5;
-    mouse_set 100, 100;
-    mouse_click;
-    sleep 5;
-    save_screenshot;
+    open_dcc 'powermgm';
+    assert_screen 'dcc-powermgm-snapshot';
+    test_dcc_powermgm_keydown 'shutdown';
+    test_dcc_powermgm_keydown 'suspend';
+    test_dcc_powermgm_keydown 'ask';
+    test_dcc_powermgm_wakeup;
+    test_dcc_powermgm_plugged_in 'power-saver'; 
+    test_dcc_powermgm_plugged_in 'high-performance';
+    test_dcc_powermgm_plugged_in 'custom';
+    test_dcc_powermgm_plugged_in 'balanced';
+    close_dcc;
 
 }
 

@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 967,
+      "ypos": 56,
+      "width": 46,
+      "height": 26,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-speaker-button-off"
+  ],
+  "properties": []
+}

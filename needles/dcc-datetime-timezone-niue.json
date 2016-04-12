@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "dcc-datetime-timezone-niue"
+  ],
+  "area": [
+    {
+      "xpos": 998,
+      "ypos": 256,
+      "width": 21,
+      "height": 21,
+      "type": "match"
+    }
+  ]
+}

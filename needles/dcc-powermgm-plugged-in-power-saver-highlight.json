@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 936,
+      "ypos": 209,
+      "width": 39,
+      "height": 18,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-powermgm-plugged-in-power-saver-highlight"
+  ]
+}
