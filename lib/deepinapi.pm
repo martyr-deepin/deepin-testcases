@@ -211,8 +211,9 @@ sub open_dcc($){
     mouse_set 1023, 767;
     assert_screen $needle_dcc_main;
     assert_and_click $needle_dcc_module;
-    mouse_hide;
-    sleep 1;
+    sleep 3;
+    mouse_set 1023, 1;
+    sleep 3;
     assert_screen $needle_dcc_slider;
 
 }
