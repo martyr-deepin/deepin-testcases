@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "dcc-shortcut-custom-add"
+  ],
+  "area": [
+    {
+      "xpos": 988,
+      "ypos": 183,
+      "width": 24,
+      "height": 24,
+      "type": "match"
+    }
+  ]
+}

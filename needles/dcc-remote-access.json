@@ -1,0 +1,22 @@
+{
+  "tags": [
+    "dcc-remote-access"
+  ],
+  "area": [
+    {
+      "ypos": 669,
+      "height": 28,
+      "type": "match",
+      "xpos": 673,
+      "width": 30
+    },
+    {
+      "xpos": 986,
+      "ypos": 115,
+      "width": 37,
+      "height": 83,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

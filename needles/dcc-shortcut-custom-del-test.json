@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "dcc-shortcut-custom-del-test"
+  ],
+  "area": [
+    {
+      "ypos": 245,
+      "width": 55,
+      "xpos": 707,
+      "type": "match",
+      "height": 24
+    }
+  ]
+}

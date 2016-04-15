@@ -1,0 +1,36 @@
+{
+  "properties": [],
+  "tags": [
+    "dcc-systeminfor-snapshot"
+  ],
+  "area": [
+    {
+      "xpos": 722,
+      "ypos": 6,
+      "width": 292,
+      "height": 125,
+      "type": "match"
+    },
+    {
+      "xpos": 717,
+      "ypos": 161,
+      "width": 60,
+      "height": 115,
+      "type": "match"
+    },
+    {
+      "xpos": 722,
+      "ypos": 301,
+      "width": 143,
+      "height": 22,
+      "type": "match"
+    },
+    {
+      "xpos": 724,
+      "ypos": 334,
+      "width": 31,
+      "height": 21,
+      "type": "match"
+    }
+  ]
+}

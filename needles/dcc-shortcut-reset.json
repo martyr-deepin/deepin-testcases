@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "dcc-shortcut-reset"
+  ],
+  "area": [
+    {
+      "xpos": 937,
+      "ypos": 10,
+      "width": 76,
+      "height": 29,
+      "type": "match"
+    }
+  ]
+}

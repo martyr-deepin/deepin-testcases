@@ -17,26 +17,33 @@
 use base "softwarebasetest";
 use strict;
 use testapi;
+use deepinapi qw( open_dcc close_dcc refresh_dcc );
 
 sub run {
-    # show controlcenter
-    mouse_set 100, 100;
-    mouse_set 1023, 767;
 
-    # click btn on the mainpage of controlcenter
-    assert_screen "dcc-main-remote", 10;
-    assert_and_click "dcc-main-remote";
-    sleep 2;
+    open_dcc 'remote';
+    assert_screen 'dcc-remote-snapshot';
 
-    assert_screen "dcc-slider-remote", 10;
-
-    assert_screen "dcc-backtohome-btn", 10;
-    assert_and_click "dcc-backtohome-btn";
-    sleep 5;
-    mouse_set 100, 100;
-    mouse_click;
-    sleep 5;
+    assert_and_click 'dcc-remote-share';
+    mouse_hide;
+    sleep 1;
     save_screenshot;
+    assert_screen 'dcc-remote-share-detail';
+    assert_and_click 'dcc-remote-share-detail-cancel';
+    mouse_hide;
+    sleep 1;
+    assert_screen 'dcc-remote-snapshot';
+
+    assert_and_click 'dcc-remote-access';
+    mouse_hide;
+    sleep 1;
+    assert_screen 'dcc-remote-access-detail';
+    assert_and_click 'dcc-remote-access-detail-cancel';
+    mouse_hide;
+    sleep 1;
+    assert_screen 'dcc-remote-snapshot';
+
+    close_dcc;
 
 }
 

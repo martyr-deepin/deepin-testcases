@@ -347,6 +347,7 @@ sub loadDccAllTests{
     loadDccBootmenuTests;
     loadDccRemoteTests;
     loadDccSysteminforTests;
+	loadtest "DeepinSoftware/DCCSysteminforbug.pm";
     loadDccPowerTests;
 
 }

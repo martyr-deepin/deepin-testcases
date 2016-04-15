@@ -19,25 +19,9 @@ use strict;
 use testapi;
 use deepinapi qw( open_dcc close_dcc refresh_dcc );
 
-sub open_dcc_module($){
-
-    my $module = shift;
-    my $needle_dcc_main = "dcc-main-area";
-    my $needle_dcc_module = "dcc-main-".$module;
-    my $needle_dcc_module_snapshot = "dcc-".$module."-snapshot";
-    assert_screen "desktop-default";
-    mouse_set 1023, 767;
-    assert_screen $needle_dcc_main;
-    assert_and_click $needle_dcc_module;
-    mouse_hide;
-    sleep 1;
-    assert_screen $needle_dcc_module_snapshot;
-
-}
-
 sub run {
 
-    open_dcc_module 'systeminfor';
+    open_dcc 'systeminfor';
     close_dcc;
 
 }

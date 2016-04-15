@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 776,
+      "ypos": 275,
+      "width": 237,
+      "height": 24,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-shortcut-custom-add-command"
+  ],
+  "properties": []
+}

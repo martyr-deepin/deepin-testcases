@@ -1,0 +1,22 @@
+{
+  "properties": [],
+  "tags": [
+    "dcc-remote-share-detail"
+  ],
+  "area": [
+    {
+      "xpos": 722,
+      "ypos": 12,
+      "width": 298,
+      "height": 234,
+      "type": "match"
+    },
+    {
+      "xpos": 787,
+      "ypos": 56,
+      "width": 161,
+      "height": 67,
+      "type": "exclude"
+    }
+  ]
+}

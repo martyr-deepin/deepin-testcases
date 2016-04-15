@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "dcc-shortcut-snapshot"
+  ],
+  "area": [
+    {
+      "ypos": 10,
+      "width": 289,
+      "height": 261,
+      "type": "match",
+      "xpos": 725
+    }
+  ]
+}

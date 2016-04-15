@@ -1,0 +1,22 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 720,
+      "ypos": 7,
+      "width": 296,
+      "height": 427,
+      "type": "match"
+    },
+    {
+      "xpos": 726,
+      "ypos": 62,
+      "width": 285,
+      "height": 177,
+      "type": "exclude"
+    }
+  ],
+  "tags": [
+    "dcc-bootmenu-snapshot"
+  ]
+}

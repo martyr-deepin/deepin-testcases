@@ -1,0 +1,22 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "height": 28,
+      "xpos": 673,
+      "type": "match",
+      "width": 30,
+      "ypos": 669
+    },
+    {
+      "xpos": 717,
+      "ypos": 11,
+      "width": 300,
+      "height": 238,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-remote-snapshot"
+  ]
+}

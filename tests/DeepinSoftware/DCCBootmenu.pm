@@ -17,26 +17,26 @@
 use base "softwarebasetest";
 use strict;
 use testapi;
+use deepinapi qw( open_dcc close_dcc refresh_dcc );
+
+our @modulelist = qw( default-boot boot-delay text-color selected-text-color );
 
 sub run {
-    # show controlcenter
-    mouse_set 100, 100;
-    mouse_set 1023, 767;
 
-    # click btn on the mainpage of controlcenter
-    assert_screen "dcc-main-bootmenu", 10;
-    assert_and_click "dcc-main-bootmenu";
-    sleep 2;
+    open_dcc 'bootmenu';
+    assert_screen 'dcc-bootmenu-snapshot';
+    
+    foreach my $module (@modulelist) {
+        assert_and_click 'dcc-bootmenu-'.$module;
+        mouse_hide;
+        sleep 1;
+        assert_screen    'dcc-bootmenu-'.$module.'-detail';
+        assert_and_click 'dcc-bootmenu-'.$module;
+        mouse_hide;
+        sleep 1;
+    }
 
-    assert_screen "dcc-slider-bootmenu", 10;
-
-    assert_screen "dcc-backtohome-btn", 10;
-    assert_and_click "dcc-backtohome-btn";
-    sleep 5;
-    mouse_set 100, 100;
-    mouse_click;
-    sleep 5;
-    save_screenshot;
+    close_dcc;
 
 }
 

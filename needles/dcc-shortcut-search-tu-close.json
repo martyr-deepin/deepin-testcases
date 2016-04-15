@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 988,
+      "ypos": 54,
+      "width": 19,
+      "height": 23,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-shortcut-search-tu-close"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "dcc-shortcut-custom-add-comfirm"
+  ],
+  "area": [
+    {
+      "xpos": 938,
+      "ypos": 304,
+      "width": 76,
+      "height": 25,
+      "type": "match"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 722,
+      "ypos": 121,
+      "width": 295,
+      "height": 20,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-shortcut-system-launcher-key-ok"
+  ]
+}

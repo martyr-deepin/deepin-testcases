@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "dcc-bootmenu-default-boot-detail"
+  ],
+  "area": [
+    {
+      "xpos": 742,
+      "ypos": 312,
+      "width": 65,
+      "height": 21,
+      "type": "match"
+    }
+  ]
+}

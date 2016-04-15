@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "dcc-bootmenu-boot-delay-detail"
+  ],
+  "area": [
+    {
+      "xpos": 721,
+      "ypos": 316,
+      "width": 294,
+      "height": 146,
+      "type": "match"
+    }
+  ],
+  "properties": []
+}

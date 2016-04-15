@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 724,
+      "ypos": 345,
+      "width": 58,
+      "height": 21,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-bootmenu-text-color"
+  ],
+  "properties": []
+}

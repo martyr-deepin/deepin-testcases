@@ -1,0 +1,15 @@
+{
+  "area": [
+    {
+      "xpos": 866,
+      "ypos": 154,
+      "width": 79,
+      "height": 26,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-remote-access-detail-cancel"
+  ],
+  "properties": []
+}

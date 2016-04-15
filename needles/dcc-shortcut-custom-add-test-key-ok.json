@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "area": [
+    {
+      "xpos": 725,
+      "ypos": 242,
+      "width": 292,
+      "height": 25,
+      "type": "match"
+    }
+  ],
+  "tags": [
+    "dcc-shortcut-custom-add-test-key-ok"
+  ]
+}

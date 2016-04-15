@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "dcc-shortcut-window"
+  ],
+  "area": [
+    {
+      "width": 39,
+      "type": "match",
+      "xpos": 726,
+      "height": 19,
+      "ypos": 121
+    }
+  ]
+}
