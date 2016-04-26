@@ -19,7 +19,7 @@ sub step1 {
 sub step2 {
 	check_app_open "google-high-effect","google-main-default";
 	assert_and_click "google-maximize-btn";
-	assert_screen "dock-always-hide",100;
+	assert_screen "google-maximize",100;
 }
 
 sub step3{
@@ -30,7 +30,7 @@ sub step3{
 sub teardown{
 	send_key "alt-f4";
 	assert_screen "dock-high-effect-mode-default", 60;
-	assert_and_click "fashion-dock-blank","right";
+	assert_and_click "high-effect-blank","right";
 	assert_and_click "always-show-menu";
 	assert_screen "dock-fashion-mode-default",60;
 }

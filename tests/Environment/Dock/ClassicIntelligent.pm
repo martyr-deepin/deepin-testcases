@@ -19,7 +19,7 @@ sub step1 {
 sub step2 {
 	check_app_open "google-classic","google-main-default";
 	assert_and_click "google-maximize-btn";
-	assert_screen "dock-always-hide",60;
+	assert_screen "google-maximize",60;
 }
 
 sub step3{
@@ -29,6 +29,9 @@ sub step3{
 
 sub teardown{
 	send_key "alt-f4";
+	assert_screen "dock-classic-mode-default", 60;
+	assert_and_click "classic-dock-blank","right";
+	assert_and_click "always-show-menu";
 	assert_screen "dock-fashion-mode-default", 10;
 }
 
